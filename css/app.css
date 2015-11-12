@@ -114,6 +114,10 @@ tei-title {
   width:100%;
 }
 
+.top-bar a{
+  text-decoration: none;
+}
+
 .f-dropdown{
   background-color: black;
 }
