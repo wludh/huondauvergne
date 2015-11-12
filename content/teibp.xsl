@@ -122,7 +122,7 @@
 
 </div><!--end top bar nav-->
 <!--main content-->
-                <div id="hidden-title"></div>
+                <TEI><h1 id="hidden-title"></h1></TEI>
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
