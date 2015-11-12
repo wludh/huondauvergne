@@ -206,14 +206,6 @@
 	
 
 	<xsl:template match="@xml:id">
-		<!-- @xml:id is copied to @id, which browsers can use
-			for internal links.
-		-->
-		<!--
-		<xsl:attribute name="xml:id">
-			<xsl:value-of select="."/>
-		</xsl:attribute>
-		-->
 		<xsl:attribute name="id">
 			<xsl:value-of select="."/>
 		</xsl:attribute>
@@ -262,35 +254,6 @@
     </xsl:copy>
   </xsl:template>
 	
-	<!--
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc>
-			<xd:p>Transforms TEI figure/head to HTML figcaption</xd:p>
-		</xd:desc>
-	</xd:doc>
-	<xsl:template match="tei:figure/tei:head">
-		<figcaption><xsl:apply-templates/></figcaption>
-	</xsl:template>
-	-->
-    <!--
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc>
-			<xd:p>Adds some javascript just before end of root tei element. Javascript sets the
-				/html/head/title element to an appropriate title selected from the TEI document.
-				This could also be achieved through XSLT but is here to demonstrate some simple
-				javascript, using JQuery, to manipulate the DOM containing both html and TEI.</xd:p>
-		</xd:desc>
-	</xd:doc>
-	
-	
-	<xsl:template match="tei:TEI" priority="99">
-		<xsl:element name="{local-name()}">
-			<xsl:call-template name="addID"/>
-			<xsl:apply-templates select="@*|node()"/>
-		</xsl:element>
-	</xsl:template>
-	-->
-	
 	<xsl:template name="addID">
 		<xsl:if test="not(ancestor::eg:egXML)">
 			<xsl:attribute name="id">
@@ -325,11 +288,6 @@
 		<xsl:variable name="id" select="concat($root,$suffix)"/>
 		<xsl:choose>
 			<xsl:when test="key('ids',$id)">
-				<!--
-				<xsl:message>
-					<xsl:value-of select="concat('Found duplicate id: ',$id)"/>
-				</xsl:message>
-				-->
 				<xsl:call-template name="generate-unique-id">
 					<xsl:with-param name="root" select="$root"/>
 					<xsl:with-param name="suffix" select="concat($suffix,'f')"/>
