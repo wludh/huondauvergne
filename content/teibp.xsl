@@ -49,12 +49,14 @@
 	<xsl:param name="filePrefix" select="'..'"/>
 	
 	<xsl:param name="teibpCSS" select="concat($filePrefix,'/css/teibp.css')"/>
+    <xsl:param name="normalizeCSS" select="concat($filePrefix, '/css/normalize.css')"/>
     <xsl:param name="foundationCSS" select="concat($filePrefix,'/css/foundation.css')"/>
     <xsl:param name="appCSS" select="concat($filePrefix, '/css/app.css')"/>
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
+    <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/>
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
 	<xsl:param name="theme.terminal" select="concat($filePrefix,'/css/terminal.css')"/>
@@ -102,8 +104,8 @@
               </section>
           <section class="top-bar-section">
               <ul>
-                <li class=""><a data-dropdown="hover1" data-options="is_hover:true; hover_timeout:500">Edition</a>
-                  <ul id="hover1" class="f-dropdown" data-dropdown-content="">
+                <li><a>Edition</a>
+                  <ul>
                     <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
                     <li><a href="#">Another Edition</a></li>
                     <li><a href="#">Another Edition</a></li>
@@ -120,7 +122,7 @@
 
 </div><!--end top bar nav-->
 <!--main content-->
-
+                <TEI><h1 id="hidden-title"></h1></TEI>
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
@@ -206,14 +208,6 @@
 	
 
 	<xsl:template match="@xml:id">
-		<!-- @xml:id is copied to @id, which browsers can use
-			for internal links.
-		-->
-		<!--
-		<xsl:attribute name="xml:id">
-			<xsl:value-of select="."/>
-		</xsl:attribute>
-		-->
 		<xsl:attribute name="id">
 			<xsl:value-of select="."/>
 		</xsl:attribute>
@@ -262,35 +256,6 @@
     </xsl:copy>
   </xsl:template>
 	
-	<!--
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc>
-			<xd:p>Transforms TEI figure/head to HTML figcaption</xd:p>
-		</xd:desc>
-	</xd:doc>
-	<xsl:template match="tei:figure/tei:head">
-		<figcaption><xsl:apply-templates/></figcaption>
-	</xsl:template>
-	-->
-    <!--
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc>
-			<xd:p>Adds some javascript just before end of root tei element. Javascript sets the
-				/html/head/title element to an appropriate title selected from the TEI document.
-				This could also be achieved through XSLT but is here to demonstrate some simple
-				javascript, using JQuery, to manipulate the DOM containing both html and TEI.</xd:p>
-		</xd:desc>
-	</xd:doc>
-	
-	
-	<xsl:template match="tei:TEI" priority="99">
-		<xsl:element name="{local-name()}">
-			<xsl:call-template name="addID"/>
-			<xsl:apply-templates select="@*|node()"/>
-		</xsl:element>
-	</xsl:template>
-	-->
-	
 	<xsl:template name="addID">
 		<xsl:if test="not(ancestor::eg:egXML)">
 			<xsl:attribute name="id">
@@ -325,11 +290,6 @@
 		<xsl:variable name="id" select="concat($root,$suffix)"/>
 		<xsl:choose>
 			<xsl:when test="key('ids',$id)">
-				<!--
-				<xsl:message>
-					<xsl:value-of select="concat('Found duplicate id: ',$id)"/>
-				</xsl:message>
-				-->
 				<xsl:call-template name="generate-unique-id">
 					<xsl:with-param name="root" select="$root"/>
 					<xsl:with-param name="suffix" select="concat($suffix,'f')"/>
@@ -351,11 +311,13 @@
 			<meta charset="UTF-8"/>
 
 			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
+            <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
             <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <script type="text/javascript" src="{$foundationminJS}"></script>
-			<script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
+			<script type="text/javascript" src="{$modernizrJS}"></script>
+            <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
 			<script type="text/javascript" src="{$teibpJS}"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
@@ -444,6 +406,15 @@
 		<footer class="footer">
       Supported by the <a href="http://www.neh.gov/">National Endowment for the Humanities</a> and <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by a modified version of <a href="{$teibpHome}">TEI Boilerplate</a>. 
   </footer>
+              <script>
+            $(document).foundation();
+            </script>
+
+                <script>
+var element = jQuery('tei-title:first').clone();
+element.appendTo('#hidden-title');
+</script>
+
 	</xsl:variable>
 
 	<xsl:template name="teibpToolbox">

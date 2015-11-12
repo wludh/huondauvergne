@@ -17,6 +17,4 @@
          to be overridden here. -->
     <xsl:import href="teibp.xsl"/>
     
-
-
 </xsl:stylesheet>
