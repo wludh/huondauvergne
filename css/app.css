@@ -9,7 +9,6 @@ font-kerning:normal;
 }
 
 p {
-  font-size:1.3rem;
   font-weight:normal;
 }
 /* full image in background */
@@ -29,8 +28,6 @@ background-size: cover;
 }
 
 .titleRow{
-  /*position: relative;
-  top:200px;*/
   background-color: rgba(192,192,192,0.5);
   text-align:right;
   padding-right: 300px;
@@ -84,16 +81,23 @@ p.tagline {
   width:100%;
   background-color: #000;
   color:#fff;
-  height: auto;
-  padding-top:2em;
-  padding-bottom:3em;
+  height: 45px;
   font-weight:normal;
 }
 
-.footer p {
-  font-size:.7rem;
+.footer {
+  text-align: center;
+  font-size:13px;
+  color: rgb(255,255,255);
+  margin: 0px;
+  margin-bottom: 0px;
+  line-height: 45px;
+  padding-top: 0px;
 }
 
+.footer a{
+  color: rgb(255,255,255);
+}
 TEI {
   margin-left: 16.66667% !important;
   width: 66.66667%;
@@ -108,6 +112,10 @@ tei-title {
 
 .top-bar{
   width:100%;
+}
+
+.top-bar a{
+  text-decoration: none;
 }
 
 .f-dropdown{
