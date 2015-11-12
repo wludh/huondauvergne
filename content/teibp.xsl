@@ -85,35 +85,35 @@
         <section class="top-bar-section">
           <!--right-nav section-->
           <ul>
-            <li class=""><a href="/index.html">home</a></li>
+            <li class=""><a href="/index.html">Home</a></li>
             </ul>
           </section>
           <section class="top-bar-section">
             <!--right-nav section-->
             <ul>
-              <li class=""><a href="/about.html">about</a></li>
+              <li class=""><a href="/about.html">About</a></li>
               </ul>
             </section>
             <section class="top-bar-section">
               <!--right-nav section-->
               <ul>
-                <li class="active"><a href="/introduction.html">introduction</a></li>
+                <li class=""><a href="/introduction.html">Introduction</a></li>
                 </ul>
               </section>
           <section class="top-bar-section">
               <ul>
-                <li class=""><a data-dropdown="hover1" data-options="is_hover:true; hover_timeout:500">edition</a>
+                <li class=""><a data-dropdown="hover1" data-options="is_hover:true; hover_timeout:500">Edition</a>
                   <ul id="hover1" class="f-dropdown" data-dropdown-content="">
-                    <li><a href="/content/Br_TEI_v1.xml">br manuscript</a></li>
-                    <li><a href="#">another edition</a></li>
-                    <li><a href="#">another edition</a></li>
+                    <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
+                    <li><a href="#">Another Edition</a></li>
+                    <li><a href="#">Another Edition</a></li>
                   </ul>
                 </li>
                 </ul>
         </section>
          <section class="top-bar-section">
           <ul>
-            <li class=""><a href="/bibliography.html">bibliography</a></li>
+            <li class=""><a href="/bibliography.html">Bibliography</a></li>
             </ul>
           </section>
 </nav>
@@ -441,8 +441,9 @@
 		</xd:desc>
 	</xd:doc>
 	<xsl:variable name="htmlFooter">
-		<footer> Powered by a modified version of <a href="{$teibpHome}">TEI Boilerplate</a>. 
-		</footer>
+		<footer class="footer">
+      Supported by the <a href="http://www.neh.gov/">National Endowment for the Humanities</a> and <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by a modified version of <a href="{$teibpHome}">TEI Boilerplate</a>. 
+  </footer>
 	</xsl:variable>
 
 	<xsl:template name="teibpToolbox">
