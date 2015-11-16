@@ -1,9 +1,7 @@
 
 body {
 font-family: "garamond-premier-pro-display", Georgia, Times New Roman, serif;
-/*background-color:#FCFFF5;*/
-color: #193441;
-text-rendering:optimizeLegibility;
+background: rgba(255,255,255,0.875);text-rendering:optimizeLegibility;
 font-feature-settings: "kern" 1;
 font-kerning:normal;
 }
@@ -11,14 +9,6 @@ font-kerning:normal;
 p {
   font-weight:normal;
 }
-/* full image in background */
-#homepage {
-background: url('../img/blake.jpg') no-repeat center center;
-min-height:100%;
-position: relative;
-background-size: cover;
-}
-
 
 .fullWidth {
   width: 100%;
@@ -64,8 +54,7 @@ p.tagline {
   background-color: #000;}
 /*the color to use for a hover*/
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background-color: #000;
-  }
+    background-color: #000;}
 
 .imgprofile {
   float:left;
@@ -85,11 +74,13 @@ p.tagline {
   margin-bottom: 0px;
   line-height: 45px;
   padding-top: 0px;
+  position: absolute;
 }
 
 .footer a{
   color: rgb(255,255,255);
 }
+
 TEI {
   margin-left: 16.66667% !important;
   width: 66.66667%;
@@ -114,13 +105,40 @@ teiHeader{
   display: none;
 }
 
-html{
+/*
+  old style
+  html{
   width:100%;
   padding:0;
   margin:0;
   background-color: white;
-}
+}*/
 
+
+/* full image in background */
+/*#homepage {
+min-height:100%;
+position: relative;
+}
+*/
+
+/* jerm's style*/
+html{
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("../img/blake.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
+  background-position: bottom right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height:auto;
+}
 
 /*dropdown menus*/
 
@@ -160,4 +178,14 @@ ul li:hover ul {
 
 #hidden-title{
   
+}
+
+#homepage {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#homepage-body{
+  background: rgba(255,255,255,0);
 }
