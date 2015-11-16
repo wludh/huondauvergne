@@ -1,7 +1,8 @@
 
 body {
 font-family: "garamond-premier-pro-display", Georgia, Times New Roman, serif;
-background: rgba(255,255,255,0.875);text-rendering:optimizeLegibility;
+background: rgba(255,255,255,0.875);
+text-rendering:optimizeLegibility;
 font-feature-settings: "kern" 1;
 font-kerning:normal;
 }
@@ -86,7 +87,7 @@ TEI {
   width: 66.66667%;
   margin-right: 4.5em;
   font-family: Garamond;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
 
 tei-title {
@@ -105,22 +106,9 @@ teiHeader{
   display: none;
 }
 
-/*
-  old style
-  html{
-  width:100%;
-  padding:0;
-  margin:0;
-  background-color: white;
-}*/
-
-
-/* full image in background */
-/*#homepage {
-min-height:100%;
-position: relative;
+#tei_wrapper{
 }
-*/
+
 
 /* jerm's style*/
 html{
@@ -138,6 +126,9 @@ html{
   background-attachment: fixed;
   background-repeat: no-repeat;
   height:auto;
+  width:100%;
+  padding:0;
+  margin:0;
 }
 
 /*dropdown menus*/
@@ -188,4 +179,7 @@ ul li:hover ul {
 
 #homepage-body{
   background: rgba(255,255,255,0);
+}
+text body{
+  background-color: rgba(255,255,255,0);
 }
