@@ -1,5 +1,8 @@
 /* Todo: 
-  fonts all over. styling of title
+  fonts all over. 
+  styling of title
+  font-size all over?
+  styling of Edition
 */
 
 body {
@@ -85,6 +88,14 @@ p.tagline {
   float:left;
   padding-right: 10px;
   padding-bottom: 20px;
+  
+}
+
+.p img{
+  border-color: rgb(233, 233, 233);
+  border-style: solid;
+  border-width: 10px;
+  padding: 300px;
 }
 
 .footer{
@@ -113,11 +124,15 @@ p.tagline {
 /* TEI */
 
 TEI {
-  margin-left: 16.66667% !important;
-  width: 66.66667%;
-  margin-right: 4.5em;
+  
+/*  width: 66.66667%;
+*/  margin: auto;
+/*  margin-left: 16.66667% !important;
+  margin-right: 4.5em;*/
+  max-width: 40%;
   font-family: Garamond;
-  font-size: 1.4rem;
+  font-size: 16px;
+
 }
 
 tei-title {
@@ -186,6 +201,7 @@ ul li ul li {
   text-shadow: 0 -1px 0 #000;
   z-index: 1000;
 }
+
 ul li ul li:hover { background: #666; }
 ul li:hover ul {
   display: block;
