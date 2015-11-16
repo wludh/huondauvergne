@@ -3,10 +3,11 @@
   styling of title
   font-size all over?
   styling of Edition
+  search bar functionality
 */
 
 body {
-font-family: "garamond-premier-pro-display", Georgia, Times New Roman, serif;
+font-family: "garamond-premier-pro-display", "Georgia", "Times New Roman", serif;
 background: rgba(255,255,255,0.875);
 text-rendering:optimizeLegibility;
 font-feature-settings: "kern" 1;
@@ -35,10 +36,8 @@ nav{
 
 .top-bar-section li:not(.has-form) a:not(.button){background: #000;}
 .top-bar-section li:not(.has-form) a:not(.button):hover {background: #000;}
-
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background-color: #000;}
-/*the color to use for a hover*/
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
     background-color: #000;}
 
@@ -82,21 +81,19 @@ p.tagline {
   margin-top:-15px;
 }
 
-
-
 .imgprofile {
   float:left;
   padding-right: 10px;
   padding-bottom: 20px;
-  
+  border-color: rgb(233, 233, 233);
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  max-width: 150px;
 }
 
 .p img{
-  border-color: rgb(233, 233, 233);
-  border-style: solid;
-  border-width: 10px;
-  padding: 300px;
-}
+  }
 
 .footer{
   background-color: #000;
@@ -220,6 +217,7 @@ ul li:hover ul {
 #homepage-body{
   background: rgba(255,255,255,0);
 }
+
 text body{
   background-color: rgba(255,255,255,0);
 }
@@ -289,3 +287,13 @@ text body{
   -o-transition: all .55s ease;
   transition: all .55s ease;
 }
+/*
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+ 
+  .container-4:hover button.icon:hover{
+    background: white;
+  }*/
