@@ -1,4 +1,5 @@
-/* Todo: line under bar. font size of bar;
+/* Todo: 
+  fonts all over. styling of title
 */
 
 body {
@@ -14,6 +15,8 @@ header{
   padding-bottom: 4em;
   margin-bottom: 1.5em;
 }
+
+/*Top bar*/
 
 .top-bar {
   background: #000;
@@ -46,6 +49,13 @@ nav{
   font-size: 14px;
 }
 
+.titleRow{
+  background-color: rgba(192,192,192,0.5);
+  padding-left: 15px;
+}
+
+/*Content */
+
 p {
   font-weight:normal;
 }
@@ -57,10 +67,6 @@ p {
 
 }
 
-.titleRow{
-  background-color: rgba(192,192,192,0.5);
-  padding-left: 15px;
-}
 
 h1 {
   color:#333;
@@ -104,6 +110,8 @@ p.tagline {
   color: rgb(255,255,255);
 }
 
+/* TEI */
+
 TEI {
   margin-left: 16.66667% !important;
   width: 66.66667%;
@@ -116,13 +124,12 @@ tei-title {
   font-family: Garamond !important;
 }
 
-
-
 teiHeader{
   display: none;
 }
 
-/* jerm's style*/
+/* Background image*/
+
 html{
   background-color: #f0f0f0;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("../img/blake.jpg");
@@ -143,7 +150,7 @@ html{
   margin:0;
 }
 
-/*dropdown menus*/
+/*dropdown/side menus*/
 
 ul li ul {
   padding: 0;
@@ -170,6 +177,7 @@ ul li ul {
   border-bottom-style: solid;
   border-top-style: solid;
   border-color: gray;
+  transition:1s;
 }
 ul li ul li { 
   background: #555; 
@@ -184,10 +192,7 @@ ul li:hover ul {
   opacity: 1;
   visibility: visible;
   z-index: 1000;
-}
-
-#hidden-title{
-  
+  transition:1s;
 }
 
 #homepage {
