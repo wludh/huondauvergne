@@ -1,3 +1,5 @@
+/* Todo: line under bar. font size of bar;
+*/
 
 body {
 font-family: "garamond-premier-pro-display", Georgia, Times New Roman, serif;
@@ -33,7 +35,6 @@ header{
 
 h1 {
   color:#333;
-/*  font-size: 50px;*/
   font-family: "garamond-premier-pro-display",serif;
   margin-bottom:0;
 }
@@ -45,7 +46,14 @@ p.tagline {
 
 .top-bar {
   background: #000;
+  width:100%;
+  height: 48px;
+}
 
+nav{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button){background: #000;}
@@ -67,15 +75,22 @@ p.tagline {
   background-color: #000;
   color: rgb(255,255,255);
   width:100%;
-  height: 45px;
+  height: 48px;
   text-align: center;
   font-weight:normal;
-  font-size:13px;
+  font-size:14px;
   margin: 0px;
   margin-bottom: 0px;
-  line-height: 45px;
+  line-height: 48px;
   padding-top: 0px;
   position: absolute;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: gray;
+}
+
+.top-bar-section{
+  font-size: 14px important;
 }
 
 .footer a{
@@ -92,10 +107,6 @@ TEI {
 
 tei-title {
   font-family: Garamond !important;
-}
-
-.top-bar{
-  width:100%;
 }
 
 .top-bar a{
@@ -137,7 +148,7 @@ ul li ul {
   padding: 0;
   position: absolute;
   top: 48px;
-  left: 0;
+  right: 0;
   width: 150px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -151,20 +162,27 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
   z-index: 1000;
+  border-left: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: gray;
 }
 ul li ul li { 
   background: #555; 
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
-    z-index: 1000;
+  z-index: 1000;
 }
 ul li ul li:hover { background: #666; }
 ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
-    z-index: 1000;
+  z-index: 1000;
 }
 
 #hidden-title{
@@ -182,4 +200,70 @@ ul li:hover ul {
 }
 text body{
   background-color: rgba(255,255,255,0);
+}
+
+/*Search bar */
+
+.box{
+  width: 215px;
+  height: 50px;
+}
+
+.container-4{
+  overflow: hidden;
+  width: 200px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container-4 input#search{
+  width: 200px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-4 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: none;
+  background: #232833;
+  height: 50px;
+  width: 50px;
+  color: #4f5b66;
+  opacity: 0;
+  font-size: 10pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
 }
