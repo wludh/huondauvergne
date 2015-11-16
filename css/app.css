@@ -7,7 +7,9 @@
 */
 
 body {
-font-family: "garamond-premier-pro-display", "Georgia", "Times New Roman", serif;
+/*font-family: "garamond-premier-pro-display", "Georgia", "Times New Roman", serif;
+*/
+font-family: 'Roboto';
 background: rgba(255,255,255,0.875);
 text-rendering:optimizeLegibility;
 font-feature-settings: "kern" 1;
