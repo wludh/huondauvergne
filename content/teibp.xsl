@@ -85,42 +85,52 @@
         </ul>
 
         <section class="top-bar-section">
-          <!--right-nav section-->
-          <ul>
-            <li class=""><a href="/index.html">Home</a></li>
-            </ul>
-          </section>
-          <section class="top-bar-section">
-            <!--right-nav section-->
-            <ul>
-              <li class=""><a href="/about.html">About</a></li>
-              </ul>
-            </section>
+        <ul>
+          <li class=""><a href="/index.html">Huon d'Auvergne: A Digital Edition</a></li>
+        </ul>
+      </section>
             <section class="top-bar-section">
-              <!--right-nav section-->
-              <ul>
-                <li class=""><a href="/introduction.html">Introduction</a></li>
-                </ul>
-              </section>
-          <section class="top-bar-section">
-              <ul>
-                <li><a>Edition</a>
-                  <ul>
-                    <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
-                    <li><a href="#">Another Edition</a></li>
-                    <li><a href="#">Another Edition</a></li>
-                  </ul>
-                </li>
-                </ul>
-        </section>
-         <section class="top-bar-section">
-          <ul>
-            <li class=""><a href="/bibliography.html">Bibliography</a></li>
+        <ul class="right">
+          <div class="box">
+            <div class="container-4">
+              <input type="search" id="search" placeholder="Search..." />
+              <button class="icon"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="">
+            <a href="/bibliography.html">Bibliography</a>
+          </li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class=""><a href="/about.html">About</a></li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a>Edition</a>
+            <ul>
+              <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
+              <li><a href="#">Another Edition</a></li>
+              <li><a href="#">Another Edition</a></li>
+              <li><a href="#">Another Edition</a></li>
+              <li><a href="#">Another Edition</a></li>
             </ul>
-          </section>
-</nav>
-
-</div><!--end top bar nav-->
+          </li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class=""><a href="/introduction.html">Introduction</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div><!--end top bar nav-->
 <!--main content-->
                 <TEI><h1 id="hidden-title"></h1></TEI>
 				<div id="tei_wrapper">
