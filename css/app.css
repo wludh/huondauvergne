@@ -1,15 +1,13 @@
 /* Todo: 
-  fonts all over. 
-  styling of title
-  font-size all over?
+  font size
+  double check font?
+  color of links in nav bar and footer
   styling of Edition
   search bar functionality
 */
 
 body {
-/*font-family: "garamond-premier-pro-display", "Georgia", "Times New Roman", serif;
-*/
-font-family: 'Roboto';
+font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 background: rgba(255,255,255,0.875);
 text-rendering:optimizeLegibility;
 font-feature-settings: "kern" 1;
@@ -46,11 +44,11 @@ nav{
 
 .top-bar a{
   text-decoration: none;
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 .top-bar-section{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .titleRow{
@@ -58,7 +56,15 @@ nav{
   padding-left: 15px;
 }
 
+section ul li a{
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
+}
+
 /*Content */
+
+#clear{
+  clear:both;
+}
 
 p {
   font-weight:normal;
@@ -74,7 +80,7 @@ p {
 
 h1 {
   color:#333;
-  font-family: "garamond-premier-pro-display",serif;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
   margin-bottom:0;
 }
 
@@ -90,7 +96,8 @@ p.tagline {
   border-color: rgb(233, 233, 233);
   border-style: solid;
   border-width: 1px;
-  padding: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   max-width: 150px;
 }
 
@@ -104,7 +111,7 @@ p.tagline {
   height: 48px;
   text-align: center;
   font-weight:normal;
-  font-size:14px;
+  font-size:16px;
   margin: 0px;
   margin-bottom: 0px;
   line-height: 48px;
@@ -129,13 +136,14 @@ TEI {
 /*  margin-left: 16.66667% !important;
   margin-right: 4.5em;*/
   max-width: 40%;
-  font-family: Garamond;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   font-size: 16px;
 
 }
 
 tei-title {
-  font-family: Garamond !important;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+ !important;
 }
 
 teiHeader{
