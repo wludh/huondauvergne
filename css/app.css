@@ -120,6 +120,9 @@ p.tagline {
   border-top-color: gray;
 }
 
+#hidden-title{
+  font-size: 28px;
+}
 
 .footer a{
   color:#cccccc !important;
