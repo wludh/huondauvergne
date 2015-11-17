@@ -91,18 +91,16 @@ p.tagline {
 
 .imgprofile {
   float:left;
-  padding-right: 10px;
-  padding-bottom: 20px;
+  padding-right: 25px;
   border-color: rgb(233, 233, 233);
   border-style: solid;
   border-width: 1px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  max-width: 150px;
+  max-width: 200px;
 }
 
-.p img{
-  }
+.participant_profile{
+  padding-top: 25px;
+}
 
 .footer{
   background-color: #000;
@@ -159,7 +157,7 @@ html{
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
   background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
   background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
-  background-position: bottom right;
+  background-position: top right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
