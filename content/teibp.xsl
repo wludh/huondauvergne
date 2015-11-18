@@ -116,11 +116,11 @@
         <ul class="right">
           <li><a>Edition</a>
             <ul>
-              <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
-              <li><a href="#">Another Edition</a></li>
-              <li><a href="#">Another Edition</a></li>
-              <li><a href="#">Another Edition</a></li>
-              <li><a href="#">Another Edition</a></li>
+              <li><a href="/content/Br_TEI_v1.xml">Bologna Fragment</a></li>
+              <li><a href="#">Padua Manuscript</a></li>
+              <li><a href="#">Berlin Manuscript</a></li>
+              <li><a href="#">Turin Manuscript</a></li>
+              <li><a href="#">Hell Scene Comparison</a></li>
             </ul>
           </li>
         </ul>
