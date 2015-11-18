@@ -38,6 +38,7 @@
 	
 	<!-- interface text -->
 	<xsl:param name="pbNote"><text>page: </text></xsl:param>
+	<xsl:param name="n"></xsl:param>
 	<xsl:param name="altTextPbFacs"><text>view page image(s)</text></xsl:param>
 	
 	<!-- parameters for file paths or URLs -->
@@ -89,7 +90,7 @@
           <li class=""><a href="/index.html">Huon d'Auvergne: A Digital Edition</a></li>
         </ul>
       </section>
-            <section class="top-bar-section">
+<!--             <section class="top-bar-section">
         <ul class="right">
           <div class="box">
             <div class="container-4">
@@ -98,7 +99,7 @@
             </div>
           </div>
         </ul>
-      </section>
+      </section> -->
       <section class="top-bar-section">
         <ul class="right">
           <li class="">
@@ -132,7 +133,7 @@
     </nav>
   </div><!--end top bar nav-->
 <!--main content-->
-                <TEI><h1 id="hidden-title"></h1></TEI>
+                <TEI><div id="hidden-title"></div></TEI>
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
@@ -363,7 +364,7 @@
       </xsl:for-each>
     </style>
   </xsl:template>
-  
+
   <xsl:template name="tokenize">
     <xsl:param name="string" />
     <xsl:param name="delimiter" select="' '" />
@@ -483,7 +484,7 @@ element.appendTo('#hidden-title');
 			</span>
 
 	</xsl:template>
-	
+
 	<xsl:template match="tei:pb[@facs]">
 		<xsl:param name="pn">
 			<xsl:number count="//tei:pb" level="any"/>    
