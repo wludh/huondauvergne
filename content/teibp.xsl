@@ -116,11 +116,11 @@
         <ul class="right">
           <li><a href="/edition.html">Edition</a>
             <ul>
-              <li><a href="/content/Br_TEI_v1.xml">Bologna Fragment</a></li>
-              <li><a href="#">Padua Manuscript</a></li>
-              <li><a href="#">Berlin Manuscript</a></li>
-              <li><a href="#">Turin Manuscript</a></li>
-              <li><a href="#">Hell Scene Comparison</a></li>
+              <li><a href="/content/br.xml">Bologna Fragment</a></li>
+              <li><a href="/content/p.xml">Padua Manuscript</a></li>
+              <li><a href="/content/b.xml">Berlin Manuscript</a></li>
+              <li><a href="/content/t.xml">Turin Manuscript</a></li>
+              <li><a href="">Hell Scene Comparison</a></li>
             </ul>
           </li>
         </ul>
