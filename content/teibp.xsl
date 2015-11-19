@@ -114,13 +114,13 @@
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li><a>Edition</a>
+          <li><a href="/edition.html">Edition</a>
             <ul>
-              <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
-              <li><a href="#">Another Edition</a></li>
-              <li><a href="#">Another Edition</a></li>
-              <li><a href="#">Another Edition</a></li>
-              <li><a href="#">Another Edition</a></li>
+              <li><a href="/content/br.xml">Bologna Fragment</a></li>
+              <li><a href="/content/p.xml">Padua Manuscript</a></li>
+              <li><a href="/content/b.xml">Berlin Manuscript</a></li>
+              <li><a href="/content/t.xml">Turin Manuscript</a></li>
+              <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
         </ul>
