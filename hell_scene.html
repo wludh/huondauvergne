@@ -69,7 +69,7 @@
               <li><a href="/content/p.xml">Padua Manuscript</a></li>
               <li><a href="/content/b.xml">Berlin Manuscript</a></li>
               <li><a href="/content/t.xml">Turin Manuscript</a></li>
-              <li><a href="">Hell Scene Comparison</a></li>
+              <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
         </ul>
@@ -104,7 +104,7 @@
               be reproduced without consent. For further information, please contact Stephen P.
               McCormick at mccormicks@wlu.edu
               </p>
-
+<hr>
             <!-- Note: for whatever reason deleting this first button breaks the functionality on the panels. Keeping it hidden allows them to keep working. -->
          <input type="button" id="newPanel" value="New Version" onclick="openPanel();" style="visibility:hidden;">
 
@@ -118,7 +118,7 @@
       <div id="mssArea">
          <div id="manuscripts">
             <div class="panel mssPanel">
-               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/vm-images/closePanel.gif" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
+               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/vm-images/closePanel.png" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
                      <option selected value="B">1: Berlin</option>
                      <option value="Br">2: Bologna</option>
                      <option value="P">3: Padua</option>
@@ -165,7 +165,7 @@
                </div>
             </div>
             <div class="panel mssPanel">
-               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/vm-images/closePanel.gif" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
+               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/vm-images/closePanel.png" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
                      <option value="B">1: Berlin</option>
                      <option selected value="Br">2: Bologna</option>
                      <option value="P">3: Padua</option>
@@ -213,7 +213,7 @@
             </div>
          </div>
          <div class="panel" id="notesPanel" style="display: none;">
-            <div class="panelBanner"><img class="closePanel" onclick="hideNotesPanel();" alt="X" src="/vmachine_assets/vm-images/closePanel.gif">
+            <div class="panelBanner"><img class="closePanel" onclick="hideNotesPanel();" alt="X" src="/vmachine_assets/vm-images/closePanel.png">
                Textual Notes
                
             </div>
@@ -224,7 +224,7 @@
             </div>
          </div><br class="clear"></div>
       <div class="viewerRoot" id="panel_imageViewer">
-         <div title="Click to drag panel." class="viewerHandle" id="handle_imageViewer"><span class="viewerHandleLt" id="title_imageViewer">Image Viewer</span><img class="viewerHandleRt" onclick="return hidePanel('imageViewer');" alt="X" src="/vmachine_assets/vm-images/closePanel.gif"></div>
+         <div title="Click to drag panel." class="viewerHandle" id="handle_imageViewer"><span class="viewerHandleLt" id="title_imageViewer">Image Viewer</span><img class="viewerHandleRt" onclick="return hidePanel('imageViewer');" alt="X" src="/vmachine_assets/vm-images/closePanel.png"></div>
          <div class="viewerContent" id="content_imageViewer"></div>
       </div>
 

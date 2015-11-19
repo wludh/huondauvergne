@@ -4,10 +4,11 @@
 
 
 div#mssArea {
-   width: 100%;
-   margin: 0;
-   padding: 0;
-}
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+/*   padding: 20px;
+*/}
 div#mssArea div#manuscripts {
    float: left;
    border: 0;
@@ -16,7 +17,7 @@ div#mssArea div#manuscripts {
 }
 div#mssArea div.panel {
    float: left;
-   border: 1px solid black;
+   border: 1px solid #d8d8d8;
    min-height: 250px;
    margin: 0;
    padding: 0;
@@ -35,11 +36,12 @@ div#mssArea div.panel div.panelBanner select.witnessMenu {
    width: 160px;
 }
 div#mssArea div.mssPanel {
-   background: white;
+   background-color: rgba(0, 0, 0, 0);
    /* padding-bottom: 5em; */
+   margin-right: 20px;
 }
 div#mssArea div.mssPanel div.panelBanner {
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #d8d8d8;
 }
 div#mssArea div.panel div.panelBanner img.closePanel {
    float: right;
@@ -72,8 +74,8 @@ div#mssArea div.panel div.mssContent img.imageLink {
    margin: 0 10px 10px 10px;
    line-height: 16px;
    font-size: 11px;
-   border: thin solid black;
-   background: white;
+   border: thin solid #d8d8d8;
+  background-color: rgba(0, 0, 0, 0);
 }
 /*div#mssArea div.panel div.bibContent {
    padding: 10px;
@@ -113,7 +115,7 @@ div.line div.emptynumber {
    float: left;
    margin-left: -2.5em;
    width: 2em;
-   background: white;
+  background-color: rgba(0, 0, 0, 0);
 }
 div.line div.linenumber {
    text-align: right;
@@ -187,22 +189,26 @@ span.rdgGrp:hover div.altRdg {
    color: black;
    text-align: left;
    border: thick solid #003366;
-   background: white;
+  background-color: rgba(0, 0, 0, 0);
    font-weight: 400 !important;
 }
 span.noteicon:hover div.note {
    left: -125px;
    min-width: 250px;
    max-width: 500px;
-   background: white;
+  background-color: rgba(0, 0, 0, 0);
 }
 span.choice:hover div.corr,
 span.rdgGrp:hover div.altRdg {
    left: 0;
    min-width: 175px;
    max-width: 350px;
-   background: white;
+  background-color: rgba(0, 0, 0, 0);
    font-size: 90%;
+}
+
+table{
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 div.paragraph {
@@ -266,8 +272,8 @@ div.type-stanza {
 .viewerRoot {
 /*   position: absolute;
 */   width: 38.11em;
-   background-color: white;
-   border: 0.08em solid black;
+  background-color: rgba(0, 0, 0, 0);
+   border: 0.08em solid #d8d8d8;
    font-family: sans-serif;
    visibility: hidden;
    cursor: move;

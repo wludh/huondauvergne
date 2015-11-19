@@ -229,7 +229,7 @@
       <xsl:param name="increment" />
       <div class="panel mssPanel">
          <div class="panelBanner">
-            <img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="../vm-images/closePanel.gif" alt="X" />
+            <img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="../vm-images/closePanel.png" alt="X" />
             <xsl:text>Witness </xsl:text>
             <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
                <xsl:for-each select="//tei:witness">
@@ -283,7 +283,7 @@
             </xsl:attribute>
          </xsl:if>
          <div class="panelBanner">
-            <img class="closePanel" onclick="toggleBiblio();" alt="X" src="../vm-images/closePanel.gif" />
+            <img class="closePanel" onclick="toggleBiblio();" alt="X" src="../vm-images/closePanel.png" />
             Bibliographic Information
          </div>
          <div class="bibContent">
@@ -418,7 +418,7 @@
             </xsl:if>
         
             <div class="panelBanner">
-               <img class="closePanel" onclick="toggleCrit();" alt="X" src="../vm-images/closePanel.gif" />
+               <img class="closePanel" onclick="toggleCrit();" alt="X" src="../vm-images/closePanel.png" />
                Critical Introduction
             </div>
             <div class="critContent">
@@ -481,7 +481,7 @@
             </xsl:attribute>
          </xsl:if>
          <div class="panelBanner">
-            <img class="closePanel" onclick="hideNotesPanel();" alt="X" src="../vm-images/closePanel.gif" />
+            <img class="closePanel" onclick="hideNotesPanel();" alt="X" src="../vm-images/closePanel.png" />
             Textual Notes
          </div>
          <xsl:for-each select="//tei:body//tei:note[not(@type='image')]">
@@ -1024,7 +1024,7 @@
       <div class="viewerRoot" id="panel_imageViewer">
          <div title="Click to drag panel." class="viewerHandle" id="handle_imageViewer">
             <span class="viewerHandleLt" id="title_imageViewer">Image Viewer</span>
-            <img class="viewerHandleRt" onclick="return hidePanel('imageViewer');" alt="X" src="../vm-images/closePanel.gif" />
+            <img class="viewerHandleRt" onclick="return hidePanel('imageViewer');" alt="X" src="../vm-images/closePanel.png" />
          </div>
          <div class="viewerContent" id="content_imageViewer"></div>
       </div>
