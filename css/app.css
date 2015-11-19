@@ -370,3 +370,7 @@ td{
   padding-right: 0;
   display: hidden; 
 }
+
+#bibPanel{
+  display: none;
+}

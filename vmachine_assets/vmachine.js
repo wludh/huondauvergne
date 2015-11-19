@@ -39,31 +39,31 @@ function resizePanels() {
    var borderWidth = 2;
 
    // Set a minimum page width equal to the width of the main banner / control bar
-   var minPageWidth = document.getElementById("mainBanner").offsetWidth;
+   // var minPageWidth = document.getElementById("mainBanner").offsetWidth;
             
    // Calculate viewport width
-   var pageWidth = windowWidth();
+   // var pageWidth = windowWidth();
    
-   if (pageWidth < minPageWidth) pageWidth = minPageWidth;
+   // if (pageWidth < minPageWidth) pageWidth = minPageWidth;
    
    // Set a minimum panel width of 300px
-   var minPanelWidth = 300 - borderWidth;
+   // var minPanelWidth = 300 - borderWidth;
    
    // Calculate panel width
-   var panelWidth = Math.floor(pageWidth / numPanels);
-   if (panelWidth < minPanelWidth) panelWidth = minPanelWidth;
+   // var panelWidth = Math.floor(pageWidth / numPanels);
+   // if (panelWidth < minPanelWidth) panelWidth = minPanelWidth;
    
-   var leftPos = 0;
-   if (bibPanel.style.display != "none") {
-      bibPanel.style.width = panelWidth + "px";
-   }
-   for (l = 0; l < panels.length; l++) {
-      panels[l].style.width = panelWidth + "px"; 
-   }
-   if (notesPanel.style.display != "none") {
-      notesPanel.style.width = panelWidth + "px";
-   }
-   mssArea.style.width = numPanels * (panelWidth + borderWidth) + 5 + "px";
+   // var leftPos = 0;
+   // if (bibPanel.style.display != "none") {
+   //    bibPanel.style.width = panelWidth + "px";
+   // }
+   // for (l = 0; l < panels.length; l++) {
+   //    panels[l].style.width = panelWidth + "px"; 
+   // }
+   // if (notesPanel.style.display != "none") {
+   //    notesPanel.style.width = panelWidth + "px";
+   // }
+   // mssArea.style.width = numPanels * (panelWidth + borderWidth) + 5 + "px";
 }
 function windowWidth() {
    var viewportwidth;
