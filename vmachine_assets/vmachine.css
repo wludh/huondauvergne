@@ -32,17 +32,13 @@ div#mssArea div.panel div.panelBanner {
    color: black;
    font-weight: 800;
 }
-div#mssArea div.panel div.panelBanner select.witnessMenu {
-   width: 160px;
-}
+
 div#mssArea div.mssPanel {
    background-color: rgba(0, 0, 0, 0);
    /* padding-bottom: 5em; */
    margin-right: 20px;
 }
-div#mssArea div.mssPanel div.panelBanner {
-   border-bottom: 1px solid #d8d8d8;
-}
+
 div#mssArea div.panel div.panelBanner img.closePanel {
    float: right;
    cursor: pointer;
