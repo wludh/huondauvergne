@@ -1,4 +1,3 @@
-
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
@@ -30,7 +29,7 @@
     </head>
 
    <body onload="init();">
-    <nav class="top-bar" data-topbar>
+    <nav class="top-bar" id="mainBanner" data-topbar>
       <ul class="title-area">
         <li class="name"></li>
       </ul>
@@ -109,12 +108,51 @@
          <input type="button" id="newPanel" value="New Version" onclick="openPanel();" style="visibility:hidden;">
 
           <div id="mainControls">
-            <div id="add_witness"><input type="button" id="newPanel" value="New Witness" onclick="openPanel();"></div>
+            <div id="add_witness"><input type="button" id="newPanel" value="New Version" onclick="openPanel();"></div>
             <div id="line_toggle"><label for="toggleLineNumbers">Line Numbers</label><input type="checkbox" id="toggleLineNumbers" onclick="toggleLineNumbers(this.checked);"></div>
       </div>
 
        </div>
     </section>
+    <div class="panel" id="bibPanel">
+            <div class="panelBanner"><img class="closePanel" onclick="toggleBiblio();" alt="X" src="/vmachine_assets/vm-images/closepanel.png">
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>Huon d'Auvergne, a Franco-Italian Epic</h2>
+               <h4>Original Source</h4>
+               <p>Editions of the text are by Leslie Zarker Morgan (Berlin and Turin) and Stephen P. McCormick 
+                                  (Padua and Bologna). Translation is by Shira Schwam-Baird
+               </p>
+               <h4>Witness List</h4>
+               <ul></ul>
+               <h4>Textual Notes</h4>
+               <div class="note">There are four manuscript witnesses of this epic: Berlin Kupferstichkabinett 
+                                      78 D 8 (olim Hamilton 337)(dated 1341); Padua, Biblioteca del Seminario Vescovile MS 32 (late 
+                                      fourteenth/early fifteenth century); Turin, Biblioteca Nazionale N III 19 (dated 1441); and 
+                                      the Barbieri fragment, Bologna, Biblioteca dell'Archiginnasio B. 3489 (fourteenth century). 
+               </div>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Text Encoding by  Stephen P. McCormick and  Mackenzie Brooks</li>
+                  <li>Edited by  Leslie Zarker Morgan and  Stephen P. McCormick</li>
+                  <li>Translated by Shira Schwam-Baird</li>
+               </ul>
+               <h5>Publication Details:</h5>
+               <p>Published by Washington and Lee University.</p>
+               <p>This poem is being made available for demonstration purposes only. It may not
+                                          be reproduced without consent. For further information, please contact Stephen P.
+                                          McCormick at mccormicks@wlu.edu
+               </p>
+               <h4>Encoding Principles</h4>
+               <p>Test document for versioning machine project. Marked-up collation of Huon d'Auvergne.</p>
+               <p>DTD constructed from TEI poetry base with tagsets for linking, figures, analysis,
+                                      transcr, textcrit.
+               </p>
+            </div>
+         </div>
       <div id="mssArea">
          <div id="manuscripts">
             <div class="panel mssPanel">
