@@ -3,13 +3,17 @@
   search bar functionality
 */
 
+.top-bar .toggle-topbar a{
+  font-weight: normal;
+}
+
 body{
-font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
-background: rgba(255,255,255,0.875);
-text-rendering:optimizeLegibility;
-font-feature-settings: "kern" 1;
-font-kerning:normal;
-margin-bottom: 47px;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  background: rgba(255,255,255,0.875);
+  text-rendering:optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning:normal;
+  margin-bottom: 47px;
 }
 
 header{
@@ -165,11 +169,11 @@ teiHeader{
 
 html{
   background-color: #f0f0f0;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("../img/blake.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
-  background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
-  background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/blake.jpg");
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("/img/blake.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
   background-position: top right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -219,14 +223,15 @@ ul li ul li {
   text-shadow: 0 -1px 0 #000;
   z-index: 1000;
 }
-
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  z-index: 1000;
-  transition:1s;
+@media screen{
+  ul li ul li:hover { background: #666; }
+  ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+    transition:1s;
+  }
 }
 
 #homepage {
