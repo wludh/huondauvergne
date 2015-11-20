@@ -26,8 +26,8 @@
 	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
-	<xsl:param name="includeToolbox" select="false()"/>
-	<xsl:param name="includeAnalytics" select="true()"/>
+<!-- 	<xsl:param name="includeToolbox" select="false()"/>
+ -->	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
 	
 	
@@ -76,11 +76,12 @@
 		<html>
 			<xsl:call-template name="htmlHead"/>
 			<body>
-				<xsl:if test="$includeToolbox = true()">
+<!-- 				<xsl:if test="$includeToolbox = true()">
 					<xsl:call-template name="teibpToolbox"/>
 				</xsl:if>
-
+ -->
                 <div>
+
 <nav class="top-bar" data-topbar="">
         <ul class="title-area">
           <li class="name"></li>
@@ -131,6 +132,12 @@
 				</div>
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
+			    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/foundation/foundation.topbar.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 		</html>
 	</xsl:template>
 	
@@ -312,7 +319,7 @@
 	<xsl:template name="htmlHead">
 		<head>
 			<meta charset="UTF-8"/>
-
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
@@ -420,7 +427,7 @@ element.appendTo('#hidden-title');
 </script>
 
 	</xsl:variable>
-
+<!-- 
 	<xsl:template name="teibpToolbox">
 		<div id="teibpToolbox">
 			<h1>Toolbox</h1>
@@ -435,7 +442,7 @@ element.appendTo('#hidden-title');
 					<option value="{$theme.terminal}">Terminal</option>
 				</select>			</div>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
 	
 	<xsl:template name="analytics">
 		<script type="text/javascript">
