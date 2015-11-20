@@ -57,6 +57,7 @@
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
+    <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/>
     <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/>
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
@@ -80,9 +81,10 @@
 				</xsl:if>
 
                 <div>
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name"></li>
+<nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Huon d'Auvergne</span></a></li>
         </ul>
 
         <section class="top-bar-section">
@@ -90,16 +92,6 @@
           <li class=""><a href="/index.html">Huon d'Auvergne: A Digital Edition</a></li>
         </ul>
       </section>
-<!--             <section class="top-bar-section">
-        <ul class="right">
-          <div class="box">
-            <div class="container-4">
-              <input type="search" id="search" placeholder="Search..." />
-              <button class="icon"><i class="fa fa-search"></i></button>
-            </div>
-          </div>
-        </ul>
-      </section> -->
       <section class="top-bar-section">
         <ul class="right">
           <li class="">
@@ -326,10 +318,11 @@
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
             <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
-            <script type="text/javascript" src="{$foundationminJS}"></script>
-			<script type="text/javascript" src="{$modernizrJS}"></script>
             <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
 			<script type="text/javascript" src="{$teibpJS}"></script>
+			<script type="text/javascript" src="{$foundationminJS}"></script>
+            <script type="text/javascript" src="{$foundationtopbarJS}"></script>
+			<script type="text/javascript" src="{$modernizrJS}"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
 					$("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
