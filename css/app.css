@@ -167,28 +167,38 @@ teiHeader{
 
 /* Background image*/
 
-@media only screen{
-    html{
-    background-color: #f0f0f0;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("/img/blake.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
-    background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
-    background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
-    background-position: top right;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height:auto;
-    width:100%;
-    padding:0;
-    margin:0;
-  }
+html{
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("/img/blake.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-position: top right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height:auto;
+  width:100%;
+  padding:0;
+  margin:0;
 }
 
+@media only screen and (max-width: 480px){
+  html,body{
+  max-width: 100%;
+  overflow-x:hidden;
+  }
+  html{
+  }
+  body{
+    min-height: 100%;
+    margin-bottom: 0px;
+  }
+}
 
 /*dropdown/side menus*/
 
