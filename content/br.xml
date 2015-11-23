@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
     <teiHeader>
@@ -169,6 +168,7 @@
             <change when="2015-10-02" who="#DPD">Added the rest of the ab and lb tags to line 1602</change>
             <change when="2015-10-02" who="#SPM">Proofed work by #DPD</change>
             <change when="2015-10-12" who="#DPD">Added hi tags to line 308</change>
+            <change when="2015-10-13" who="#DPD">Added the rest of the hi tags</change>
          </revisionDesc>
     </teiHeader>
     <text>
@@ -209,8 +209,8 @@
             <l n="27">Morto çasire il fu bien smari</l>
             <l n="28">Ai bon çival chi jusqu'à çi</l>
             <l n="29">M'avés convoyé come loial ami</l>
-            <l n="30">Jamés por fain alentés  no[n] vos vi	</l>	
-            <l n="31">En strançes contré m'as lasé e ge[r]pi 		</l>
+            <l n="30">Jamés por fain alentés  no[n] vos vi  </l>    
+            <l n="31">En strançes contré m'as lasé e ge[r]pi        </l>
             <l n="32">Dou retornere là onde je me parti</l>
             <l n="33">Noient seroit; tropo seroit le pas gri! </l>
             <l n="34">Ai! Nef petite, qi es en l'eve  do tigri,</l>
@@ -222,7 +222,7 @@
             <l n="40">Jantil contese bien puise dire de fi. </l>
             <l n="41"><pb n="f.1v"/> Qe oltre mon gré co[n]vent qe vos  obli.</l>
             <l n="42">Le camin m'est contredit e ravi </l>
-            <l n="43">De veoir  vestre vis colori		</l>
+            <l n="43">De veoir  vestre vis colori       </l>
             <l n="44">Tant ai erré por nuite et por di</l>
             <l n="45">Que sui çert si voires sunt les  escri</l>
             <l n="46">Qe les piés v[est]res les miés sur p[er] mi</l>
@@ -251,7 +251,7 @@
             <l n="66">De gran dolor esmagé  e confus</l>
             <l n="67">Qant li mostras li ton disipulus</l>
             <l n="68">Mulier diçist ecce ton filius </l>
-            <l n="69">Et a Johan  diçist com a to[n] drus	</l>
+            <l n="69">Et a Johan  diçist com a to[n] drus   </l>
             <l n="70">Vois çi ta mere e por tiel l'aisus </l>
             <l n="71">Por çes[tes]  paroles che nois ais me[n]çonus </l>
             <l n="72">Aiés merci, dous e beneoit feüs </l>
@@ -267,7 +267,7 @@
           </lg>
             <ab type="rubric"><hi rend="red">Comant Uguen trova le dial e forme de pelegrins</hi></ab>
           <lg>
-            <l n="82"><hi rend="red">D</hi>a sa proiere se leva le quens Uge	</l>
+            <l n="82"><hi rend="red">D</hi>a sa proiere se leva le quens Uge    </l>
             <l n="83">Plure de ses oilç e de ses main l'asue </l>
             <l n="84"><pb n="f.2r"/>E puis garde por une vale fondue </l>
             <l n="85">Sot une arbre dont la folie est chaüe</l>
@@ -309,7 +309,7 @@
             <ab type="rubric"><hi rend="red">Comant Ugon refusa la conpagnie dou pelegrin</hi></ab>
            <lg>
             <l n="117"><hi rend="red">D</hi>ist li faus angle: "Di moi donc qe faras</l>
-            <l n="118">Por quoi vous  tu vëoire çe qe no[n] oseras</l> 		
+            <l n="118">Por quoi vous  tu vëoire çe qe no[n] oseras</l>      
             <l n="119">Je atenderai dit le que[n]s che spirit plus veras</l>
             <l n="120">Vera por moi secorere tu no[n] m'en meneras</l>
             <l n="121">Ne fust plus da croire depuis le gran forfais</l>
@@ -336,9 +336,9 @@
             <l n="142">Je nen voil plus stere no plus moi oïrais</l>
             <l n="143">Umais a t'aventure  e a to[n] peril te lais</l>
            </lg>
-     <ab type="rubric">Comant Ugon trovoit Eneas</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon trovoit Eneas</hi></ab>
             <lg>
-            <l n="144">Après cest parole respont li baron</l>
+            <l n="144"><hi rend="red">A</hi>près cest parole respont li baron</l>
             <l n="145">Se voire est che plaçe a çil qi ten  le tron</l>
             <l n="146">Qe je p[er]venir poise  en la perse maison</l>
             <l n="147">Plus sofiça[n]t co[n]duit quere che toi non</l>
@@ -368,11 +368,11 @@
             <l n="171">E puis torneras vif e[n] ta mayson</l>
             <l n="172">Se si no[n] est voire Dé çe graçia no m'ordon</l>
             <l n="173"><pb n="f.3r"/>D'ensire jamés de leu ou danés son  </l>
-            <l n="174">Ou Aristotel.  feit il ses conpagnon		</l>
+            <l n="174">Ou Aristotel.  feit il ses conpagnon     </l>
             </lg>
-    <ab type="rubric">Coment Ugon parole con Eneas et Eneas a luy</ab>
+            <ab type="rubric"><hi rend="red">Coment Ugon parole con Eneas et Eneas a luy</hi></ab>
             <lg>
-            <l n="175">Le quens d'Av[er]nie regarda l'unbra a[r]mée </l>
+            <l n="175"><hi rend="red">L</hi>e quens d'Av[er]nie regarda l'unbra a[r]mée </l>
             <l n="176">Oï la parole qi li fu rasinee</l>
             <l n="177">Qe le ensegnie la dolorose stree </l>
             <l n="178">E il li respont come p[er]sone e[n]segnee:</l>
@@ -383,7 +383,7 @@
             <l n="183">"Non sui," feit il, "mes bien la danee</l>
             <l n="184">Gent qe furent anç le batisme nee</l>
             <l n="185">Anç qe deus fust en la V[er]çen unbree </l>
-            <l n="186">De mout gran tens estoit ma carn poree 	</l>
+            <l n="186">De mout gran tens estoit ma carn poree   </l>
             <l n="187">Las! Se je eüse de çele eve toçee </l>
             <l n="188">Par qoi su[n]t hore humana çent sauvee</l>
             <l n="189">Ja no[n] dotas  da atendre la jornee</l>
@@ -405,9 +405,9 @@
             <l n="105">Filç fu Anchises,  si ma  apelent Enee </l>
             <l n="106">Por cui amor sançist Dido  la forsene la forsenee. </l>
         </lg>
-    <ab type="rubric">Comant Ugo refusa la compagnie de Eneas</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugo refusa la compagnie de Eneas</hi></ab>
         <lg>
-            <l n="207">"Merveiles oi," le quens a respondui, </l>
+            <l n="207">"<hi rend="red">M</hi>erveiles oi," le quens a respondui, </l>
             <l n="208">"Santa Marie,  adunc est çelui</l>
             <l n="209">De qoi ai tant noveles entendu</l>
             <l n="210">E fus vivant in le regne perdu</l>
@@ -427,14 +427,14 @@
             <l n="224">De toi mesfere no li (eü)sent  il plu</l>
             <l n="225">Sor moi peçable qe a batisme  no fu</l>
         </lg>
-    <ab type="rubric">Coma[n]t Ugon non voult fiere de alere con Eneas</ab>    
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon non voult fiere de alere con Eneas</hi></ab>    
         <lg>
-            <l n="226">Come po[r]cele  qe estoit en grant atent</l>
+            <l n="226"><hi rend="red">C</hi>ome po[r]cele  qe estoit en grant atent</l>
             <l n="227">Por obeïre l'ome por pormise  d'arjent</l>
             <l n="228">Ch'el s'en docte  ch'el n'en faça nient</l>
             <l n="229">Por qatre fois a fet tut ensement</l>
             <l n="230">Tot se pensa le quens a traiment </l>
-            <l n="231">Qe Eneas fist de la troyane çent</l>		
+            <l n="231">Qe Eneas fist de la troyane çent</l>     
             <l n="232">Respont a lui molt debonairement:</l>
             <l n="233">"Perdones moi çentil spirit, au present,</l>
             <l n="234">Qe dou venire n'en ai por toi ardime[n]t</l>
@@ -448,15 +448,15 @@
             <l n="242">E se je sui venu jusq[ue]  çi folement</l>
             <l n="243">Je di ma colpe qe hom qi soi repent </l>
             <l n="244">Tot çe qe soit tarde le pensament</l>
-            <l n="245">Apreveüs  sui qe je a Deu offent 	</l>
-            <l n="246">Qe je li domand inposible prexent." 	</l>
+            <l n="245">Apreveüs  sui qe je a Deu offent     </l>
+            <l n="246">Qe je li domand inposible prexent."  </l>
             <l n="247">E çil respont de çe sui je  dolent</l>
             <l n="248">Se tu no[n] as cu[n]dut  a ton talent</l>
             <l n="249">Deus te la don de moi plus sufiçent</l>
         </lg>
-    <ab type="rubric">Comant Eneas et Ugon parlent a ensenble</ab>
+            <ab type="rubric"><hi rend="red">Comant Eneas et Ugon parlent a ensenble</hi></ab>
         <lg>
-            <l n="250">Or  est le quens entrepris de doctançe</l> 		
+            <l n="250"><hi rend="red">O</hi>r  est le quens entrepris de doctançe</l>       
             <l n="251">Ne sai qe fere n'en cui avoir fiançe</l>
             <l n="252">De soi meësme li fu pris pietançe</l>
             <l n="253">Lermes de ses oilç li mentans li avançe</l>
@@ -473,9 +473,9 @@
             <l n="264">Pecheis en feis qant toi partis de Françe </l>
             <l n="265">Or fais autrui dolore da mescheançe </l>
         </lg>
-    <ab type="rubric">Comant saint Guliame veni por co[n]duire Ugon a sa voie</ab>
+            <ab type="rubric"><hi rend="red">Comant saint Guliame veni por co[n]duire Ugon a sa voie</hi></ab>
         <lg>
-            <l n="266">De  tieles paroles le quens Ugon l'en m[er]cie</l> 
+            <l n="266"><hi rend="red">D</hi>e  tieles paroles le quens Ugon l'en m[er]cie</l> 
             <l n="267">Ler filç Anchises  qi por lui ate[n]drie</l>
             <l n="268">Dava[n]t lui garda deve[r]s destre partie</l>
             <l n="269">D'une fontaine dont l'eve estoit sorçie </l>
@@ -499,9 +499,9 @@
             <l n="287">Le quens d'Av[er]nie enlor  co[n] çhere lie</l>
             <l n="288">S'ençenoile qant ha la parola oïe</l>
         </lg>
-    <ab type="rubric">Comant Sant Guliame dist a Ugon qi le segist après</ab>
+            <ab type="rubric"><hi rend="red">Comant Sant Guliame dist a Ugon qi le segist après</hi></ab>
         <lg>
-            <l n="289">DIst  l'espirit  a Ugon: "Or leve toi</l>
+            <l n="289"><hi rend="red">D</hi>ist  l'espirit  a Ugon: "Or leve toi</l>
             <l n="290">E da par Deu t'en vien avec moi,</l>
             <l n="291">Qe por divine v[er]tus [con]dure  te doi</l>
             <l n="292">Aqirire çe qi volt le gran françoi. </l>
@@ -519,13 +519,13 @@
             <l n="304">Et ala  a prendre q'il n'oit gard de soi </l>
             <l n="305">E le tuai en l'eve a cele foi</l>
             <l n="306">Jusq[ue] çel jor che Deu con ses dui doi </l>
-            <l n="307">Demostrera la plaie e 'l sanc v[er]moi 	</l>
+            <l n="307">Demostrera la plaie e 'l sanc v[er]moi   </l>
             <l n="308">Por jujere çeaus qi li ferent desroi </l>
             <l n="309">Stara çi diable en çil gravoi." </l>
         </lg>
-    <ab type="rubric">Comant Ugon parole a Saint Guliame</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon parole a Saint Guliame</hi></ab>
         <lg>
-            <l n="310">Quant tel parol senti le contor </l>
+            <l n="310"><hi rend="red">Q</hi>uant tel parol senti le contor </l>
             <l n="311">De gran joie q'el oit son vis en bagne de plor</l>
             <l n="312">E qant il parle si dist: "Ai! Criator,</l>
             <l n="313">Prende pieté vers çaschun peçeor</l>
@@ -539,7 +539,7 @@
             <l n="321">Jamés vans  ne terme ne sejor</l>
             <l n="322">Dedans Orenge ne ta çentil usor </l>
             <l n="323">Dont es ensis de la glorie maior</l>
-            <l n="324">Por moi co[n]dure in la gran tenebror		</l>
+            <l n="324">Por moi co[n]dure in la gran tenebror        </l>
             <l n="325">Gracies toi rent com fa serf a seignor</l>
             <l n="326">Garda sor moi se je ai tanto de vigor</l>
             <l n="327">Qe je nen  more en le erterne plor </l>
@@ -548,20 +548,20 @@
             <l n="330">Tu as por Deu de moi ton cu[n]dutor</l>
             <l n="331">Une ançels ai oi  desor</l>
             <l n="332">Qe in la terene vie fu niés l'inperëor </l>
-            <l n="333">Canpions fu de Deu e romain senator  	</l>
+            <l n="333">Canpions fu de Deu e romain senator      </l>
             <l n="334">Le virgen ma[r]tres  si i vindrent  avec lor</l>
             <l n="335">A la conpagnie des martres confesor</l>
             <l n="336">Dava[n]t la majest cantant con grand honor</l>
-            <l n="337">Proia Rolant  por toi li posant almansor		</l>
+            <l n="337">Proia Rolant  por toi li posant almansor     </l>
             <l n="338">Tot son plasire li fist le large doneor</l>
             <l n="339">Et a moi coma(n)da  de venir sans demor</l>
             <l n="340">Por ton secor qi es in tant error</l>
             <l n="341">Offerire dois gracie  a le magne redentor </l>
         </lg>
-    <ab type="rubric"><pb n="f.5r"/>Comant Ugon se co[n]fortoit e soi mist dava[n]t a Saint Guliame
-    <lb/>e genoilons</ab>
+            <ab type="rubric"><pb n="f.5r"/><hi rend="red">Comant Ugon se co[n]fortoit e soi mist dava[n]t a Saint Guliame 
+            <lb/>e genoilons</hi></ab>
             <lg>
-            <l n="342">E tot ensemant come le petit enfant </l>
+            <l n="342"><hi rend="red">E</hi>tot ensemant come le petit enfant </l>
             <l n="343">Qant perd sa mere e sun pere ensemant,</l>
             <l n="344">Qant sans conseil desconforté romant</l>
             <l n="345">Puis se confort e prent argumant </l>
@@ -573,8 +573,8 @@
             <l n="351">Davant ses piés s'ençenoil atant </l>
             <l n="352">Riens no'l tocha ne palpa tant ne qant </l>
             <l n="353">Come valet de petit ensiant </l>
-            <l n="354">En grant  Deu reclint, non veus pe[n]sament</l> 		
-            <l n="355">Por l'altrui ire  s'en ver(go)gne  et esprant 	</l>
+            <l n="354">En grant  Deu reclint, non veus pe[n]sament</l>      
+            <l n="355">Por l'altrui ire  s'en ver(go)gne  et esprant    </l>
             <l n="356">Ensi feit le cont qant voit qe rien nen  prant</l>
             <l n="357">Retrat tot arier  les mains tot tre[n]blant</l>
             <l n="358">E l'espirit li dist tot apertemant</l>
@@ -589,10 +589,10 @@
             <l n="367">Car tra toi et eles est come al batiçamant</l>
             <l n="368">Enlor se driça e si se mist avant</l>
             </lg>
-    <ab type="rubric">Comant Ugon e Sant Guliame et Eneas e le pelgrin aleront 
-    <lb/>tot ensa[n]ble po[r] aler a enfer</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon e Sant Guliame et Eneas e le pelgrin aleront 
+                <lb/>tot ensa[n]ble po[r] aler a enfer</hi></ab>
         <lg>
-            <l n="369">Ensi se vont por le desert païs</l>
+            <l n="369"><hi rend="red">E</hi>nsi se vont por le desert païs</l>
             <l n="370">Le bon Guierme  ensenble con l ome vis</l>
             <l n="371">Et Eneas con le faus espiris</l>
             <l n="372">Vient darere tot con le pas petis</l>
@@ -622,10 +622,10 @@
             <l n="396">Proçain somes dou regne maleïs</l>
             <l n="397">Plein de dolors de travail e de cris</l>
         </lg>
-   <ab type="rubric">Comant atrové une voie de jonches de fer aguçes e troveront 
-   <lb/>l'antrea dou permanable Enferne</ab>
+            <ab type="rubric"><hi rend="red">Comant atrové une voie de jonches de fer aguçes e troveront 
+                <lb/>l'antrea dou permanable Enferne</hi></ab>
         <lg>
-            <l n="398">Con ces parole qe vos me oïes co[n]tere</l>
+            <l n="398"><hi rend="red">C</hi>on ces parole qe vos me oïes co[n]tere</l>
             <l n="399">A petit pas se mistrent ad alere </l>
             <l n="400">Envers  le et[er]ne peine por un sentere</l>
             <l n="401">Cum plus i vont plus furent lu(n)tanere </l>
@@ -650,25 +650,25 @@
             <l n="420">En feu et en flan et en dol et en plorere</l>
             <l n="421">Çeus qi près  morte se i lasent menere</l>
         </lg>
-   <ab type="rubric">Comant Eneas parole a Ugon</ab>
+            <ab type="rubric"><hi rend="red">Comant Eneas parole a Ugon</hi></ab>
         <lg>
-            <l n="422">Le quens s'arest a la parole oscure</l>
+            <l n="422"><hi rend="red">L</hi>e quens s'arest a la parole oscure</l>
             <l n="423">Et Eneas dist, "Est çele mure</l>
             <l n="424">Qe hom che i vait  les tient qe tot tens dure."</l>
             <l n="425">Dist le Troiens  garde çele figure</l>
-            <l n="426">Sor çel porte del vie future 	</l>
+            <l n="426">Sor çel porte del vie future     </l>
             <l n="427">A loi d'une polçele (a) vis et è vestue    </l>
             <l n="428">E tient la spee che d'açel senble  pure</l>
             <l n="429">Sor çelie carte coverte d'escriture</l>
             <l n="430">S'en puet ente(n)dre  qe çe est por lecture</l>
-            <l n="431">'France Justixe  contra la desmesure'		</l>
+            <l n="431">'France Justixe  contra la desmesure'        </l>
             <l n="432"><pb n="f.6r"/>Q'il se garde l'umane nature </l>
             <l n="433">Après la mort entrere en çest ardure </l>
             <l n="434">Qe mai non ist qi pase la pinture </l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon respont ad Eneas e trovont les portes<lb/>enfernales</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon respont ad Eneas e trovont les portes<lb/>enfernales</hi></ab>
         <lg>                                                       
-            <l n="435">Ugues dist: "Vient el a dire por moi?</l>
+            <l n="435"><hi rend="red">U</hi>gues dist: "Vient el a dire por moi?</l>
             <l n="436">Entrere non i voi  se meis ensire ne doi</l>
             <l n="437">Respont Eneas  nul ait poire  sor toi</l>
             <l n="438">Pleit a Deu quant tu sans nul enoi </l>
@@ -686,9 +686,9 @@
             <l n="450">Ja l'en verais entrere plus de .xx. troi</l>
             <l n="451">Qe mais nen aurent fors che mal e desroi</l>
         </lg>     
-    <ab type="rubric">Comant Ugon domant San Guliame e la sant respo[n]t a luy</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon domant San Guliame e la sant respo[n]t a luy</hi></ab>
         <lg>
-            <l n="452">Dist Ugues: "Mon signor, plus m'e[n]sagne</l>
+            <l n="452"><hi rend="red">D</hi>ist Ugues: "Mon signor, plus m'e[n]sagne</l>
             <l n="453">La terçe porte sot çel tor[r]e autagne </l>
             <l n="454">Qe senefie ou çel lion regragne  </l>
             <l n="455">Qe tie[n]te la machue in la branche grifagne </l>
@@ -706,9 +706,9 @@
             <l n="467">Grans tens resenble che chaï la teragne</l>
             <l n="468">Terre las covre e fang i dono  le bagne</l>
         </lg>
-    <ab type="rubric">Comant San Guliame parle a Ugon çele est la porte dou linbo<lb/>qe Jh[es]u fist cheïre qant e[n]tra dens</ab>
+            <ab type="rubric"><hi rend="red">Comant San Guliame parle a Ugon çele est la porte dou linbo<lb/>qe Jh[es]u fist cheïre qant e[n]tra dens</hi></ab>
         <lg>
-            <l n="469">A çele porte dist il qe tu veis là</l>
+            <l n="469"><hi rend="red">A</hi>çele porte dist il qe tu veis là</l>
             <l n="470">Çelui qi poit co[n] ses pié l'av[er]sa</l> 
             <l n="471">Qant li por la vie de nos morire digna</l>
             <l n="472">E fu a çil tens q'il Enfern spolia</l>
@@ -725,16 +725,16 @@
             <l n="483">Da pois q il sunt pases un tal regart li fa</l>
             <l n="484">Qe ce est une des penes grignor ch il ont dela</l>
         </lg>
-    <ab type="rubric">Comant atroverent trois portes d enfernes</ab>
+            <ab type="rubric"><hi rend="red">Comant atroverent trois portes d enfernes</hi></ab>
         <lg>
-            <l n="485">DE ces troi port dist li cont che tu vois</l>
-            <l n="486">Amis Ugon  entre por çel qi te plois</l>		
-            <l n="487">Ou vois veoir le tromens paganois		</l>
+            <l n="485"><hi rend="red">D</hi>e ces troi port dist li cont che tu vois</l>
+            <l n="486">Amis Ugon  entre por çel qi te plois</l>     
+            <l n="487">Ou vois veoir le tromens paganois        </l>
             <l n="488">Ou xpiens ou la Judec  lais</l>
             <l n="489">Mon seignor mon co[n]dutor  e co[n]vois</l>
             <l n="490">Je voil entrere dist Ugon  çel fois</l>
             <l n="491">Ou ie poisa trovere de çeaus qe conois</l>
-            <l n="492">Qi sunt dane  en le regne Renois 		</l>
+            <l n="492">Qi sunt dane  en le regne Renois         </l>
             <l n="493">Ase ia dist le spirit des greçois</l>
             <l n="494">Si con ie croy aleman e françiois</l>
             <l n="495">Et alv[er]niens  gaschos  e navarrois</l>
@@ -755,9 +755,9 @@
             <l n="510">Con tot Guieume  qual co[n] li brais le prois</l>
             <l n="511">Entrent de dans le doleros destrois</l>
         </lg>
-    <ab type="rubric">Comant desendent in aquilon ou fust grant tenebria<lb/>de oscurite</ab>
+            <ab type="rubric"><hi rend="red">Comant desendent in aquilon ou fust grant tenebria<lb/>de oscurite</hi></ab>
         <lg>
-            <l n="512">Or entrent ou pos  comunal</l>
+            <l n="512"><hi rend="red">O</hi>r entrent ou pos  comunal</l>
             <l n="513">Come il orent trapase le torale</l>
             <l n="514">Plus droit qe mais nul piere ou o[r]tal ou mo[r]tal</l>
             <l n="515">De son desise non desent tanto aval</l>
@@ -777,14 +777,14 @@
             <l n="529">Iluec su[n]t stris clamors e gran creal</l>
             <l n="530">Agus sospirs e la menter de mal</l>
             <l n="531">Engurez mort e blastemes mortal</l>
-            <l n="532">Quand lo foist naystre le roy çelestial 	</l>	
-            <l n="533">Dist  Eneas  en vers l ome carnal		 </l>
+            <l n="532">Quand lo foist naystre le roy çelestial  </l>    
+            <l n="533">Dist  Eneas  en vers l ome carnal         </l>
             <l n="534">Tu es en l ayre de cubre e de metal</l>
-            <l n="535">En çele çe nn  qe fist ben ni mal		</l>
+            <l n="535">En çele çe nn  qe fist ben ni mal        </l>
         </lg>
-    <ab type="rubric">Comant Eneas respont a Ugon de çelor qi furent como <lb/>le stro[n]?</ab>   
+            <ab type="rubric"><hi rend="red">Comant Eneas respont a Ugon de çelor qi furent como <lb/>le stro[n]?</hi></ab>   
         <lg>                
-            <l n="536">Ov su[n]t le gran cris  cris li cont Ugon  s aresta</l>
+            <l n="536"><hi rend="red">O</hi>v su[n]t le gran cris  cris li cont Ugon  s aresta</l>
             <l n="537">Vers li troians domanda e fist qesta</l>
             <l n="538">Gentil espirit qe die tu qi su[n]t cesta</l>
             <l n="539">Ient qe de cris moi font tentir la teste</l>
@@ -803,9 +803,9 @@
             <l n="552">Doplerent lor dol e lor moleste</l>
             <l n="553">Ese[r] voudront porçe çascun anestre</l>
         </lg>
-    <ab type="rubric">Coma Ugon domant Eneas s il croit e[n]fine iames denferne</ab>
+            <ab type="rubric"><hi rend="red">Coma Ugon domant Eneas s il croit e[n]fine iames denferne</hi></ab>
         <lg>
-            <l n="554">En autre qeste se mist le cont Ugon </l>
+            <l n="554"><hi rend="red">E</hi>n autre qeste se mist le cont Ugon </l>
             <l n="555">Tu Eneas  gentiles files de baron</l>
             <l n="556">Crois mais ensire de çie ne avoire perdon</l>
             <l n="557">Çelui s en taist n en dist oi ne non</l>
@@ -822,9 +822,9 @@
             <l n="568">Alons avant qe ases plus trovoron</l>
             <l n="569">Penes nos çent co[n] cris e co[n] tençon</l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon vit le sodomites e luxuriose (crossed-out letter s?) e sa paine</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon vit le sodomites e luxuriose (crossed-out letter s?) e sa paine</hi></ab>
         <lg>
-            <l n="570">Quant ont pases la primoraine torre</l>
+            <l n="570"><hi rend="red">Q</hi>uant ont pases la primoraine torre</l>
             <l n="571">De ceus qe auront la gra[n] senteçe fere</l>
             <l n="572"><pb n="f.7v"/>Avant se mistrent p[er] le laide  </l>
             <l n="573">Le quens Ugon  co[n] la parole quiere </l>
@@ -839,7 +839,7 @@
             <l n="582">Dolor defendre tant est for cativere</l>
             <l n="583">Ne ma nule nait sote lor letere</l>
             <l n="584">Çerte diables por qoi secors espent</l>
-            <l n="585">La lor aie trop  est mauvas e fere		</l>
+            <l n="585">La lor aie trop  est mauvas e fere       </l>
             <l n="586">Qe co[n] çes grafes n i a[n] nul qe non fere</l>
             <l n="587">Escolt filç che çaschu[n] chlame oy mere</l>
             <l n="588">A vive moi cho madit soit mon pere</l>
@@ -847,9 +847,9 @@
             <l n="590">Çist su[n]t çelor qe onsi n o[n]t la maynere</l>
             <l n="591">De la luxere por sodomie maynere</l>
         </lg>
-   <ab type="rubric"> Comant Ugon veit la prime des vanaglorioses</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon veit la prime des vanaglorioses</hi></ab>
         <lg>
-            <l n="592">Ugon sospire e dist aute pat[er]ne </l>
+            <l n="592"><hi rend="red">U</hi>gon sospire e dist aute pat[er]ne </l>
             <l n="593">Com la iustixe e grant qe vos gou[er]ne</l>
             <l n="594">Dolans çelui qi in tele maison s enve[r]ne </l>
             <l n="595">Çi a felons host e mauvas tav[er]ne</l>
@@ -863,9 +863,9 @@
             <l n="603">Qe fait çaschu[n] entere e[n] sta luserne</l>
             <l n="604">Qe vanaglorie se clama in lor dierne</l>
         </lg>
-   <ab type="rubric">Coma Ugon veit la poine de l arivie</ab>
+            <ab type="rubric"><hi rend="red">Coma Ugon veit la poine de l arivie</hi></ab>
         <lg>
-            <l n="605">Lor Vaineglorie respon le cont Ugon</l>
+            <l n="605"><hi rend="red">L</hi>or Vaineglorie respon le cont Ugon</l>
             <l n="606">Su[n]t  portant cestor en cist parfon</l> 
             <l n="607">Çe est mervoile se altre pechie ne non</l>
             <l n="608">Respont Guiaume  çels qe çil pechies son</l>
@@ -884,9 +884,9 @@
             <l n="621">I les veront çi e iamais non ensiron</l>
             <l n="622">Fors qe a çel ior qe pains  adopleron</l>
         </lg>
-   <ab type="rubric"><pb n="f.8r"/>Comant Ugon veit li paine de jugles ro[n]fians</ab>
+            <ab type="rubric"><pb n="f.8r"/><hi rend="red">Comant Ugon veit li paine de jugles ro[n]fians</hi></ab>
         <lg>
-            <l n="623">Ancor te dis, biaus fils, (e sé)s bien çertain </l>
+            <l n="623"><hi rend="red">A</hi>ncor te dis, biaus fils, (e sé)s bien çertain </l>
             <l n="624">Se çestor qi a su[n]t qe tu vois en le fain </l>
             <l n="625">Ensent le poine  de Karle  maing</l>
             <l n="626">Tot le donasent voluntere a main a main</l>
@@ -915,9 +915,9 @@
             <l n="649">E de portere noveles da luitain</l>
             <l n="650">De lor peineç ten voil trere le sain</l>
         </lg>
-    <ab type="rubric">Comant Ugon se redoloit de çele orible peine</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon se redoloit de çele orible peine</hi></ab>
         <lg>
-            <l n="651">Les Jugleors  qi viglers ne fure[n]t</l>				
+            <l n="651"><hi rend="red">L</hi>es Jugleors  qi viglers ne fure[n]t</l>             
             <l n="652">Mes le mestrere a spions tolerent</l>
             <l n="653">E por maldire e fere altrament</l>
             <l n="654">En puitenaç mantes poceles mistrent</l>
@@ -947,9 +947,9 @@
             <l n="678">Çelor serent permanables e dolent</l>
             <l n="679">Qe por avoir lor armes perdent</l>
         </lg>
-   <ab type="rubric">Comat Ugon veit le Jugelor Sandin in çele poine ele<lb/>Jugleor parla a Ugo[n]</ab>
+            <ab type="rubric"><hi rend="red">Comat Ugon veit le Jugelor Sandin in çele poine ele<lb/>Jugleor parla a Ugo[n]</hi></ab>
         <lg>
-            <l n="680">Ia gran travail fer le gentil mesage</l>
+            <l n="680"><hi rend="red">I</hi>a gran travail fer le gentil mesage</l>
             <l n="681">Glorios pere de çestui gran travaile</l>
             <l n="682">Defendes moi qant verai au pasage</l>
             <l n="683">Un de çelor qi furent ens le pautage</l>
@@ -967,9 +967,9 @@
             <l n="695">Por cil peche sui en çist leu sauvage</l>
             <l n="696">Ugues respont tu feis grant folaie</l>
         </lg>
-   <ab type="rubric">Comant Ugon respont au Jugleor</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon respont au Jugleor</hi></ab>
         <lg>
-            <l n="697">Dist le quens Ugues di moi sandin</l>
+            <l n="697"><hi rend="red">D</hi>ist le quens Ugues di moi sandin</l>
             <l n="698">M en voia Karle  en çist mauvas chamin</l>
             <l n="699">Ge sui çelui qe tant mauves maitin</l>
             <l n="700">Ai dure por voloir trere a fin</l>
@@ -983,15 +983,15 @@
             <l n="708">T en voia Karle  en le regne enferin enfernin</l>
             <l n="709">Puis qil leur intre les cherubin</l>
             <l n="710">Qe tu desendes en le cercle chain</l>
-            <l n="711">Aqueris  çe qe vout le rois topin		</l>
+            <l n="711">Aqueris  çe qe vout le rois topin        </l>
             <l n="712"><pb n= "f.9r"/>Proier te voi por amor de ton lin</l>
             <l n="713">Moi p[er]dones ta ire e tes hain</l>
             <l n="714">Tot qe non vaut mais une lopin</l>
             <l n="715">Qe ie le devoia qerire avant ma fin</l>
         </lg>
-   <ab type="rubric">Coma[n]t le Jugleor doma[n]t perdona[n]çe a Ugon e Ugon p[er]done<lb/>a luy</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t le Jugleor doma[n]t perdona[n]çe a Ugon e Ugon p[er]done<lb/>a luy</hi></ab>
         <lg>
-            <l n="716">Li quens d auv[er]nie anchor parole e dist</l>
+            <l n="716"><hi rend="red">L</hi>i quens d auv[er]nie anchor parole e dist</l>
             <l n="717">Ie toi perdon se mon perdon vausist</l>
             <l n="718">Dist il spirist par te toi car s il traist</l>
             <l n="719">Le manganel che a çaschun mist</l>
@@ -1009,9 +1009,9 @@
             <l n="731">Q  E maudisent la mort qi lor onçist</l>
             <l n="732">Li oilç seroient ses main ne revenist</l>
         </lg>
-   <ab type="rubric">Comant Guliame co[n]forta Ugon e arivont sovra un v[er]de flume</ab>
+            <ab type="rubric"><hi rend="red">Comant Guliame co[n]forta Ugon e arivont sovra un v[er]de flume</hi></ab>
         <lg>
-            <l n="733">Li bon espirit qi fu filç Aymeris </l>
+            <l n="733"><hi rend="red">L</hi>i bon espirit qi fu filç Aymeris </l>
             <l n="734">Et Eneas  apelent lo Marchis </l>
             <l n="735">Li ber li cont tot  qua[n]t il avoit aquis</l>
             <l n="736">Con lui acusa le Roy  de san donis</l>
@@ -1044,9 +1044,9 @@
             <l n="763">SE  content fusent dou lor despris</l>
             <l n="764">Avec lor martres fuissent en çiel asis</l>
         </lg>
-   <ab type="rubric">Comant Ugon veit le Sigitaire qi fu morto a Troie</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon veit le Sigitaire qi fu morto a Troie</hi></ab>
         <lg>
-            <l n="765">UGues domand Eneas  et e çestor</l>
+            <l n="765"><hi rend="red">U</hi>Gues domand Eneas et e çestor</l>
             <l n="766">Por qoi ont il ensi tres gran dolor</l>
             <l n="767">Del trapasere l eve del verde colore</l>
             <l n="768">Por un petit non entrent les plusor</l>
@@ -1063,23 +1063,23 @@
             <l n="779">Treble la terre en virons por le foror</l>
             <l n="780">Une saiete tien por son arche d aubor</l>
             <l n="781">Alonge teise co[n] dos oilç plein d ardor</l>
-            <l n="782">Escriant Vient  non entres liçeor		</l>
+            <l n="782">Escriant Vient  non entres liçeor        </l>
             <l n="783">De ma saiete sentires le fredor</l>
             <l n="784">Charom demonio a loi d un sigleor</l>
             <l n="785">Dist tost entres tropo fetes longo demor</l>
             <l n="786">Le sagitaire vient pele vostre peçor </l>
             <l n="787">Qant cele l ape[r]çeuent ia mes n en fu astor</l>
             <l n="788">Qa si tost devalas vers çil qi fait remor</l>
-            <l n="789">Comne  en la nef Charon  firent ces pecheor 		</l>
+            <l n="789">Comne  en la nef Charon  firent ces pecheor      </l>
             <l n="790">Come berbis qi sben fuit por paor</l>
             <l n="791">E ça e la davant alires pastor</l>
             <l n="792">Prende fol ossiere  e laise  le meilor</l>
             <l n="793">En les armes qe mais n auront restor</l>
             <l n="794">En l eve soi gitent qant virent l archor</l>
         </lg>
-   <ab type="rubric">Coment le Sagitare saist la sire derere les entres</ab>
+            <ab type="rubric"><hi rend="red">Coment le Sagitare saist la sire derere les entres</hi></ab>
         <lg>
-            <l n="795">Qant dedans l eve furent ensi gites </l>
+            <l n="795"><hi rend="red">Q</hi>ant dedans l eve furent ensi gites </l>
             <l n="796">Le domonio lo[r] crie or ça venes</l>
             <l n="797">Enver la barcha ont lor stunt adriçes</l>
             <l n="798"><pb n="f.10r"/>Çil prent sa cingle pois qe furent entres </l>
@@ -1091,7 +1091,7 @@
             <l n="804">Mas çil qe çi sans mort est armes</l>
             <l n="805">Portere ne voi trop seroy agreves</l>
             <l n="806">Dist Eneas  tais toi de çi mauves</l>
-            <l n="807">Nos non devons trapaser de çel les		</l>
+            <l n="807">Nos non devons trapaser de çel les       </l>
             <l n="808">Çestui est çi por sole volu[n]tes</l>
             <l n="809">Di çil porchoi tu perdis la carites</l>
             <l n="810">Si come feme qa fet de li manches</l>
@@ -1107,7 +1107,7 @@
             <l n="820">Çele saiete fiert au chief de la nes</l>
             <l n="821">Ensire en fist feu e flanbe a brases</l>
             <l n="822">Les espirit sunt dedans le flum getes</l>
-            <l n="823">Serpant v[er]mes dont g avoit aplantes		</l>
+            <l n="823">Serpant v[er]mes dont g avoit aplantes       </l>
             <l n="824">Les en glotirent si les no[n]e?  portes</l>
             <l n="825">Le Galeot  Charon  s en est ales</l>
             <l n="826">Ensi ioiant cum çil vait ades</l>
@@ -1115,11 +1115,11 @@
             <l n="828">E vos qi este qi tiel clarte rendes</l>
             <l n="829">Meilor pain croi qe de forment qeres   </l>
         </lg>
-   <ab type="rubric"><lb/>Comant le sagitaire parro a Ugon e comant se voloit meslere a Eneas</ab>
+            <ab type="rubric"><lb/><hi rend="red">Comant le sagitaire parro a Ugon e comant se voloit meslere a Eneas</hi></ab>
             <!--LOOK AT MANUSCRIPT, THIS IS A SPECIAL CASE!! #DPD -->
             <!-- Let's figure out how to tag this. The scribe must have forgotten to include the rubric #SPM -->
         <lg>
-            <l n="830">E tu dela qi fust de trois nes</l>			
+            <l n="830"><hi rend="red">E</hi> tu dela qi fust de trois nes</l>           
             <l n="831">Un de çil fuis qi trai la çites</l>
             <l n="832">Ou tant pordomes furent desertes</l>
             <l n="833">O enere  les voil puis qe t ai troves</l>
@@ -1137,9 +1137,9 @@
             <l n="845">Trestot les moines de deu a blasmes</l>
             <l n="846">Citant vait fou e por bocha e por nes</l>
         </lg>
-   <ab type="rubric"><pb n="f.10v"/>Coma[n]t Saint Guliame fuga le sagitarie e coma Charon<lb/>retorna co[n] la nef</ab>
+            <ab type="rubric"><pb n="f.10v"/><hi rend="red">Coma[n]t Saint Guliame fuga le sagitarie e coma Charon<lb/>retorna co[n] la nef</hi></ab>
         <lg>
-            <l n="847">Le quens da av[er]nie garda le sagitarie</l>
+            <l n="847"><hi rend="red">L</hi>e quens da av[er]nie garda le sagitarie</l>
             <l n="848">Laide et isdios e non fine de braire</l>
             <l n="849">Peor n oit le vasal de bone aire</l>
             <l n="850">Mes li bon saint gran confort li apaire</l>
@@ -1156,9 +1156,9 @@
             <l n="861">Menerai vos oltra le flum sanç nul mal faire</l>
             <l n="862">La est vestre camin car bien sai vestre afaire</l>
         </lg>
-   <ab type="rubric">Coma[n]t entrent ens la nef e paserent</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t entrent ens la nef e paserent</hi></ab>
         <lg>
-            <l n="863">Li saint çelestre et Eneas  li pros</l>
+            <l n="863"><hi rend="red">L</hi>i saint çelestre et Eneas  li pros</l>
             <l n="864">Por le meilor fermame[n]t anbedos</l>
             <l n="865">De trapasere le grand flume perilos</l>
             <l n="866">Primer entra con dolçe vis glorios</l>
@@ -1179,16 +1179,16 @@
             <l n="881">En autre guise fui  e ben desiros</l>
             <l n="882">De voir l estre des çeitis de lo vis </l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon avoit soif coma[n]t le pelegrin li aportoit boil boire le<lb/>vin qe po[r]ta da sa maison</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon avoit soif coma[n]t le pelegrin li aportoit boil boire le<lb/>vin qe po[r]ta da sa maison</hi></ab>
         <lg>
-            <l n="883">LE bon Guliaume  qant l enten e voit </l>
+            <l n="883"><hi rend="red">L</hi>E bon Guliaume  qant l enten e voit </l>
             <l n="884">Qe le mesaçe de soif soi lamentoit</l>
             <l n="885">Come çelui qi serf a gran esproir</l>
             <l n="886">Son bon ami qa[n]t a besogne li soit</l>
             <l n="887">Ensi fist Guliaume  a Ugon  çel foit</l>
             <l n="888">Le spirit apel qi la sela vine avoit</l>
             <l n="889">Va li aportere do vin qe boire doit</l>
-            <l n="890">En percor ni Roys  iames n en avoit		</l>
+            <l n="890">En percor ni Roys  iames n en avoit      </l>
             <l n="891">Serians si prest  qant plus coroçe soit</l>
             <l n="892">Aporter couse qo a lui a plasire foit</l>
             <l n="893">Come çelui fist por le saint beoir</l>
@@ -1198,9 +1198,9 @@
             <l n="897">Ainç qe arivast Caron  la qel devoit</l>
             <l n="898">Le vino ai porte che un fiascho estoit</l>
         </lg>
-   <ab type="rubric">Comant le pelegrin dist a Ugon bois de çest vin e Guliame dist<lb/>beves segurema[n]t e çil en beust</ab> 
+            <ab type="rubric"><hi rend="red">Comant le pelegrin dist a Ugon bois de çest vin e Guliame dist<lb/>beves segurema[n]t e çil en beust</hi></ab> 
         <lg>
-            <l n="899">BOis de çist vin  dist çil q il porta</l>
+            <l n="899"><hi rend="red">B</hi>Ois de çist vin  dist çil q il porta</l>
             <l n="900">E çile le prist ver Guliame  garda</l>
             <l n="901">Segure mant en beves e sil segna</l>
             <l n="902">Çel l en boit tant q el s en saola</l>
@@ -1231,9 +1231,9 @@
             <l n="927">Por qoi Guliaume  por conduit le rona</l> 
             <l n="928">Avant se mist alors dist venes ça</l>
         </lg>
-   <ab type="rubric">Coma[n]t Eneas le conduit ens une val profonde e oscure.</ab>     
+            <ab type="rubric"><hi rend="red">Coma[n]t Eneas le conduit ens une val profonde e oscure.</hi></ab>     
         <lg>
-            <l n="929">Guliaume si camine e Ugues  le segonde</l>
+            <l n="929"><hi rend="red">G</hi>uliaume si camine e Ugues  le segonde</l>
             <l n="930">Apres Eneas por le dolores munde</l>
             <l n="931">Le ber troians de tost aler sa onde</l>
             <l n="932">Conduit lis a en une val profonde</l>
@@ -1247,12 +1247,12 @@
             <l n="940"><pb n="f.11v"/>Aval le mene  ou li danés s'afonde</l>
             <l n="941">Le main le mist jusq[ue] la test blon[de]</l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon trait son brant por veoire au qa[n]t de clarte</ab>  
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon trait son brant por veoire au qa[n]t de clarte</hi></ab>  
         <lg>
-            <l n="942">Or entrerent en le p[ri]merain degre</l>
+            <l n="942"><hi rend="red">O</hi>r entrerent en le p[ri]merain degre</l>
             <l n="943">D on grand abise q est plein d ouscurite</l>
             <l n="944">E por avoire luminaire e clarte</l>
-            <l n="945">Trait li ques  Ugue  li bon brando de çel mole	</l>		
+            <l n="945">Trait li ques  Ugue  li bon brando de çel mole   </l>        
             <l n="946">Sor le pom oit des pieres a gran plate</l>
             <l n="947">Si qe u[n] petit furent inlumine</l>
             <l n="948">Le mere p[ro]fund qando est pluç coroçe</l>
@@ -1274,9 +1274,9 @@
             <l n="964">Qe ie meeseme na plaint e regrete</l>
             <l n="965">E çil respont bien serait conte</l>
         </lg>
-   <ab type="rubric"> Comant entrent en le libe</ab>
+            <ab type="rubric"><hi rend="red">Comant entrent en le libe</hi></ab>
         <lg>
-            <l n="966">Cest asenblee qe tu nois en present</l>
+            <l n="966"><hi rend="red">C</hi>est asenblee qe tu nois en present</l>
             <l n="967">En çestui linbe furent de cil çent</l>
             <l n="968">Qe furent vif anç qel batiçament</l>
             <l n="969">E de çeus ga  qe peçe non firent</l>
@@ -1307,9 +1307,9 @@
             <l n="994">El no el romagne qe oure ocultament</l>
             <l n="995">Le quens parole mes no fala nient</l>
         </lg>
-   <ab type="rubric">Comant Ugon parole co[n] Eneas</ab>
+            <ab type="rubric"><hi rend="red">Comant Ugon parole co[n] Eneas</hi></ab>
         <lg>
-            <l n="996">Ensi s en vont por mi la tenebrie</l>
+            <l n="996"><hi rend="red">E</hi>nsi s en vont por mi la tenebrie</l>
             <l n="997">Ugues domant a Eneas  qi le guie</l>
             <l n="998">Donc est bien voire si tu aies aie</l>
             <l n="999">Qe il en fu de cest conpagnie</l>
@@ -1340,9 +1340,9 @@
             <l n="1024">Si romanemes con la loi eschernie</l>
             <l n="1025">Alons nos e ma senteçe est finie</l>
         </lg>
-   <ab type="rubric">Coma[n]t atrove[n]t le castel qi avoit .Un. portes</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t atrove[n]t le castel qi avoit .Un. portes</hi></ab>
         <lg>
-            <l n="1026">Por mi lo selve des sprist s en vont</l>
+            <l n="1026"><hi rend="red">P</hi>or mi lo selve des sprist s en vont</l>
             <l n="1027">En si parlant Eneas  e le cont</l>
             <l n="1028">E tant erent qi arsue sunt</l>
             <l n="1029">En Un  castel qe no[n] fu pas e mont</l>
@@ -1360,13 +1360,13 @@
             <l n="1041">E veut savoir se deu a mains afront </l>
             <l n="1042">E çil pensere anchor biaus frere sont</l>
             <l n="1043">Trovent les cart e non trovent les pont</l>
-            <l n="1044">Cest Usançe  biaus amis mantenu[n]t</l>		
+            <l n="1044">Cest Usançe  biaus amis mantenu[n]t</l>     
             <l n="1045">Iusq[ue] a çil ior qe les angles vendrunt</l>
             <l n="1046">Sonore les tronbes dont li morti reviseront </l>
         </lg>
-   <ab type="rubric">Comant entrent dens la prime parte de çelo castel</ab>
+            <ab type="rubric"><hi rend="red">Comant entrent dens la prime parte de çelo castel</hi></ab>
         <lg> 
-            <l n="1047">PArmi la porta p[ri]mere des escoler</l>
+            <l n="1047"><hi rend="red">P</hi>Armi la porta p[ri]mere des escoler</l>
             <l n="1048">Ioste Eneas  entra le mocsaier </l>
             <l n="1049">Dou mur segond de çi che li p[ri]mer</l>
             <l n="1050">Ne non posança de l u[n] a l autre parler</l>
@@ -1375,7 +1375,7 @@
             <l n="1053">Nichomachus li fu sus un piler</l>
             <l n="1054">Che d arimisache tient le livre aensegnere</l>
             <l n="1055">E pur cumanda les ars a soager</l>
-            <l n="1056">Tot est roches e non vaut Un  dinere</l>	
+            <l n="1056">Tot est roches e non vaut Un  dinere</l>    
             <l n="1057">Le quens d av[er]nie se prist tot astorner</l>
             <l n="1058">Por çil ch il non puet oire ni doma[n]der</l>
             <l n="1059">Nicomachus começa a blastemere</l>
@@ -1387,9 +1387,9 @@
             <l n="1065">Çe est lor poine de cris e de tençere</l>
             <l n="1066">Lor dist Guliame  pensons desploiter</l>
         </lg>
-   <ab type="rubric">Comant les scolers estoient entor Nicomachus</ab>
+            <ab type="rubric"><hi rend="red">Comant les scolers estoient entor Nicomachus</hi></ab>
         <lg>
-            <l n="1067">Li escoler entorne Nicomachus </l>
+            <l n="1067"><hi rend="red">L</hi>i escoler entorne Nicomachus </l>
             <l n="1068">Paserent oltra de çi al terç pertus</l>
             <l n="1069">Un no[n] escrit en la porta desus</l>
             <l n="1070">La mendre letra estoit grand come un schus</l>
@@ -1404,9 +1404,9 @@
             <l n="1079">Dist Eneas  çil trova les us</l>
             <l n="1080">De dialtiche  Une  de septe v[er]tus</l>
         </lg>
-   <ab type="rubric"><pb n="f.13v"/>Comant vont por mi les scolers de dialtiche</ab>
+            <ab type="rubric"><pb n="f.13v"/><hi rend="red">Comant vont por mi les scolers de dialtiche</hi></ab>
         <lg> 
-            <l n="1081">Hhore  s'en vo[n]t por la dri  dialtiche iant</l>
+            <l n="1081"><hi rend="red">H</hi>hore  s'en vo[n]t por la dri  dialtiche iant</l>
             <l n="1082">Le quens d av[er]nie fist Un  domandamant</l>
             <l n="1083">Tu chi me mostis a la fin lor ben qi aprant</l>
             <l n="1084">A dieltiche a cistor qi l entent</l>
@@ -1414,7 +1414,7 @@
             <l n="1086">Ne nul ne auront do çi au iuiemant</l>
             <l n="1087">Le quens respont por deu om[n]ipotant</l>
             <l n="1088">Se studiez dunt ensi lungemant</l>
-            <l n="1089">Il bien sauront sentençier divitemant </l>		
+            <l n="1089">Il bien sauront sentençier divitemant </l>      
             <l n="1090">Dist Eneas  il vait tot autrement</l>
             <l n="1091">De sentençier non ont il nule talant</l>
             <l n="1092">Por qoi çascuns autre sentencie atant</l>
@@ -1431,10 +1431,10 @@
             <l n="1103">La stroit porte derer eus vont lasant</l>
             <l n="1104">E vont avant a la quarta santant</l>
         </lg>
-   <ab type="rubric">Comant entrent en la qarte porte</ab>
+            <ab type="rubric"><hi rend="red">Comant entrent en la qarte porte</hi></ab>
         <lg>
-            <l n="1105">ARive su[n]t en la porte quartaine</l>
-            <l n="1106">Davant g  avoit  Une  fosse sotaine</l>		
+            <l n="1105"><hi rend="red">A</hi>Rive su[n]t en la porte quartaine</l>
+            <l n="1106">Davant g  avoit  Une  fosse sotaine</l>     
             <l n="1107">Forte est la porte et aute e sovraine</l>
             <l n="1108">Sens grant afaire sens veileie e sens paine</l>
             <l n="1109">Non i puet entrer nule creature humane</l>
@@ -1453,15 +1453,15 @@
             <l n="1122">Respont a lui la grant arme troiane</l>
             <l n="1123">Qant tu serais en layre sovraine </l>
             <l n="1124">As mestres con paroles çertaine</l>
-            <l n="1125"><pb n="f.13v"/>Poras lor dire qe sens  poine vilaine</l>  	
+            <l n="1125"><pb n="f.13v"/>Poras lor dire qe sens  poine vilaine</l>    
             <l n="1126">Aurais veu lor dotor primeraine </l>
             <l n="1127">Teolodies as çelle blonde laine</l>
             <l n="1128">Al suo avant de çi audiraine</l>
             <l n="1129">Doctor çi fu Aristoteles de Atheine </l>
         </lg>
-   <ab type="rubric">Comant Teolides a vele Une des scolers</ab>
+            <ab type="rubric"><hi rend="red">Comant Teolides a vele Une des scolers</hi></ab>
         <lg>
-            <l n="1130">Le quens d avernie s en est oltra pase</l>
+            <l n="1130"><hi rend="red">L</hi>e quens d avernie s en est oltra pase</l>
             <l n="1131">Çest armes saies l ont mout regarde</l>
             <l n="1132">L une des espirit ses in estant l eve</l>
             <l n="1133">Clamer le cuit e il começe</l>
@@ -1479,9 +1479,9 @@
             <l n="1145">La qui[n]ta porta le qui[n]te mure e lo fose</l>
             <l n="1146">Çi troverent le p[ri]me retonçe</l>
         </lg>
-   <ab type="rubric">Comant entrent ens la qui[n]te porte</ab>
+            <ab type="rubric"><hi rend="red">Comant entrent ens la qui[n]te porte</hi></ab>
         <lg>
-            <l n="1147">LA qui[n]te porte fu molto de grant senbiançe</l>
+            <l n="1147"><hi rend="red">L</hi>A qui[n]te porte fu molto de grant senbiançe</l>
             <l n="1148">Ovree fu de peire noire e blançe</l>
             <l n="1149">Et as meles de Foie  contena[n]çe</l>
             <l n="1150">Autretel par çe estre comançe</l>
@@ -1497,13 +1497,13 @@
             <l n="1160">Çili qi portent des esiençe la mançe</l>
             <l n="1161">Dont lor fait mal la saie costumançe</l>
             <l n="1162">El ben aprendre lor vent a pesançe</l>
-            <l n="1163">Qe devrai dire qant ie serai in françe	</l>	
+            <l n="1163">Qe devrai dire qant ie serai in françe  </l>    
             <l n="1164">Qe li scolere qi plus ont sapiançe</l>
             <l n="1165">Vegnerent stra tuit a la scure habitançe</l>
         </lg>
-   <ab type="rubric">Comant Eneas respont a Ugon</ab>
+            <ab type="rubric"><hi rend="red">Comant Eneas respont a Ugon</hi></ab>
         <lg>
-            <l n="1166">NE sont mie çe respont Eneas </l>
+            <l n="1166"><hi rend="red">N</hi>E sont mie çe respont Eneas </l>
             <l n="1167">N en su[n]t danes fo[r]s le mauvais</l>
             <l n="1168">Che conoisent le droit camin Veras </l>
             <l n="1169">E nol tient tant sunt yps  eras</l>
@@ -1511,7 +1511,7 @@
             <l n="1171">Por çe su[n]t il rues in çele Vales </l>
             <l n="1172"><pb n="f.14r"/>Car i les mand Minos lo setanas</l>
             <l n="1173">A li celiers qe l om clame Flegias </l>
-            <l n="1174">Trop sunt (de)  cestor e lons e bas		</l>
+            <l n="1174">Trop sunt (de)  cestor e lons e bas     </l>
             <l n="1175">La poine de çestor lor seroit solas</l>
             <l n="1176">Mes se il eusent le batis qe tu as</l>
             <l n="1177">La cites de l enfers non paservient mas</l>
@@ -1523,9 +1523,9 @@
             <l n="1183">Une mainere de ient qe erent tuti ras</l>
             <l n="1184">Volent cantere entor a Pitogoras </l>
         </lg>
-   <ab type="rubric">Comant Enea (dist)  les scgleres  scholer voloient ca[n]ter e[n]torn<lb/>pitagoras</ab>     
+            <ab type="rubric"><hi rend="red">Comant Enea (dist)  les scgleres  scholer voloient ca[n]ter e[n]torn<lb/>pitagoras</hi></ab>     
         <lg>
-            <l n="1185">Celors qi cantent en le regne enfernal</l>
+            <l n="1185"><hi rend="red">C</hi>elors qi cantent en le regne enfernal</l>
             <l n="1186">Il n el font mie por ieu no por  bal</l>
             <l n="1187">Mais lor sovent dou tenps ançional</l>
             <l n="1188">Entor Pitagoras  lor mestre natural</l>
@@ -1540,9 +1540,9 @@
             <l n="1197">Nenil dist  tra çi a le iornal  </l>
             <l n="1198">C il adopleront la ioie el batistal</l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon dist qe avoit m[er]veil qe por ça[n]tere fuse[n]t pe[r]dus<lb/>Enea li Respont</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon dist qe avoit m[er]veil qe por ça[n]tere fuse[n]t pe[r]dus<lb/>Enea li Respont</hi></ab>
         <lg>
-            <l n="1199">AMis dist Ugues  grant m[er]veile çi ha</l>
+            <l n="1199"><hi rend="Red">A</hi>Mis dist Ugues  grant m[er]veile çi ha</l>
             <l n="1200">Se home por çantere  tant de male aura</l>
             <l n="1201">Biaus amis dist Eneas  or m entedis ça</l>
             <l n="1202">Tant fu le son dilit  de çantere ça e la</l>
@@ -1552,10 +1552,10 @@
             <l n="1206">Por çe su[n]t çist danes e iames non ensira</l>
             <l n="1207">Alons dist Guliame  trop gran demo[r] çi ha</l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon pa[r]le a Guliame de la iustixe de deu</ab>   
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon pa[r]le a Guliame de la iustixe de deu</hi></ab>   
         <lg>
-            <l n="1208">Or sunt desevrez da oire cantere en Vain</l> 
-            <l n="1209">Sire Guliame  çe dit l ome terain</l>
+            <l n="1208"><hi rend="red">Or sunt desevrez da oire cantere en Vain</hi></l> 
+            <l n="1209"><hi rend="red">S</hi>ire Guliame  çe dit l ome terain</l>
             <l n="1210">Com grant est la iustixe del Roy  sovrain</l>
             <l n="1211">Voire dist Guliame  de çe siez çertain</l>
             <l n="1212">Apres çist mot le seisi por la main</l>
@@ -1564,9 +1564,9 @@
             <l n="1215">Envers le grignor poine s en vont tot coiema[n]</l>
             <l n="1216">Dient deus misere por ton digne coman</l>
         </lg>
-   <ab type="rubric">Coma[n]t Ugon veit les mogni sens consil e le fases consileors<lb/>in pene d infern</ab>
+            <ab type="rubric"><hi rend="red">Coma[n]t Ugon veit les mogni sens consil e le fases consileors<lb/>in pene d infern</hi></ab>
         <lg>
-            <l n="1217">AL ensire ch il firent doulor  da çelu casama[n]t </l> 
+            <l n="1217"><hi rend="red">A</hi>L ensire ch il firent doulor  da çelu casama[n]t </l> 
             <l n="1218">Regarda Ugon cho fu en grant atent</l>
             <l n="1219"><pb n="f.14v"/>Davant vit dos maynere de doe vent</l> 
             <l n="1220">Çaschune de lor amenoit grant plante de ient</l>
@@ -1584,9 +1584,9 @@
             <l n="1232">Le conseil de çelor font autres dolent</l>
             <l n="1233">Ore entedes bie[n] te dira coment</l>
         </lg>
-   <ab type="rubric">Comant Eneas dist a Ugon le peçe de çels qi sa aurte[n]t</ab>
+            <ab type="rubric"><hi rend="red">Comant Eneas dist a Ugon le peçe de çels qi sa aurte[n]t</hi></ab>
         <lg>
-            <l n="1234">Cestor sor desire  qua[n]t il furent Viva[n]t</l>
+            <l n="1234"><hi rend="red">C</hi>estor sor desire  qua[n]t il furent Viva[n]t</l>
             <l n="1235">Travailos furent sostenant ses enfant</l>
             <l n="1236">E qant se partirent de lor casamant</l>
             <l n="1237">Cestor felon mauvais li vindront au devant</l>
@@ -1603,9 +1603,9 @@
             <l n="1248">Car ien trabuçe e l autre se destant</l>
             <l n="1249">Or alons de çi a le deu comandamant </l>
         </lg>
-   <ab type="rubric">Comant atroverent Argantine e Guion</ab>
+            <ab type="rubric"><hi rend="red">Comant atroverent Argantine e Guion</hi></ab>
         <lg>
-            <l n="1250">Guliame chamine e amene Ugon </l>
+            <l n="1250"><hi rend="red">G</hi>uliame chamine e amene Ugon </l>
             <l n="1251">Molt fu pensis del mesaier Karlon</l> 
             <l n="1252">Jhus reclame qi sofri pasion</l>
             <l n="1253">Qi lo doie gardere da tanta mesprison</l>
@@ -1614,7 +1614,7 @@
             <l n="1256">Seccores moi fet ele vers cest mauves hon</l>
             <l n="1257">Qi n a voloire sono de ma destruçion</l>
             <l n="1258">Ugues dist a Guliame  si li mist a rason</l>
-            <l n="1259">Selonc au parler sire de nostre nostre  rognon 	</l>	
+            <l n="1259">Selonc au parler sire de nostre nostre  rognon  </l>    
             <l n="1260">Il moy senble entendre le latiner guaschon</l>
             <l n="1261">Amis çe dit Guliame  on entend mon selmon</l>
             <l n="1262">Çel fu Argentine  file au roy Yvon </l>

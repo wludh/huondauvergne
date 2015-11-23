@@ -26,8 +26,8 @@
 	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
-	<xsl:param name="includeToolbox" select="false()"/>
-	<xsl:param name="includeAnalytics" select="true()"/>
+<!-- 	<xsl:param name="includeToolbox" select="false()"/>
+ -->	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
 	
 	
@@ -38,6 +38,7 @@
 	
 	<!-- interface text -->
 	<xsl:param name="pbNote"><text>page: </text></xsl:param>
+	<xsl:param name="n"></xsl:param>
 	<xsl:param name="altTextPbFacs"><text>view page image(s)</text></xsl:param>
 	
 	<!-- parameters for file paths or URLs -->
@@ -56,6 +57,7 @@
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
+    <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/>
     <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/>
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
@@ -74,60 +76,68 @@
 		<html>
 			<xsl:call-template name="htmlHead"/>
 			<body>
-				<xsl:if test="$includeToolbox = true()">
+<!-- 				<xsl:if test="$includeToolbox = true()">
 					<xsl:call-template name="teibpToolbox"/>
 				</xsl:if>
-
+ -->
                 <div>
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name"></li>
+
+<nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Huon d'Auvergne</span></a></li>
         </ul>
 
         <section class="top-bar-section">
-          <!--right-nav section-->
-          <ul>
-            <li class=""><a href="/index.html">Home</a></li>
-            </ul>
-          </section>
-          <section class="top-bar-section">
-            <!--right-nav section-->
+        <ul>
+          <li class=""><a href="/index.html">Huon d'Auvergne: A Digital Edition</a></li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="">
+            <a href="/bibliography.html">Bibliography</a>
+          </li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class=""><a href="/about.html">About</a></li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="/edition.html">Edition</a>
             <ul>
-              <li class=""><a href="/about.html">About</a></li>
-              </ul>
-            </section>
-            <section class="top-bar-section">
-              <!--right-nav section-->
-              <ul>
-                <li class=""><a href="/introduction.html">Introduction</a></li>
-                </ul>
-              </section>
-          <section class="top-bar-section">
-              <ul>
-                <li><a>Edition</a>
-                  <ul>
-                    <li><a href="/content/Br_TEI_v1.xml">BR Manuscript</a></li>
-                    <li><a href="#">Another Edition</a></li>
-                    <li><a href="#">Another Edition</a></li>
-                  </ul>
-                </li>
-                </ul>
-        </section>
-         <section class="top-bar-section">
-          <ul>
-            <li class=""><a href="/bibliography.html">Bibliography</a></li>
+              <li><a href="/content/br.xml">Bologna Fragment</a></li>
+              <li><a href="/content/p.xml">Padua Manuscript</a></li>
+              <li><a href="/content/b.xml">Berlin Manuscript</a></li>
+              <li><a href="/content/t.xml">Turin Manuscript</a></li>
+              <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
-          </section>
-</nav>
-
-</div><!--end top bar nav-->
+          </li>
+        </ul>
+      </section>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class=""><a href="/introduction.html">Introduction</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div><!--end top bar nav-->
 <!--main content-->
-                <TEI><h1 id="hidden-title"></h1></TEI>
+                <TEI><div id="hidden-title"></div></TEI>
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
+			    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/foundation/foundation.topbar.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 		</html>
 	</xsl:template>
 	
@@ -309,16 +319,17 @@
 	<xsl:template name="htmlHead">
 		<head>
 			<meta charset="UTF-8"/>
-
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
             <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
-            <script type="text/javascript" src="{$foundationminJS}"></script>
-			<script type="text/javascript" src="{$modernizrJS}"></script>
             <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
 			<script type="text/javascript" src="{$teibpJS}"></script>
+			<script type="text/javascript" src="{$foundationminJS}"></script>
+            <script type="text/javascript" src="{$foundationtopbarJS}"></script>
+			<script type="text/javascript" src="{$modernizrJS}"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
 					$("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
@@ -353,7 +364,7 @@
       </xsl:for-each>
     </style>
   </xsl:template>
-  
+
   <xsl:template name="tokenize">
     <xsl:param name="string" />
     <xsl:param name="delimiter" select="' '" />
@@ -416,7 +427,7 @@ element.appendTo('#hidden-title');
 </script>
 
 	</xsl:variable>
-
+<!-- 
 	<xsl:template name="teibpToolbox">
 		<div id="teibpToolbox">
 			<h1>Toolbox</h1>
@@ -431,7 +442,7 @@ element.appendTo('#hidden-title');
 					<option value="{$theme.terminal}">Terminal</option>
 				</select>			</div>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
 	
 	<xsl:template name="analytics">
 		<script type="text/javascript">
@@ -473,7 +484,7 @@ element.appendTo('#hidden-title');
 			</span>
 
 	</xsl:template>
-	
+
 	<xsl:template match="tei:pb[@facs]">
 		<xsl:param name="pn">
 			<xsl:number count="//tei:pb" level="any"/>    

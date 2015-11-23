@@ -1760,7 +1760,7 @@ meta.foundation-mq-topbar {
         padding: 0 0.9375rem; }
   .top-bar .toggle-topbar {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
       color: #FFFFFF;
@@ -1771,10 +1771,12 @@ meta.foundation-mq-topbar {
       display: block;
       padding: 0 0.9375rem;
       height: 2.8125rem;
-      line-height: 2.8125rem; }
+      line-height: 2.8125rem;
+      }
     .top-bar .toggle-topbar.menu-icon {
       top: 50%;
-      margin-top: -16px; }
+      margin-top: -16px;
+      right: 0; }
       .top-bar .toggle-topbar.menu-icon a {
         height: 34px;
         line-height: 33px;

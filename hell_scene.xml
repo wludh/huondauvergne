@@ -1,0 +1,223 @@
+<?xml-stylesheet href="/vmachine_assets/vmachine.xsl" type="text/xsl" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Huon d'Auvergne, a Franco-Italian Epic</title>
+                <respStmt>
+                    <resp>Text Encoding by </resp>
+                    <name>Stephen P. McCormick</name>
+                    <name>Mackenzie Brooks</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Edited by </resp>
+                    <name>Leslie Zarker Morgan</name>
+                    <name>Stephen P. McCormick</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Translated by</resp>
+                    <name>Shira Schwam-Baird</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Washington and Lee University</publisher>
+                <availability>
+                    <p>This poem is being made available for demonstration purposes only. It may not
+                        be reproduced without consent. For further information, please contact Stephen P.
+                        McCormick at mccormicks@wlu.edu</p>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note anchored="true">There are four manuscript witnesses of this epic: Berlin Kupferstichkabinett 
+                    78 D 8 (olim Hamilton 337)(dated 1341); Padua, Biblioteca del Seminario Vescovile MS 32 (late 
+                    fourteenth/early fifteenth century); Turin, Biblioteca Nazionale N III 19 (dated 1441); and 
+                    the Barbieri fragment, Bologna, Biblioteca dell'Archiginnasio B. 3489 (fourteenth century). </note>
+            </notesStmt>
+            <sourceDesc>
+                <p>Editions of the text are by Leslie Zarker Morgan (Berlin and Turin) and Stephen P. McCormick 
+                (Padua and Bologna). Translation is by Shira Schwam-Baird</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Test document for versioning machine project. Marked-up collation of Huon d'Auvergne.</p>
+                <p>DTD constructed from TEI poetry base with tagsets for linking, figures, analysis,
+                    transcr, textcrit.</p>
+            </editorialDecl>
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div>
+                <listWit>
+                    <witness xml:id="B">Berlin</witness>
+                    <witness xml:id="Br">Bologna</witness>
+                    <witness xml:id="P">Padua</witness>
+                    <witness xml:id="T">Turin</witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head>
+                <title>
+                    <app>
+                        <rdg wit="#B #Br #P #T">Huon d'Auvergne</rdg>
+                    </app>
+                </title>
+            </head>
+            <l n="1">
+                <app loc="1">
+                    <rdg wit="#B">En genoillon se mist et garde sus,</rdg>
+                    <rdg wit="#Br">Engenoilon se mist e gard en sus:</rdg>
+                    <rdg wit="#P">In cenochion se mete e guarda in sus:</rdg>
+                    <rdg wit="#T">En zonechion se mete e guarda yn susa,</rdg>
+                </app>
+            </l>
+            <l n="2">
+                <app loc="2">
+                    <rdg wit="#Br">"Sire, feit il, "qi ton filç mandast jus,</rdg>
+                    <rdg wit="#P">"Sier Dio", dix'ello, "che conseio mandase jus,</rdg>
+                </app>
+                <app loc="23">
+                    <rdg wit="#B">devotemant cun il poit onques plus.</rdg>
+                    <rdg wit="#T">devotamente como el posea piue.</rdg>
+                </app>
+            </l>
+            <l n="3">
+                <app loc="4">
+                    <rdg wit="#Br">qe fu por moi e por çaschum pendus</rdg>
+                    <rdg wit="#P">che fosse per mi e per çascun pendus</rdg>
+                </app>
+                <app loc="5">
+                    <rdg wit="#B">De ce ben dir acostumeç il fus,</rdg>
+                    <rdg wit="#T">E del suo ben dire acostumà l’era</rdg>
+                </app>
+            </l>
+            <l n="4">
+                <app loc="6">
+                    <rdg wit="#Br">sus çel crois ou fu nostre salus,</rdg>
+                    <rdg wit="#P">su quela croxe che fo nostra salus,</rdg>
+                </app>
+                <app loc="7">
+                    <rdg wit="#B">de jor en jor ja ne’l mist en refus:</rdg>
+                    <rdg wit="#T">de zorno yn zorno za non misse yn refuso:</rdg>
+                </app>
+            </l>
+            <l n="5">
+                <app loc="8">
+                    <rdg wit="#Br">qant fust fragilé e batus</rdg>
+                    <rdg wit="#P">quando vui fossi flagelado e batus</rdg>
+                </app>
+                <app loc="2">
+                    <rdg wit="#B">«Ay, sire Diex, quel consoil moy das tus</rdg>
+                    <rdg wit="#T">«Ay, signor Dio, tal conseis me des tuy</rdg>
+                </app>
+            </l>
+            <l n="6">
+                <app loc="9">
+                    <rdg wit="#Br">e su la crois inclavé tot nus,</rdg>
+                    <rdg wit="#P">e sulla croxe inclavado tuto nus,</rdg>
+                </app>
+                <app loc="10">
+                    <rdg wit="#B">cum tu feisis as prophete perdus</rdg>
+                    <rdg wit="#T">como tu fessy ay profeta ch'era perduty</rdg>
+                </app>
+            </l>
+            <l n="7">
+                <app loc="11">
+                    <rdg wit="#Br">dedans le Limbe ou il erente enclus.</rdg>
+                    <rdg wit="#P">de dentro lo Limbo onda li erano rechiousy.</rdg>
+                </app>
+                <app loc="12">
+                    <rdg wit="#B">qant de la lança en fu fet le pertus</rdg>
+                    <rdg wit="#T">quando de lla lança ve fe fato lo pertus</rdg>
+                </app>
+            </l>
+            <l n="8">
+                <app loc="13">
+                    <rdg wit="#Br">qe jusque au cor pasa parmi le bus;</rdg>
+                    <rdg wit="#P">che de fin al cuor passa per mé lo bus;</rdg>
+                </app>
+                <app loc="4">
+                    <rdg wit="#B">Por lor et nos fus sor la crois pendus,</rdg>
+                    <rdg wit="#T">Per lor e per nuy foste sopra la croze miso,</rdg>
+                </app>
+            </l>
+            <l n="9">
+                <app loc="14">
+                    <rdg wit="#Br">por çele santa pieté de vertus</rdg>
+                    <rdg wit="#P">per quella santa pietade de vertus</rdg>
+                </app>
+                <app loc="6">
+                    <rdg wit="#B">toe mort fu rechat de nos salus,</rdg>
+                    <rdg wit="#T">la toa morte fo rechuza de nostry saluty,</rdg>
+                </app>
+            </l>
+            <l n="10">
+                <app loc="15">
+                    <rdg wit="#Br">qe en tenebre aporta clere lus</rdg>
+                    <rdg wit="#P">che [en] tenebrie porta chiara lus</rdg>
+                    <rdg wit="#B">en tenebrie aporta clere lux</rdg>
+                    <rdg wit="#T">en tenembre portasty chiary luzy</rdg>
+                </app>
+            </l>
+            <l n="11">
+                <app loc="16">
+                    <rdg wit="#Br">a ceaus qi estoient ens le linbo metus,</rdg>
+                    <rdg wit="#P">a queli chi era in llo linbo suspendus,</rdg>
+                    <rdg wit="#B">a cil ch'erent au Limbe suspendus.</rdg>
+                    <rdg wit="#T">e choloro ch'erano al limbo sostinuty</rdg>
+                </app>
+            </l>
+            <l n="12">
+                <app loc="17">
+                    <rdg wit="#Br">tot les pechés che mai furent e plus</rdg>
+                    <rdg wit="#P">tuti li pecati che mai fono e plus</rdg>
+                </app>
+                <app loc="14">
+                    <rdg wit="#B">Par celle saincte pieté et vertus</rdg>
+                    <rdg wit="#T">per quela santa piatà apristily.</rdg>
+                </app>
+            </l>
+            <l n="13">
+                <app loc="18">
+                    <rdg wit="#Br">por la pieté, biau sire Yhesus,</rdg>
+                </app>
+                <app loc="19">
+                    <rdg wit="#P">fono perdonadi e per ti demetus</rdg>
+                </app>
+                <app loc="8">
+                    <rdg wit="#B">par qui vos fustes flageleç et batus</rdg>
+                    <rdg wit="#T">E perché vuy fusty fragilà e batuto</rdg>
+                </app>
+            </l>
+            <l n="14">
+                <app loc="20">
+                    <rdg wit="#Br">qe nos en osta su la crois, sor le fus</rdg>
+                </app>
+                <app loc="18">
+                    <rdg wit="#P">per la pietade, bel sier Dio Jhesus</rdg>
+                </app>
+                <app loc="9">
+                    <rdg wit="#B">e sor la crois encloeç et metus,</rdg>
+                    <rdg wit="#T">en su la croze ynchiodà e metuto,</rdg>
+                </app>
+            </l>
+            <l n="15">
+                <app loc="21">
+                    <rdg wit="#Br">de vestre mere qe avoit le cor enclus</rdg>
+                </app>
+                <app loc="20">
+                    <rdg wit="#P">che vui avesse su la croxe sor lo fus</rdg>
+                </app>
+                <app loc="22">
+                    <rdg wit="#B">quant de la lance vos fu feit li pertus</rdg>
+                    <rdg wit="#T">quando de la lanza a voy fo fato lo pertuso</rdg>
+                </app>
+            </l>
+        </body>
+    </text>
+</TEI>
+
+

@@ -1,29 +1,57 @@
+/* Todo: 
+  styling of Edition
+  search bar functionality
+*/
 
-body {
-font-family: "garamond-premier-pro-display", Georgia, Times New Roman, serif;
-/*background-color:#FCFFF5;*/
-color: #193441;
-text-rendering:optimizeLegibility;
-font-feature-settings: "kern" 1;
-font-kerning:normal;
+.top-bar .toggle-topbar a{
+  font-weight: normal;
 }
 
-p {
-  font-weight:normal;
-}
-/* full image in background */
-#homepage {
-background: url('../img/blake.jpg') no-repeat center center;
-min-height:100%;
-position: relative;
-background-size: cover;
+body{
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  background: rgba(255,255,255,0.875);
+  text-rendering:optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning:normal;
+  margin-bottom: 47px;
 }
 
+header{
+  padding-top:3em;
+  padding-bottom: 4em;
+  margin-bottom: 1.5em;
+}
 
-.fullWidth {
-  width: 100%;
-  max-width: 100%;
-  height: 100px;
+/*Top bar*/
+
+.top-bar {
+  background: #000;
+  width:100%;
+  height: 48px;
+
+}
+
+nav{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){background: #000;}
+.top-bar-section li:not(.has-form) a:not(.button):hover {background: #000;}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background-color: #000;}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background-color: #000;}
+
+
+.top-bar a{
+  text-decoration: none;
+  font-size: 16px !important;
+  color:#cccccc !important;
+}
+
+.top-bar-section ul li a{
 
 }
 
@@ -32,18 +60,31 @@ background-size: cover;
   padding-left: 15px;
 }
 
+section ul li a{
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
+}
 
-header{
-  padding-top:3em;
-  padding-bottom: 4em;
-  margin-bottom: 1.5em;
+/*Content */
+
+#clear{
+  clear:both;
+}
+
+p {
+  font-weight:normal;
+}
+
+.fullWidth {
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+
 }
 
 
-h1 {
+h1, h4 {
   color:#333;
-/*  font-size: 50px;*/
-  font-family: "garamond-premier-pro-display",serif;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
   margin-bottom:0;
 }
 
@@ -52,83 +93,107 @@ p.tagline {
   margin-top:-15px;
 }
 
-.top-bar {
-  background: #000;
-
+#manuscript_list{
+  text-align: center;
 }
-
-.top-bar-section li:not(.has-form) a:not(.button){background: #000;}
-.top-bar-section li:not(.has-form) a:not(.button):hover {background: #000;}
-
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-  background-color: #000;}
-/*the color to use for a hover*/
-.top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background-color: #000;
-  }
 
 .imgprofile {
   float:left;
-  padding-right: 10px;
-  padding-bottom: 20px;
+  padding-right: 25px;
+  border-color: rgb(233, 233, 233);
+  border-style: solid;
+  border-width: 1px;
+  max-width: 200px;
+}
+
+.participant_profile{
+  padding-top: 25px;
 }
 
 .footer{
   background-color: #000;
-  color: rgb(255,255,255);
+  color:#cccccc !important;
   width:100%;
-  height: 45px;
+  height: 80px;
   text-align: center;
   font-weight:normal;
-  font-size:13px;
+  font-size:16px;
   margin: 0px;
   margin-bottom: 0px;
-  line-height: 45px;
+  line-height: 80px;
   padding-top: 0px;
+  position: absolute;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: gray;
+}
+
+.footer img{
+  max-height: 50px;
+}
+
+#hidden-title{
+  font-size: 28px;
+  padding-top: 48px;
+  padding-bottom:64px;
 }
 
 .footer a{
-  color: rgb(255,255,255);
+  color:#cccccc !important;
 }
+
+/* TEI */
+
 TEI {
-  margin-left: 16.66667% !important;
-  width: 66.66667%;
-  margin-right: 4.5em;
-  font-family: Garamond;
-  font-size: 1.4rem; 
+  
+/*  width: 66.66667%;
+*/  margin: auto;
+/*  margin-left: 16.66667% !important;
+  margin-right: 4.5em;*/
+  max-width: 40%;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  font-size: 16px;
+
 }
 
 tei-title {
-  font-family: Garamond !important;
-}
-
-.top-bar{
-  width:100%;
-}
-
-.top-bar a{
-  text-decoration: none;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+ !important;
 }
 
 teiHeader{
   display: none;
 }
 
+/* Background image*/
+
 html{
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("/img/blake.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
+  background-position: top right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height:auto;
   width:100%;
   padding:0;
   margin:0;
-  background-color: white;
 }
 
-
-/*dropdown menus*/
+/*dropdown/side menus*/
 
 ul li ul {
   padding: 0;
   position: absolute;
   top: 48px;
-  left: 0;
+  right: 0;
   width: 150px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -142,22 +207,175 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
   z-index: 1000;
+  border-left: 1px;
+  border-bottom: 1px;
+  border-top: 1px;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: gray;
+  transition:1s;
 }
 ul li ul li { 
   background: #555; 
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
-    z-index: 1000;
+  z-index: 1000;
 }
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
+@media screen{
+  ul li ul li:hover { background: #666; }
+  ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
     z-index: 1000;
+    transition:1s;
+  }
 }
 
-#hidden-title{
-  
+#homepage {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#homepage-body{
+  background: rgba(255,255,255,0);
+}
+
+text body{
+  background-color: rgba(255,255,255,0);
+}
+
+/*Search bar */
+
+.box{
+  width: 215px;
+  height: 50px;
+}
+
+.container-4{
+  overflow: hidden;
+  width: 200px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container-4 input#search{
+  width: 200px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-4 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: none;
+  background: #232833;
+  height: 50px;
+  width: 50px;
+  color: #4f5b66;
+  opacity: 0;
+  font-size: 10pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+/*
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+ 
+  .container-4:hover button.icon:hover{
+    background: white;
+  }*/
+
+  /*Versioning Machine*/
+
+#mainControls{
+  text-align: center;
+}
+
+#line_toggle, label{
+  float:left;
+  text-decoration: underline;
+  font-size: 16px;
+  color: black;
+}
+
+input[type="button"]{
+  border-style: none;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input[type="checkbox"]{
+  display:none;
+}
+
+#add_witness{
+  display: inline;
+  border-style:none;
+  float:left;
+  width:50%;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+.panelBanner, .witnessMenu{
+font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
+  background-color: rgba(0, 0, 0, 0);
+  height: 30px;
+  margin-bottom: 0;
+  padding:0;
+  border:none;
+  font-size: 16px;
+}
+
+.witnessMenu{
+  width: 100px;
+}
+
+td{
+  padding-left:0;
+  padding-right: 0;
+  display: hidden; 
+}
+
+#bibPanel{
+  display: none;
 }
