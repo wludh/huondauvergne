@@ -13,7 +13,11 @@ body{
   text-rendering:optimizeLegibility;
   font-feature-settings: "kern" 1;
   font-kerning:normal;
-  margin-bottom: 47px;
+/*  margin-bottom: 47px;
+*/  width: 100%;
+  max-width: 100%;
+  overflow-x:hidden;
+
 }
 
 header{
@@ -185,21 +189,22 @@ html{
   width:100%;
   padding:0;
   margin:0;
+  max-width: 100%;
+  overflow-x:hidden;
+  overflow-x:hidden;
 }
 
-@media only screen and (max-width: 480px){
+/*@media only screen and (max-width: 480px){
   html,body{
   width: 100%;
   max-width: 100%;
   overflow-x:hidden;
   }
-  html{
-  }
   body{
     min-height: 100%;
     margin-bottom: 0px;
   }
-}
+}*/
 
 /*dropdown/side menus*/
 
