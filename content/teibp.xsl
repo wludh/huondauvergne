@@ -415,7 +415,7 @@
 	</xd:doc>
 	<xsl:variable name="htmlFooter">
 		<footer class="footer">
-      Supported by <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>.
+      Supported by <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
   </footer>
 <!--               <script>
             $(document).foundation();
