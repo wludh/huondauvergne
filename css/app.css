@@ -173,9 +173,6 @@ html{
   width:100%;
   padding:0;
   margin:0;
-}
-
-.background {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("/img/blake.jpg");
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/blake.jpg");
@@ -189,6 +186,7 @@ html{
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
 
 /*dropdown/side menus*/
 
