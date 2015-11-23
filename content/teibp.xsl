@@ -56,9 +56,9 @@
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
-    <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
-    <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/>
-    <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/>
+<!--     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
+    <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/> -->
+<!--     <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/> -->
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
 	<xsl:param name="theme.terminal" select="concat($filePrefix,'/css/terminal.css')"/>
@@ -85,7 +85,7 @@
 <nav class="top-bar" data-topbar="">
         <ul class="title-area">
           <li class="name"></li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Huon d'Auvergne</span></a></li>
+          <li class="toggle-topbar menu-icon"><a href="/edition.html"><span>Back to Editions Page</span></a></li>
         </ul>
 
         <section class="top-bar-section">
@@ -133,11 +133,11 @@
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
 			    <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/foundation.min.js"></script>
+<!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
     <script>
       $(document).foundation();
-    </script>
+    </script> -->
 		</html>
 	</xsl:template>
 	
@@ -327,10 +327,10 @@
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
 			<script type="text/javascript" src="{$teibpJS}"></script>
-			<script type="text/javascript" src="{$foundationminJS}"></script>
-            <script type="text/javascript" src="{$foundationtopbarJS}"></script>
-			<script type="text/javascript" src="{$modernizrJS}"></script>
-			<script type="text/javascript">
+<!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
+            <script type="text/javascript" src="{$foundationtopbarJS}"></script> -->
+<!-- 			<script type="text/javascript" src="{$modernizrJS}"></script>
+ -->			<script type="text/javascript">
 				$(document).ready(function() {
 					$("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
 					$.unblockUI();	
@@ -417,10 +417,10 @@
 		<footer class="footer">
       Supported by the <a href="http://www.neh.gov/">National Endowment for the Humanities</a> and <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by a modified version of <a href="{$teibpHome}">TEI Boilerplate</a>. 
   </footer>
-              <script>
+<!--               <script>
             $(document).foundation();
             </script>
-
+ -->
                 <script>
 var element = jQuery('tei-title:first').clone();
 element.appendTo('#hidden-title');
