@@ -73,7 +73,7 @@
 	<xsl:key name="ids" match="//*" use="@xml:id"/>
 
 	<xsl:template match="/" name="htmlShell" priority="99">
-		<html>
+		<html class="background">
 			<xsl:call-template name="htmlHead"/>
 			<body>
 <!-- 				<xsl:if test="$includeToolbox = true()">
