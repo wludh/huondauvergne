@@ -13,7 +13,11 @@ body{
   text-rendering:optimizeLegibility;
   font-feature-settings: "kern" 1;
   font-kerning:normal;
-  margin-bottom: 47px;
+/*  margin-bottom: 47px;
+*/  width: 100%;
+  max-width: 100%;
+  overflow-x:hidden;
+
 }
 
 header{
@@ -153,7 +157,7 @@ TEI {
   max-width: 40%;
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   font-size: 16px;
-
+padding-bottom: 1px;
 }
 
 tei-title {
@@ -185,7 +189,22 @@ html{
   width:100%;
   padding:0;
   margin:0;
+  max-width: 100%;
+  overflow-x:hidden;
+  overflow-x:hidden;
 }
+
+/*@media only screen and (max-width: 480px){
+  html,body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x:hidden;
+  }
+  body{
+    min-height: 100%;
+    margin-bottom: 0px;
+  }
+}*/
 
 /*dropdown/side menus*/
 
@@ -223,7 +242,7 @@ ul li ul li {
   text-shadow: 0 -1px 0 #000;
   z-index: 1000;
 }
-@media screen{
+@media screen and (min-width: 850px){
   ul li ul li:hover { background: #666; }
   ul li:hover ul {
     display: block;
@@ -364,6 +383,7 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
   padding:0;
   border:none;
   font-size: 16px;
+  text-align:left;
 }
 
 .witnessMenu{

@@ -26,8 +26,8 @@
 	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
-	<xsl:param name="includeToolbox" select="false()"/>
-	<xsl:param name="includeAnalytics" select="true()"/>
+<!-- 	<xsl:param name="includeToolbox" select="false()"/>
+ -->	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
 	
 	
@@ -56,9 +56,9 @@
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
-    <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
-    <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/>
-    <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/>
+<!--     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
+    <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/> -->
+<!--     <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/> -->
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
 	<xsl:param name="theme.terminal" select="concat($filePrefix,'/css/terminal.css')"/>
@@ -73,18 +73,19 @@
 	<xsl:key name="ids" match="//*" use="@xml:id"/>
 
 	<xsl:template match="/" name="htmlShell" priority="99">
-		<html>
+		<html class="background">
 			<xsl:call-template name="htmlHead"/>
 			<body>
-				<xsl:if test="$includeToolbox = true()">
+<!-- 				<xsl:if test="$includeToolbox = true()">
 					<xsl:call-template name="teibpToolbox"/>
 				</xsl:if>
-
+ -->
                 <div>
+
 <nav class="top-bar" data-topbar="">
         <ul class="title-area">
           <li class="name"></li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Huon d'Auvergne</span></a></li>
+          <li class="toggle-topbar menu-icon"><a href="/edition.html"><span>Back to Editions Page</span></a></li>
         </ul>
 
         <section class="top-bar-section">
@@ -131,6 +132,12 @@
 				</div>
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
+			    <script src="/js/vendor/jquery.js"></script>
+<!--     <script src="/js/foundation.min.js"></script>
+    <script src="/js/foundation/foundation.topbar.js"></script>
+    <script>
+      $(document).foundation();
+    </script> -->
 		</html>
 	</xsl:template>
 	
@@ -312,7 +319,7 @@
 	<xsl:template name="htmlHead">
 		<head>
 			<meta charset="UTF-8"/>
-
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
@@ -320,10 +327,10 @@
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
 			<script type="text/javascript" src="{$teibpJS}"></script>
-			<script type="text/javascript" src="{$foundationminJS}"></script>
-            <script type="text/javascript" src="{$foundationtopbarJS}"></script>
-			<script type="text/javascript" src="{$modernizrJS}"></script>
-			<script type="text/javascript">
+<!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
+            <script type="text/javascript" src="{$foundationtopbarJS}"></script> -->
+<!-- 			<script type="text/javascript" src="{$modernizrJS}"></script>
+ -->			<script type="text/javascript">
 				$(document).ready(function() {
 					$("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
 					$.unblockUI();	
@@ -408,19 +415,19 @@
 	</xd:doc>
 	<xsl:variable name="htmlFooter">
 		<footer class="footer">
-      Supported by the <a href="http://www.neh.gov/">National Endowment for the Humanities</a> and <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by a modified version of <a href="{$teibpHome}">TEI Boilerplate</a>. 
+      Supported by <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
   </footer>
-              <script>
+<!--               <script>
             $(document).foundation();
             </script>
-
+ -->
                 <script>
 var element = jQuery('tei-title:first').clone();
 element.appendTo('#hidden-title');
 </script>
 
 	</xsl:variable>
-
+<!-- 
 	<xsl:template name="teibpToolbox">
 		<div id="teibpToolbox">
 			<h1>Toolbox</h1>
@@ -435,7 +442,7 @@ element.appendTo('#hidden-title');
 					<option value="{$theme.terminal}">Terminal</option>
 				</select>			</div>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
 	
 	<xsl:template name="analytics">
 		<script type="text/javascript">
