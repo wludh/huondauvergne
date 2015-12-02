@@ -60,8 +60,7 @@
     <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/> -->
 <!--     <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/> -->
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
-	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
-	<xsl:param name="theme.terminal" select="concat($filePrefix,'/css/terminal.css')"/>
+
 	
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>
@@ -109,10 +108,10 @@
         <ul class="right">
           <li><a href="/edition.html">Edition</a>
             <ul>
-              <li><a href="/content/br.xml">Bologna Fragment</a></li>
-              <li><a href="/content/p.xml">Padua Manuscript</a></li>
-              <li><a href="/content/b.xml">Berlin Manuscript</a></li>
-              <li><a href="/content/t.xml">Turin Manuscript</a></li>
+              <li><a href="/content/br.xml">Bologna</a></li>
+              <li><a href="/content/p.xml">Padua</a></li>
+              <li><a href="/content/b.xml">Berlin</a></li>
+              <li><a href="/content/t.xml">Turin</a></li>
               <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
@@ -130,6 +129,7 @@
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
+				<hr id="tei-hr"></hr>
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
 			    <script src="/js/vendor/jquery.js"></script>
@@ -414,9 +414,11 @@
 		</xd:desc>
 	</xd:doc>
 	<xsl:variable name="htmlFooter">
+		       
 		<footer class="footer">
-      Supported by <a href="http://digitalhumanities.wlu.edu/">Washington and Lee University</a>. Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
-  </footer>
+			<a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu_blue.jpg"></img></a>
+			<a href="https://www.neh.gov/"><img src="/img/neh_logo.png"></img></a>
+		</footer>
 <!--               <script>
             $(document).foundation();
             </script>

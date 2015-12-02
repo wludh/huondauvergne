@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js background" lang="en" id="homepage">
+<html class="no-js background" lang="en" id="landing">
   <head> <!--v 0.1-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body id="homepage-body">
@@ -40,10 +39,10 @@
           <ul class="right">
             <li><a href="/edition.html">Edition</a>
               <ul data-options="mobile_show_parent_link: true">
-                <li><a href="/content/br.xml">Bologna Fragment</a></li>
-                <li><a href="/content/p.xml">Padua Manuscript</a></li>
-                <li><a href="/content/b.xml">Berlin Manuscript</a></li>
-                <li><a href="/content/t.xml">Turin Manuscript</a></li>
+                <li><a href="/content/br.xml">Bologna</a></li>
+                <li><a href="/content/p.xml">Padua</a></li>
+                <li><a href="/content/b.xml">Berlin</a></li>
+                <li><a href="/content/t.xml">Turin</a></li>
                 <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
               </ul>
             </li>
@@ -58,11 +57,46 @@
     </div>
     <!--end top bar nav-->
     <!-- needed to keep footer at bottom -->
-    <img src="/img/blake.jpg" style="display:none;" alt="" />
-    <section id="homepage">
+
+    <header class="row">
+      <div class="large-12 columns text-center">
+       <h1>Huon d'Auvergne</h1>
+      </div>
+    </header>
+
+     <section class="row">
+      <div class="large-8 large-offset-2 columns">
+
+<!--       <img src="/img/hours_cropped.jpg"> -->
+        <p>Some general text on the edition. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue lorem, dictum nec libero ac, tincidunt finibus neque. Proin sed est volutpat ligula lacinia pellentesque. Cras imperdiet orci sit amet sem posuere, nec fringilla urna ultrices. Nam placerat ut justo sit amet porttitor. Praesent euismod urna nec felis aliquet, eget auctor sem posuere. Suspendisse eleifend nulla in leo volutpat ultricies sed in urna. Maecenas eget bibendum tellus, id fermentum purus. Sed non mauris ut arcu pharetra iaculis. Nunc nisl dolor, auctor sed rutrum at, dignissim nec metus. Pellentesque pellentesque at nulla eu pulvinar. The editions are powered by TEI Boilerplate and the comparison views are faciliated by the Versioning Machine.</p>
+        <hr>
+        <h4 id="sub-header">Manuscript Editions</h4>
+        <div id="manuscript_list">
+          <a href="/content/br.xml">Bologna</a> |
+          <a href="/content/p.xml">Padua</a> |
+          <a href="/content/b.xml">Berlin</a> |
+          <a href="/content/t.xml">Turin</a> |
+          <a href="/hell_scene.html">Hell Scene Comparison</a>
+        </div>
+        <hr>
+        <h4 id="sub-header">Participants</h4>
+        <div id="manuscript_list">
+          Leslie Zarker Morgan |
+          Shira Schwam-Baird |
+          Stephen Patrick McCormick <br>
+          Alan Bernstein |
+          Jean-Claude Vallecalle<br>
+          Mackenzie Brooks |
+          Jeff Barry |
+          Brandon Walsh
+        </div>
+       <hr>
+      </div>
+
     </section>
     <div class="footer">
-      <a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu.jpg"></a>
+      <a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu_blue.jpg"></a>
+      <a href="https://www.neh.gov/"><img src="/img/neh_logo.png"></a>
     </div>
     <script src="/js/vendor/jquery.js"></script>
     <script src="/js/foundation.min.js"></script>
