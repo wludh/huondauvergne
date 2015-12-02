@@ -109,10 +109,10 @@
         <ul class="right">
           <li><a href="/edition.html">Edition</a>
             <ul>
-              <li><a href="/content/br.xml">Bologna Fragment</a></li>
-              <li><a href="/content/p.xml">Padua Manuscript</a></li>
-              <li><a href="/content/b.xml">Berlin Manuscript</a></li>
-              <li><a href="/content/t.xml">Turin Manuscript</a></li>
+              <li><a href="/content/br.xml">Bologna</a></li>
+              <li><a href="/content/p.xml">Padua</a></li>
+              <li><a href="/content/b.xml">Berlin</a></li>
+              <li><a href="/content/t.xml">Turin</a></li>
               <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
