@@ -423,6 +423,11 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
   text-align:center; margin: 0 auto;
 }
 
+#comparison-hr{
+  width:66.7%;
+  text-align:center; margin: 0 auto;
+}
+
 .witnessMenu{
   width: 100px;
 }
