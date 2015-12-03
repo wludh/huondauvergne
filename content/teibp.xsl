@@ -94,32 +94,20 @@
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li class="">
-            <a href="/bibliography.html">Bibliography</a>
-          </li>
+          <li class=""><a href="/bibliography.html">Bibliography</a></li>
         </ul>
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li class=""><a href="/about.html">About</a></li>
-        </ul>
-      </section>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li><a href="/edition.html">Edition</a>
+          <li><a href="/edition.html">Critical Editions</a>
             <ul>
-              <li><a href="/content/br.xml">Bologna</a></li>
-              <li><a href="/content/p.xml">Padua</a></li>
-              <li><a href="/content/b.xml">Berlin</a></li>
-              <li><a href="/content/t.xml">Turin</a></li>
+				<li><a href="/content/b.xml">Berlin (B)</a></li>
+				<li><a href="/content/t.xml">Turin (T)</a></li>
+				<li><a href="/content/p.xml">Padua (P)</a></li>
+				<li><a href="/content/br.xml">Barbieri Fragment (Br)</a></li>
               <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
-        </ul>
-      </section>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li class=""><a href="/introduction.html">Introduction</a></li>
         </ul>
       </section>
     </nav>
