@@ -54,7 +54,7 @@
     <xsl:param name="foundationCSS" select="concat($filePrefix,'/css/foundation.css')"/>
     <xsl:param name="appCSS" select="concat($filePrefix, '/css/app.css')"/>
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
-	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
+	<!-- <xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/> -->
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
 <!--     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
     <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/> -->
@@ -120,7 +120,7 @@
 				<hr id="tei-hr"></hr>
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
-			    <script src="/js/vendor/jquery.js"></script>
+<!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
     <script>
@@ -313,7 +313,7 @@
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
             <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
-            <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
+            <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
 			<script type="text/javascript" src="{$teibpJS}"></script>
 <!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
             <script type="text/javascript" src="{$foundationtopbarJS}"></script> -->
