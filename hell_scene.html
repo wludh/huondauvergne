@@ -50,12 +50,12 @@
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="/edition.html">Edition</a>
+          <li><a href="/edition.html">Critical Editions</a>
             <ul>
-              <li><a href="/content/br.xml">Bologna</a></li>
-              <li><a href="/content/p.xml">Padua</a></li>
-              <li><a href="/content/b.xml">Berlin</a></li>
-              <li><a href="/content/t.xml">Turin</a></li>
+              <li><a href="/content/b.xml">Berlin (B)</a></li>
+              <li><a href="/content/t.xml">Turin (T)</a></li>
+              <li><a href="/content/p.xml">Padua (P)</a></li>
+              <li><a href="/content/br.xml">Barbieri Fragment (Br)</a></li>
               <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
@@ -76,20 +76,13 @@
 
     <section class="row">
       <div class="large-8 large-offset-2 columns">
-        There are four manuscript witnesses of this epic: Berlin Kupferstichkabinett 
-        78 D 8 (olim Hamilton 337)(dated 1341); Padua, Biblioteca del Seminario Vescovile MS 32 (late 
-        fourteenth/early fifteenth century); Turin, Biblioteca Nazionale N III 19 (dated 1441); and 
-        the Barbieri fragment, Bologna, Biblioteca dell'Archiginnasio B. 3489 (fourteenth century). 
 
-        <p>Editions of the text are by Leslie Zarker Morgan (Berlin and Turin) and Stephen P. McCormick 
-        (Padua and Bologna). Translation is by Shira Schwam-Baird.
+        <p>Carlo Martello, emperor of France, sends Huon count of Auvergne on an impossible mission to seek out the entrance to Hell and get tribute from Lucifer. Huon travels through many lands and kingdoms, including France, Provence, Hungary, Germany, Santiago de Compostela, Rome, Mount Etna, Armenia, Egypt, and the legendary lands of Prester John. Huon's seven-year journey ultimately leads him to the entrance to Hell, where he must battle a dragon. He is then greeted by a devil disguised as a pilgrim, and two guides, Aeneas and William of Orange, an Old French epic hero.</p>
+ 
+        <p>The Hell scene is the only narrative segment preserved in all four Franco-Italian manuscript witnesses. Scholars have noted the complex relationship this scene has with its Dantean precedent (Morgan, Bennett, Scattolini) and with the popularity of Hell narratives after Dante's poem (McCormick). The following Hell scene comparison uses <a href="http://v-machine.org/index.php">Versioning Machine</a>, an interactive web interface developed by Susan Schreibman at the Maryland Institute of Technology for displaying manuscript versions side-by-side.</p>
+         
+        <p>The following text is being made available for demonstration purposes only. It may not be reproduced without consent. For further information, please contact Leslie Zarker Morgan (lmorgan@loyola.edu), Shira Schwam-Baird (sschwam@unf.edu), or Stephen P. McCormick (mccormicks@wlu.edu).</p>
 
-        Text Encoding by  Stephen P. McCormick and  Mackenzie Brooks. <a href="http://v-machine.org/index.php">Powered by the Versioning Machine</a>.</p>
-
-        <p>This poem is being made available for demonstration purposes only. It may not
-        be reproduced without consent. For further information, please contact Stephen P.
-        McCormick at mccormicks@wlu.edu.
-        </p>
 				<hr>
             <!-- Note: for whatever reason deleting this first button breaks the functionality on the panels. Keeping it hidden allows them to keep working. -->
         <input type="button" id="newPanel" value="New Version" onclick="openPanel();" style="visibility:hidden;">
@@ -137,7 +130,7 @@
         <div class="panel mssPanel">
           <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/closePanel.png" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
 						<option selected value="B">1: Berlin</option>
-						<option value="Br">2: Bologna</option>
+						<option value="Br">2: Barbieri Fragment</option>
 						<option value="P">3: Padua</option>
 						<option value="T">4: Turin</option></select>
 					</div>
@@ -185,7 +178,7 @@
             <div class="panel mssPanel">
                <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/closePanel.png" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
                      <option value="B">1: Berlin</option>
-                     <option selected value="Br">2: Bologna</option>
+                     <option selected value="Br">2: Barbieri Fragment</option>
                      <option value="P">3: Padua</option>
                      <option value="T">4: Turin</option></select></div>
                <div class="mssContent">

@@ -37,13 +37,15 @@ header{
   margin-bottom: 10px;
 }
 
+.editorial_staff{
+}
+
 /*Top bar*/
 
 .top-bar {
   background: #000;
   width:100%;
   height: 48px;
-
 }
 
 nav{
@@ -109,8 +111,12 @@ p.tagline {
   margin-top:-15px;
 }
 
-#manuscript_list{
+#manuscript_list_index{
   text-align: center;
+}
+#manuscript_list_editions{
+  padding-left: 10%;
+  padding-right: 10%
 }
 
 .imgprofile {
