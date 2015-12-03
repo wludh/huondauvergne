@@ -20,6 +20,10 @@ body{
 
 }
 
+section div ul li {
+  clear: left;
+}
+
 #banner{
   padding-top:15px;
   padding-bottom: 15px;
@@ -37,7 +41,7 @@ header{
   margin-bottom: 10px;
 }
 
-.editorial_staff{
+#editorial_staff{
 }
 
 /*Top bar*/
@@ -99,7 +103,11 @@ p {
 }
 
 
-h1, h4 {
+.participant_section{
+  padding-bottom: 10px;
+}
+
+h1, h4, h5 {
   color:#333;
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
   margin-bottom:0;
@@ -215,30 +223,6 @@ html{
   overflow-x:hidden;
   overflow-x:hidden;
 }
-
-#landing{
-/*  background-color: #f0f0f0;
-  background-image: none;*/
-/*  height:auto;
-  width:100%;
-  padding:0;
-  margin:0;
-  max-width: 100%;
-  overflow-x:hidden;
-  overflow-x:hidden;*/
-}
-
-/*@media only screen and (max-width: 480px){
-  html,body{
-  width: 100%;
-  max-width: 100%;
-  overflow-x:hidden;
-  }
-  body{
-    min-height: 100%;
-    margin-bottom: 0px;
-  }
-}*/
 
 /*dropdown/side menus*/
 
@@ -371,15 +355,6 @@ text body{
   transition: all .55s ease;
 }
 /*
-.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
-    outline: none;
-    opacity: 1;
-    margin-left: -50px;
-  }
- 
-  .container-4:hover button.icon:hover{
-    background: white;
-  }*/
 
   /*Versioning Machine*/
 
@@ -435,7 +410,7 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
 }
 
 .witnessMenu{
-  width: 100px;
+  width: 72%;
 }
 
 td{

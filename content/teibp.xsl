@@ -94,13 +94,6 @@
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li class="">
-            <a href="/bibliography.html">Bibliography</a>
-          </li>
-        </ul>
-      </section>
-      <section class="top-bar-section">
-        <ul class="right">
           <li class=""><a href="/about.html">About</a></li>
         </ul>
       </section>
@@ -115,11 +108,6 @@
               <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
             </ul>
           </li>
-        </ul>
-      </section>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li class=""><a href="/introduction.html">Introduction</a></li>
         </ul>
       </section>
     </nav>
