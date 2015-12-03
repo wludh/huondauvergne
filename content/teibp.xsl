@@ -94,7 +94,7 @@
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li class=""><a href="/about.html">About</a></li>
+          <li class=""><a href="/bibliography.html">Bibliography</a></li>
         </ul>
       </section>
       <section class="top-bar-section">
