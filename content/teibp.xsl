@@ -55,12 +55,12 @@
     <xsl:param name="appCSS" select="concat($filePrefix, '/css/app.css')"/>
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
 	<!-- <xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/> -->
-	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
-<!--     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
+<!-- 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
+ --><!--     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
     <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/> -->
 <!--     <xsl:param name="modernizrJS" select="concat($filePrefix, '/js/vendor/modernizr.js')"/> -->
-	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
-
+<!-- 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
+ -->
 	
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>
@@ -314,8 +314,8 @@
             <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
-			<script type="text/javascript" src="{$teibpJS}"></script>
-<!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
+<!-- 			<script type="text/javascript" src="{$teibpJS}"></script>
+ --><!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
             <script type="text/javascript" src="{$foundationtopbarJS}"></script> -->
 <!-- 			<script type="text/javascript" src="{$modernizrJS}"></script>
  -->			<script type="text/javascript">
