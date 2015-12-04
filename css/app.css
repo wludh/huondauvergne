@@ -189,6 +189,10 @@ tei-title {
  !important;
 }
 
+TEI head{
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+}
+
 teiHeader{
   display: none;
 }
