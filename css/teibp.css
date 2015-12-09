@@ -1031,20 +1031,21 @@ note {
   display: block;
   margin: 1.5em auto 1.5em auto;
   padding: .5em 1.5em 1.5em 1.5em;
-  border: 1px solid black;
-  border-radius: 15px;
-  width: 325px;
-  position: relative;
-  border: 1px solid #aaaaaa;
-  background: #fafafa;
+/*  border: 1px solid black;
+  border-radius: 15px;*/
+/*  width: 325px;
+*/  position: relative;
+  /*border: 1px solid #aaaaaa;
+  background: #fafafa;*/
   /* reset text-indent for note with <l> ancestors. */
-
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  font-size: 16px;
   text-indent: 0;
-  font-size: 85%;
-  text-align: justify;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+/*  font-size: 85%;
+*/  text-align: justify;
+/*  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);*/
 }
 notesStmt {
   /* do we want to box each individual <note> if they're in a <notesStmt>? */
