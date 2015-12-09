@@ -404,6 +404,14 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
   text-align:left;
 }
 
+table{
+  border:none;
+}
+
+table, tr, th{
+  padding:none;
+}
+
 #tei-hr{
   width:40%;
   text-align:center; margin: 0 auto;
@@ -415,7 +423,7 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
 }
 
 .witnessMenu{
-  width: 72%;
+  width: 69%;
 }
 
 td{

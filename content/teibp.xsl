@@ -115,7 +115,7 @@
 <!--main content-->
                 <TEI>
                 	<div id="hidden-title"></div>
-                	Edited by: <div id="hidden-byline"></div>
+                	<div id="hidden-byline"></div>
                 	<div id="hidden-introduction"></div>
                 </TEI>
                 <hr id="tei-hr"/>
