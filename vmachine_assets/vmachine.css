@@ -32,7 +32,7 @@ div#mssArea div.panel div.panelBanner {
 div#mssArea div.mssPanel {
    background-color: rgba(0, 0, 0, 0);
    /* padding-bottom: 5em; */
-   margin-right: 20px;
+   margin-right: 5px;
 }
 
 div#mssArea div.panel div.panelBanner img.closePanel {

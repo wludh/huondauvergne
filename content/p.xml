@@ -77,10 +77,19 @@
                         <idno>MS 32</idno>
                     </msIdentifier>
                     <head type="msHeading">
-                        <title xml:lang="FI">Huon d'Auvergne</title>
+                        <title xml:lang="FI">Huon d'Auvergne, Biblioteca del Seminario Vescovile di Padova, Manuscript 32</title>
                         <origPlace cert="low">Padua</origPlace>
                         <origDate cert="medium" evidence="internal">second half of fourteenth century or first half of fifteenth</origDate>
                 <!-- <seg type="textLang" subtype="LAT">Latin</seg> ? See Cummings 55 -->
+                        <note>Manuscript 32 of the Biblioteca del Seminario Vescovile di Padova (P) is a codex of lightly browned paper 
+                            with clear and readable text. Pio Rajna transcribed the contents of P into a notebook, now housed at the 
+                            Biblioteca Marucelliana in Florence (Bibl. Marucelliana Carte Rajna XII.M.101). Folded and loose between the 
+                            pasteboard and the first folio is a letter by the Italian philologist Pio Rajna with a comment by the French 
+                            philologist Gaston Paris. The scribe of P does not date the manuscript, as in B and T. Palaeographers have 
+                            dated P to between the second half of the fourteenth and the first half of the fifteenth centuries. Unlike 
+                            Br, no watermarks help determine provenance. Venetian linguistic elements suggest a northern Italian provenance, 
+                            most likely in the vicinity of Padua. The manuscript consists of 117 folios and 5690 lines of text bound into 
+                            twelve gatherings measuring 22 cm by 29.5 cm.</note>
                         <note>
                             <p>The manuscript entered early into the collection of the Seminario Vescovile. Michela Scattolini notes that 
                                MS P may have belonged to the collection of Alfonso Speroni-Alvarotti, and would have been acquired by 

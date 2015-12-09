@@ -101,8 +101,8 @@
         <ul class="right">
           <li><a href="/edition.html">Critical Editions</a>
             <ul>
-				<li><a href="/content/b.xml">Berlin (B)</a></li>
-				<li><a href="/content/t.xml">Turin (T)</a></li>
+				<li><a href="/b.html">Berlin (B)</a></li>
+				<li><a href="/t.html">Turin (T)</a></li>
 				<li><a href="/content/p.xml">Padua (P)</a></li>
 				<li><a href="/content/br.xml">Barbieri Fragment (Br)</a></li>
               <li><a href="/hell_scene.html">Hell Scene Comparison</a></li>
@@ -113,7 +113,12 @@
     </nav>
   </div><!--end top bar nav-->
 <!--main content-->
-                <TEI><div id="hidden-title"></div></TEI>
+                <TEI>
+                	<div id="hidden-title"></div>
+                	Edited by: <div id="hidden-byline"></div>
+                	<div id="hidden-introduction"></div>
+                </TEI>
+                <hr id="tei-hr"/>
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
@@ -414,6 +419,9 @@
                 <script>
 var element = jQuery('tei-title:first').clone();
 element.appendTo('#hidden-title');
+
+var element = jQuery('note:first').clone();
+element.appendTo('#hidden-introduction');
 </script>
 
 	</xsl:variable>
