@@ -5,8 +5,18 @@ div#mssArea {
    margin-right: auto;*/
 /*   padding: 20px;
 */
-   padding-left: 2.25%;
-   padding-right: 2.25%;
+}
+
+.outer{
+   float: left;
+    position: relative;
+    left: 50%;
+}
+
+.inner{
+   float: left;
+    position: relative;
+    left: -50%;
 }
 div#mssArea div#manuscripts {
    float: left;

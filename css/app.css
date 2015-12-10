@@ -363,9 +363,7 @@ text body{
 
   /*Versioning Machine*/
 
-#mainControls{
-  text-align: center;
-}
+
 
 #line_toggle, label{
   float:left;
@@ -388,9 +386,9 @@ input[type="checkbox"]{
   display: inline;
   border-style:none;
   float:left;
-  width:50%;
   text-decoration: underline;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .panelBanner, .witnessMenu{
