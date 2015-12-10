@@ -363,9 +363,7 @@ text body{
 
   /*Versioning Machine*/
 
-#mainControls{
-  text-align: center;
-}
+
 
 #line_toggle, label{
   float:left;
@@ -388,9 +386,9 @@ input[type="checkbox"]{
   display: inline;
   border-style:none;
   float:left;
-  width:50%;
   text-decoration: underline;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .panelBanner, .witnessMenu{
@@ -404,6 +402,14 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
   text-align:left;
 }
 
+table{
+  border:none;
+}
+
+table, tr, th{
+  padding:none;
+}
+
 #tei-hr{
   width:40%;
   text-align:center; margin: 0 auto;
@@ -415,7 +421,7 @@ font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', G
 }
 
 .witnessMenu{
-  width: 72%;
+  width: 69%;
 }
 
 td{

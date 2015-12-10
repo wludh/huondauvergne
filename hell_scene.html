@@ -76,10 +76,12 @@
 				<hr>
             <!-- Note: for whatever reason deleting this first button breaks the functionality on the panels. Keeping it hidden allows them to keep working. -->
         <input type="button" id="newPanel" value="New Version" onclick="openPanel();" style="visibility:hidden;">
-	      <div id="mainControls">
-	        <div id="add_witness"><input type="button" id="newPanel" value="New Version" onclick="openPanel();"></div>
-	        <div id="line_toggle"><label for="toggleLineNumbers">Line Numbers</label><input type="checkbox" id="toggleLineNumbers" onclick="toggleLineNumbers(this.checked);"></div>
-	      </div>
+	      <div class="outer">
+          <div id="mainControls" class="inner">
+  	        <div id="add_witness"><input type="button" id="newPanel" value="New Version" onclick="openPanel();"></div> 
+  	        <div id="line_toggle"><label for="toggleLineNumbers">Line Numbers</label><input type="checkbox" id="toggleLineNumbers" onclick="toggleLineNumbers(this.checked);"></div>
+  	      </div>
+        </div>
       </div>
     </section>
     <div class="panel" id="bibPanel">
@@ -115,8 +117,8 @@
 				</p>
       </div>
    	</div>
-    <div id="mssArea">
-      <div id="manuscripts">
+    <div id="mssArea" class="outer">
+      <div id="manuscripts" class="inner">
         <div class="panel mssPanel">
           <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="/vmachine_assets/closePanel.png" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
 						<option selected value="B">1: Berlin</option>
@@ -160,8 +162,8 @@
 										<div class="line lined0e219">
 										  <div class="linenumber" style="visibility: hidden;">15</div><span class="apparatus loc-21" onclick="matchApp(this.className);"><span class="reading Br">de vestre mere qe avoit le cor enclus</span></span><span class="apparatus loc-20" onclick="matchApp(this.className);"><span class="reading P">che vui avesse su la croxe sor lo fus</span></span><span class="apparatus loc-22" onclick="matchApp(this.className);"><span class="reading B">quant de la lance vos fu feit li pertus</span><span class="reading T">quando de la lanza a voy fo fato lo pertuso</span></span></div>
 										</td>
-                    <td align="right" valign="top"></td>
-                  </tr>
+<!--                     <td align="right" valign="top"></td>
+ -->                  </tr>
                 </table>
               </div>
             </div>
@@ -207,8 +209,8 @@
                  <div class="line lined0e219">
                     <div class="linenumber" style="visibility: hidden;">15</div><span class="apparatus loc-21" onclick="matchApp(this.className);"><span class="reading Br">de vestre mere qe avoit le cor enclus</span></span><span class="apparatus loc-20" onclick="matchApp(this.className);"><span class="reading P">che vui avesse su la croxe sor lo fus</span></span><span class="apparatus loc-22" onclick="matchApp(this.className);"><span class="reading B">quant de la lance vos fu feit li pertus</span><span class="reading T">quando de la lanza a voy fo fato lo pertuso</span></span></div>
                   </td>
-                <td align="right" valign="top"></td>
-              </tr>
+<!--                 <td align="right" valign="top"></td>
+ -->              </tr>
             </table>
           </div>
         </div>
