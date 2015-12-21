@@ -140,6 +140,7 @@
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
             <script src="/js/browse.js"></script>
+            <script src="/js/background.js"></script>
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
