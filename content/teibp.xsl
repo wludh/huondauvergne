@@ -117,14 +117,28 @@
                 	<div id="hidden-title"></div>
                 	<div id="hidden-byline"></div>
                 	<div id="hidden-introduction"></div>
+                <input type="text" id="selected_laisse" placeholder="Select a laisse to view."/>
+                <div id="top-buttons">
+                    <a onclick="reveal_laisse()" id="top">Show Laisse</a> | 
+                    <a onclick="reveal_all()">Reveal All</a> | 
+                    <a onclick="hide_all()">Hide All</a>
+                </div>
                 </TEI>
-                <hr id="tei-hr"/>
+                
+                <hr id="tei-hr-1"/>
+
 				<div id="tei_wrapper">
 					<xsl:apply-templates/>
 				</div>
-				<hr id="tei-hr"></hr>
+                <div id="bottom-buttons">
+                    <a onclick="browse_previous()">Previous</a> | 
+                    <a onclick="browse_next()">Next</a> | 
+                    <a href="#top">Top</a>
+                </div>
+				<hr id="tei-hr-2"></hr>
 				<xsl:copy-of select="$htmlFooter"/>
 			</body>
+            <script src="/js/browse.js"></script>
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>

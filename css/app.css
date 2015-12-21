@@ -3,6 +3,20 @@
   font-weight: normal;
 }
 
+.visible{
+  display: block !important;
+}
+
+.hidden{
+  display: none;
+}
+
+#selected_laisse{
+  max-width: 155px;
+  text-align: center;
+  margin: auto;
+}
+
 #special-footer{
   bottom:0;
 }
@@ -191,6 +205,33 @@ TEI {
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   font-size: 16px;
 padding-bottom: 1px;
+
+}
+
+#top-buttons{
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+
+#bottom-buttons{
+  text-align: center;
+  display:none;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+
+#top-buttons a, #bottom-buttons a{
+  color: #0078a0;
+}
+
+#top-buttons a:hover, #bottom-buttons a:hover{
+  text-decoration: none;
+}
+
+lg{
+  display: none;
 }
 
 tei-title {
@@ -410,9 +451,13 @@ table, tr, th{
   padding:none;
 }
 
-#tei-hr{
+#tei-hr-1, #tei-hr-2{
   width:40%;
   text-align:center; margin: 0 auto;
+}
+
+#tei-hr-1{
+  display:none;
 }
 
 #comparison-hr{
