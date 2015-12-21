@@ -255,7 +255,16 @@ teiHeader{
 /* Background image*/
 
 html{
-  background-color: #f0f0f0;
+  background-color: rgba(0,0,0,0.4);
+  width:100%;
+  padding:0;
+  margin:0;
+  max-width: 100%;
+  overflow-x:hidden;
+  overflow-x:hidden;
+}
+
+.background-image{
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))),url("/img/hours_compressed.jpg");
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/hours_compressed.jpg");
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/img/hours_compressed.jpg");
@@ -268,14 +277,7 @@ html{
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width:100%;
-  padding:0;
-  margin:0;
-  max-width: 100%;
-  overflow-x:hidden;
-  overflow-x:hidden;
 }
-
 /*dropdown/side menus*/
 
 ul li ul {
