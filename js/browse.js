@@ -19,8 +19,10 @@ function reveal_laisse(){
     var selected_laisse = select_laisse();
 
     // makes that laisse vissible.
-    if(selected_laisse){
+    if(selected_laisse > 0 && selected_laisse < $("lg").length){
         $("lg[n=" + selected_laisse + "], #bottom-buttons, #tei-hr-1").addClass("visible");
+    } else{
+        window.alert("Please type a number between 1 and " + $("lg").length + ", the number of laisses in this edition.");
     };
 };
 
@@ -50,6 +52,13 @@ function browse_previous(){
     // change the old value
     $("#selected_laisse").val(parseInt(current_laisse)-1);
 };
+
+function display_laisse_num(){
+    var num_laisses =  "There are " + $("lg").length + " laisses in this edition.";
+    $("#num_laisses").text(num_laisses);
+};
+
+display_laisse_num();
 
 // This will have a default laisse loaded.
 // $("#selected_laisse").val(parseInt(1));

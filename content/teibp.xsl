@@ -117,6 +117,7 @@
                 	<div id="hidden-title"></div>
                 	<div id="hidden-byline"></div>
                 	<div id="hidden-introduction"></div>
+                    <div id="num_laisses"></div>
                 <input type="text" id="selected_laisse" placeholder="Select a laisse to view."/>
                 <div id="top-buttons">
                     <a onclick="reveal_laisse()" id="top">Show Laisse</a> | 

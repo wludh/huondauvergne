@@ -208,6 +208,11 @@ padding-bottom: 1px;
 
 }
 
+#num_laisses{
+  text-align:center;
+  padding-bottom: 16px;
+}
+
 #top-buttons{
   text-align: center;
   padding-top: 16px;
