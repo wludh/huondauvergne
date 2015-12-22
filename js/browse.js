@@ -19,7 +19,7 @@ function reveal_laisse(){
     var selected_laisse = select_laisse();
 
     // makes that laisse vissible.
-    if(selected_laisse > 0 && selected_laisse < $("lg").length){
+    if(selected_laisse > 0 && selected_laisse <= $("lg").length){
         $("lg[n=" + selected_laisse + "], #bottom-buttons, #tei-hr-1").addClass("visible");
     } else{
         window.alert("Please type a number between 1 and " + $("lg").length + ", the number of laisses in this edition.");
@@ -38,27 +38,33 @@ function hide_all(){
 
 function browse_next(){
     var current_laisse = document.getElementById("selected_laisse").value;
-    hide_laisse();
-    $("lg[n=" + (parseInt(current_laisse) + 1) + "], #bottom-buttons,#tei-hr-1").addClass("visible");
-    $("#selected_laisse").val(parseInt(current_laisse)+1);
+    if((parseInt(current_laisse)+1) <= $("lg").length){
+        hide_laisse();
+        $("lg[n=" + (parseInt(current_laisse) + 1) + "], #bottom-buttons,#tei-hr-1").addClass("visible");
+        $("#selected_laisse").val(parseInt(current_laisse)+1);
+    };
 };
 
 function browse_previous(){
     var current_laisse = document.getElementById("selected_laisse").value;
-    hide_laisse();
-    //reveal the new laisse
-     $("lg[n=" + (parseInt(current_laisse) - 1) + "], #bottom-buttons,#tei-hr-1").addClass("visible");
-    
-    // change the old value
-    $("#selected_laisse").val(parseInt(current_laisse)-1);
+    if((parseInt(current_laisse)-1) >=1){
+        hide_laisse();
+        //reveal the new laisse
+         $("lg[n=" + (parseInt(current_laisse) - 1) + "], #bottom-buttons,#tei-hr-1").addClass("visible");
+        
+        // change the old value
+        $("#selected_laisse").val(parseInt(current_laisse)-1);
+    }
 };
 
 function display_laisse_num(){
-    var num_laisses =  "There are " + $("lg").length + " laisses in this edition.";
+    var num_laisses =  $("lg").length + " laisses in this edition.";
     $("#num_laisses").text(num_laisses);
 };
 
 display_laisse_num();
+$("#selected_laisse").val(1);
+reveal_laisse();
 
 // This will have a default laisse loaded.
 // $("#selected_laisse").val(parseInt(1));

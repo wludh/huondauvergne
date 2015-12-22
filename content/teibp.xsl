@@ -113,31 +113,37 @@
     </nav>
   </div><!--end top bar nav-->
 <!--main content-->
-                <TEI>
-                	<div id="hidden-title"></div>
-                	<div id="hidden-byline"></div>
-                	<div id="hidden-introduction"></div>
-                    <div id="num_laisses"></div>
-                <input type="text" id="selected_laisse" placeholder="Select a laisse to view."/>
-                <div id="top-buttons">
-                    <a onclick="reveal_laisse()" id="top">Show Laisse</a> | 
-                    <a onclick="reveal_all()">Reveal All</a> | 
-                    <a onclick="hide_all()">Hide All</a>
+                <div id="TEI_left_panel">
+                    <TEI>
+                    	<div id="hidden-title"></div>
+                    	<div id="hidden-byline"></div>
+                    	<div id="hidden-introduction"></div>
+                        <div class="center">
+                        <div id="num_laisses"></div>
+                        <input type="text" id="selected_laisse"/>
+                        </div>
+                        <div id="top-buttons">
+                            <a onclick="reveal_laisse()" id="top">Show Laisse</a> | 
+                            <a onclick="reveal_all()">Reveal All</a> | 
+                            <a onclick="hide_all()">Hide All</a> | 
+                            <a onclick="browse_previous()">Previous</a> | 
+                            <a onclick="browse_next()">Next</a>
+                        </div>
+                        <footer class="footer">
+                            <a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu_blue.jpg"></img></a>
+                            <a href="https://www.neh.gov/"><img src="/img/neh_logo.png"></img></a>
+                        </footer>
+                    </TEI>
                 </div>
-                </TEI>
-                
-                <hr id="tei-hr-1"/>
+                <div id="TEI_reader">
+    				<div id="tei_wrapper">
+    					<xsl:apply-templates/>
+    				</div>
+                    <div id="bottom-buttons">
 
-				<div id="tei_wrapper">
-					<xsl:apply-templates/>
-				</div>
-                <div id="bottom-buttons">
-                    <a onclick="browse_previous()">Previous</a> | 
-                    <a onclick="browse_next()">Next</a> | 
-                    <a href="#top">Top</a>
+                    </div>
                 </div>
-				<hr id="tei-hr-2"></hr>
-				<xsl:copy-of select="$htmlFooter"/>
+    				<xsl:copy-of select="$htmlFooter"/>
 			</body>
             <script src="/js/browse.js"></script>
             <script src="/js/background.js"></script>
@@ -424,10 +430,6 @@
 	</xd:doc>
 	<xsl:variable name="htmlFooter">
 		       
-		<footer class="footer">
-			<a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu_blue.jpg"></img></a>
-			<a href="https://www.neh.gov/"><img src="/img/neh_logo.png"></img></a>
-		</footer>
 <!--               <script>
             $(document).foundation();
             </script>
