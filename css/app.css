@@ -10,12 +10,22 @@
 top-bar{
   position: fixed;
 }
+@media screen and (min-width: 1100px){
+  note{
+    margin: 0;
+    padding-top:16px;
+    padding-bottom: 16px;
+    padding-right: 24px;
+  }
+}
 
-note{
-  margin: 0;
-  padding-top:16px;
-  padding-bottom: 16px;
-  padding-right: 24px;
+@media screen and (max-width: 1100px){
+  note{
+    display: none;
+  }
+  toggle_note{
+    display:block;
+  }
 }
 
 #TEI_reader{
