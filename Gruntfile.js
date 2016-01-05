@@ -30,11 +30,11 @@ module.exports = function(grunt){
 		watch:{
 			js: {
 				files: ['js/**/*.js'],
-				tasks:['concat:base_js', 'uglify'],
+				tasks:['concat', 'uglify'],
 			},
 			css: {
 				files:['css/**/*.css'],
-				tasks: ['concat:base_css'],
+				tasks: ['concat'],
 			}
 		},
 		uglify: {
