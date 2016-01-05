@@ -48,11 +48,7 @@
 		
 	-->
 	<xsl:param name="filePrefix" select="'..'"/>
-	
-	<xsl:param name="teibpCSS" select="concat($filePrefix,'/css/teibp.css')"/>
-    <xsl:param name="normalizeCSS" select="concat($filePrefix, '/css/normalize.css')"/>
-    <xsl:param name="foundationCSS" select="concat($filePrefix,'/css/foundation.css')"/>
-    <xsl:param name="appCSS" select="concat($filePrefix, '/css/app.css')"/>
+    <xsl:param name="teiCSS" select="concat($filePrefix, '/build/css/tei_styles.css')"/>
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
 	<!-- <xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/> -->
 <!-- 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
@@ -313,10 +309,7 @@
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
-            <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
-            <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
-            <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
+            <link id="teicss" rel="stylesheet" type="text/css" href="{$teiCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
 <!-- 			<script type="text/javascript" src="{$teibpJS}"></script>
