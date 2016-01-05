@@ -25,6 +25,7 @@
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-uglify": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-uncss": "^0.4.4"
+    "grunt-uncss": "^0.4.4",
+    "grunt-xmlmin": "^0.1.7"
   }
 }

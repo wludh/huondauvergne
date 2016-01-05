@@ -13,7 +13,8 @@ module.exports = function(grunt){
 				dest: 'build/css/base_styles.css',
 			},
 			tei_js: {
-
+				src: ['js/browse.js', 'js/background.js'],
+				dest: 'build/js/tei_scripts.js'
 			},
 			tei_css: {
 				src: ['css/teibp.css', 'build/css/base_styles.css'],
@@ -35,7 +36,7 @@ module.exports = function(grunt){
 			},
 			css: {
 				files:['css/**/*.css'],
-				tasks: ['concat'],
+				tasks: ['concat', 'cssmin'],
 			}
 		},
 		uglify: {
@@ -45,6 +46,11 @@ module.exports = function(grunt){
 	      	base: {
 	      		files:{
 	      			'build/js/base_scripts.js': ['build/js/base_scripts.js'],
+	      		}
+	      	},
+	      	tei: {
+	      		files:{
+	      			'build/js/tei_scripts.js': ['build/js/tei_scripts.js']
 	      		}
 	      	},
 	      	vmachine:{
@@ -70,6 +76,18 @@ module.exports = function(grunt){
 				}
 			}
 		},
+		// can be used to minify xml - wouldn't integrate super tidily into the workflow at this stage. might be worth coming back to this later.
+		// xmlmin: {                                       // Task 
+  //   		dist: {                                     // Target 
+  //           	options: {                              // Target options 
+  //               	preserveComments: false
+  //           	},
+  //           files: {                                // Dictionary of files 
+  //               'content/p.tidy.xml': 'content/p.xml',   // 'destination': 'source' 
+  //      		}
+  //       }
+  //   }
+});
 		// causing problems with foundation, so left uncommented for now. appears optimized enough at least.
 		// uncss: {
 		// 	base: {
@@ -97,14 +115,15 @@ module.exports = function(grunt){
 		// 		}
 		// 	}
 		// }
-	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-uncss');
+	// grunt.loadNpmTasks('grunt-uncss');
+
+	grunt.loadNpmTasks('grunt-xmlmin');
 
 	grunt.registerTask('default', ['clean','concat', 'uglify', 'cssmin', 'watch']);
 

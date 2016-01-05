@@ -109,8 +109,10 @@
     </nav>
   </div><!--end top bar nav-->
 <!--main content-->
+
                 <div id="TEI_left_panel">
                     <TEI>
+                    	<div id="left-content">
                     	<div id="hidden-title"></div>
                     	<div id="hidden-byline"></div>
                     	<div id="hidden-introduction"></div>
@@ -125,12 +127,15 @@
                             <a onclick="browse_previous()">Previous</a> | 
                             <a onclick="browse_next()">Next</a>
                         </div>
+
                         <footer class="footer">
                             <a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu_blue.jpg"></img></a>
                             <a href="https://www.neh.gov/"><img src="/img/neh_logo.png"></img></a>
                         </footer>
+                    </div>
                     </TEI>
                 </div>
+
                 <div id="TEI_reader">
     				<div id="tei_wrapper">
     					<xsl:apply-templates/>
@@ -140,9 +145,9 @@
                     </div>
                 </div>
     				<xsl:copy-of select="$htmlFooter"/>
+
 			</body>
-            <script src="/js/browse.js"></script>
-            <script src="/js/background.js"></script>
+            <script src="/build/js/tei_scripts.js"></script>
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
