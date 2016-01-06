@@ -48,11 +48,7 @@
 		
 	-->
 	<xsl:param name="filePrefix" select="'..'"/>
-	
-	<xsl:param name="teibpCSS" select="concat($filePrefix,'/css/teibp.css')"/>
-    <xsl:param name="normalizeCSS" select="concat($filePrefix, '/css/normalize.css')"/>
-    <xsl:param name="foundationCSS" select="concat($filePrefix,'/css/foundation.css')"/>
-    <xsl:param name="appCSS" select="concat($filePrefix, '/css/app.css')"/>
+    <xsl:param name="teiCSS" select="concat($filePrefix, '/build/css/tei_styles.css')"/>
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
 	<!-- <xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/> -->
 <!-- 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
@@ -113,8 +109,10 @@
     </nav>
   </div><!--end top bar nav-->
 <!--main content-->
+
                 <div id="TEI_left_panel">
                     <TEI>
+                    	<div id="left-content">
                     	<div id="hidden-title"></div>
                     	<div id="hidden-byline"></div>
                     	<div id="hidden-introduction"></div>
@@ -129,12 +127,15 @@
                             <a onclick="browse_previous()">Previous</a> | 
                             <a onclick="browse_next()">Next</a>
                         </div>
+
                         <footer class="footer">
                             <a href="https://digitalhumanities.wlu.edu/"><img src="/img/wlu_blue.jpg"></img></a>
                             <a href="https://www.neh.gov/"><img src="/img/neh_logo.png"></img></a>
                         </footer>
+                    </div>
                     </TEI>
                 </div>
+
                 <div id="TEI_reader">
     				<div id="tei_wrapper">
     					<xsl:apply-templates/>
@@ -144,9 +145,9 @@
                     </div>
                 </div>
     				<xsl:copy-of select="$htmlFooter"/>
+
 			</body>
-            <script src="/js/browse.js"></script>
-            <script src="/js/background.js"></script>
+            <script src="/build/js/tei_scripts.js"></script>
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
@@ -335,10 +336,7 @@
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
-            <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
-            <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
-            <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
+            <link id="teicss" rel="stylesheet" type="text/css" href="{$teiCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
 <!-- 			<script type="text/javascript" src="{$teibpJS}"></script>
