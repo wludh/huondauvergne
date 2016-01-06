@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body id="homepage-body">
@@ -32,7 +33,7 @@
         </section>
         <section class="top-bar-section">
           <ul class="right">
-            <li><a href="/edition.html">Critical Editions</a>
+            <li><a href="/edition.html">Collaborative Edition</a>
               <ul data-options="mobile_show_parent_link: true">
                 <li><a href="/b.html">Berlin (B)</a></li>
                 <li><a href="/t.html">Turin (T)</a></li>
@@ -58,9 +59,11 @@
       <div class="large-8 large-offset-2 columns">
 
 <!--       <img src="/img/hours_cropped.jpg"> -->
-        <p>The Huon d'Auvergne Digital Edition is an inter-institutional, interdisciplinary project that presents the Franco-Italian Huon d'Auvergne romance-epic to a general audience for the first time. Funded by the National Endowment for the Humanities, the project aims to reach a diverse audience of both students and researchers. The modern English translation will make the text available widely for the first time, while the critical editions will allow epic scholars to read and research the Huon d'Auvergne textual tradition. The digital tools presented in this site will eventually facilitate access to high-resolution images of the manuscripts. It is our hope that the textual resources presented on our site will be used to further both research and teaching in epic studies.</p>
+        <p>The Huon d'Auvergne Digital Edition is an international, inter-institutional, interdisciplinary project that presents the Franco-Italian Huon d'Auvergne romance-epic to a general audience for the first time. Funded by the National Endowment for the Humanities, the project aims to reach a diverse audience of both students and researchers. The modern English translation will make the text available widely, while the collaborative edition will allow epic scholars to read and research all four surviving textual witnesses of the Franco-Italian Huon d'Auvergne romance-epic. The digital tools presented in this site will eventually facilitate access to high-resolution images of the manuscripts. It is our hope that the textual resources presented on our site will be used to further both research and teaching in epic studies.</p>
+
+        <p id="disclaimer">The following edition is neither definitive nor complete, and it does not in any way convey the Huon d'Auvergne's current editorial decisions. The text below acts only as a mock-up version to display website functionality until the final editions are uploaded. Check back often for updates and additions.</p>
         <hr>
-        <h4 id="sub-header">Critical Editions</h4>
+        <h4 id="sub-header">Collaborative Edition</h4>
         <div id="manuscript_list_index">
           <a href="/b.html">Berlin (B)</a> |
           <a href="/t.html">Turin (T)</a> |          
@@ -111,5 +114,20 @@
       $(document).foundation();
     </script>
     <script src="js/vendor/modernizr.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//libtrack.wlu.edu/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 244]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//libtrack.wlu.edu/piwik.php?idsite=244" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
   </body>
 </html>

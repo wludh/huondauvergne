@@ -99,7 +99,7 @@
       </section>
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="/edition.html">Critical Editions</a>
+          <li><a href="/edition.html">Collaborative Edition</a>
             <ul>
 				<li><a href="/b.html">Berlin (B)</a></li>
 				<li><a href="/t.html">Turin (T)</a></li>
@@ -116,6 +116,7 @@
                 <TEI>
                 	<div id="hidden-title"></div>
                 	<div id="hidden-byline"></div>
+                	<p id="disclaimer">The following edition is neither definitive nor complete, and it does not in any way convey the Huon d'Auvergne's current editorial decisions. The text below acts only as a mock-up version to display website functionality until the final editions are uploaded. Check back often for updates and additions.</p>
                 	<div id="hidden-introduction"></div>
                 </TEI>
                 <hr id="tei-hr"/>
@@ -124,6 +125,21 @@
 				</div>
 				<hr id="tei-hr"></hr>
 				<xsl:copy-of select="$htmlFooter"/>
+				<!-- Piwik -->
+				<script type="text/javascript">
+				  var _paq = _paq || [];
+				  _paq.push(['trackPageView']);
+				  _paq.push(['enableLinkTracking']);
+				  (function() {
+				    var u="//libtrack.wlu.edu/";
+				    _paq.push(['setTrackerUrl', u+'piwik.php']);
+				    _paq.push(['setSiteId', 244]);
+				    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+				  })();
+				</script>
+				<noscript><p><img src="//libtrack.wlu.edu/piwik.php?idsite=244" style="border:0;" alt="" /></p></noscript>
+				<!-- End Piwik Code -->
 			</body>
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
@@ -317,6 +333,7 @@
             <link id="normalizecss" rel="styleshet" type="text/css" href="{$normalizeCSS}"/>
             <link id="foundationcss" rel="stylesheet" type="text/css" href="{$foundationCSS}"/>
             <link id="appcss" rel="stylesheet" type="text/css" href="{$appCSS}"/>
+            <link rel="icon" type="image/png" href="/img/favicon.png"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
             <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
 <!-- 			<script type="text/javascript" src="{$teibpJS}"></script>

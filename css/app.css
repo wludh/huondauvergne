@@ -1,12 +1,16 @@
 
+#disclaimer{
+  color:red;
+}
+
 .top-bar .toggle-topbar a{
   font-weight: normal;
 }
 
-#special-footer{
+/*#special-footer{
   bottom:0;
 }
-
+*/
 #special-footer hr{
   width:66.7%;
   text-align:center; margin: 0 auto;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
   </head>
   <body>
     <div>
@@ -29,7 +30,7 @@
         </section>
         <section class="top-bar-section">
           <ul class="right">
-            <li><a href="/edition.html">Critical Editions</a>
+            <li><a href="/edition.html">Collaborative Edition</a>
               <ul data-options="mobile_show_parent_link: true">
                 <li><a href="/b.html">Berlin (B)</a></li>
                 <li><a href="/t.html">Turin (T)</a></li>
@@ -180,5 +181,20 @@
        $(document).foundation();
     </script>
     <script src="js/vendor/modernizr.js"></script>
+    <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//libtrack.wlu.edu/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 244]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//libtrack.wlu.edu/piwik.php?idsite=244" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
   </body>
 </html>
