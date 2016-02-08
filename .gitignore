@@ -3,3 +3,7 @@ home.html
 .DS_Store
 /images/.DS_Store
 zot_warnings.log
+/zot_bib_web/zot.py
+/zot_bib_web/__pycache__/
+/zot_bib_web/settings.pyc
+/zot_bib_web/zotero-bib.html
