@@ -169,7 +169,6 @@
        <hr>
       <div id="includedContent"></div>
       </div>
-      <div id="coins"></div>
     </section>
 
     <!--end main content-->
@@ -180,12 +179,6 @@
     <script src="/js/foundation.min.js"></script>
     <script src="/js/vendor/jquery.js"></script>
 
-    <script>
-    $(function(){
-      $("#includedContent").load("/zot_bib_web/zotero-bib.html")
-      $('#coins').load('/zot_bib_web/coins.html')
-    })
-    </script>
     <script>
        $(document).foundation();
     </script>
@@ -205,6 +198,10 @@
   </script>
   <noscript><p><img src="//libtrack.wlu.edu/piwik.php?idsite=244" style="border:0;" alt="" /></p></noscript>
   <!-- End Piwik Code -->
-<script type="text/javascript" src="/js/zot-coins.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $("#includedContent").load("/zot_bib_web/zotero-bib.html")
+  })
+</script>
   </body>
 </html>
