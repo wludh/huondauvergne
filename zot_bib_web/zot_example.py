@@ -32,7 +32,7 @@ library_id = 'GROUP_OR_USER_ID' # your group or user ID (e.g., six numeric digit
 library_type ='GROUP_OR_USER'  # or 'group' # group or userm
 api_key = 'API_KEY'  # secret key (from Zotero)
 
-toplevelfilter = 'COLLECTIN_ID'   # collection where to start retrieving
+toplevelfilter = 'COLLECTION_ID'   # collection where to start retrieving
 catchallcollection = 'CATCHALLCOLLECTION'  # include "Miscellaneous" category at end containing all items not mentioend anywhere else
 
 limit=5   # None, or set a limit (integer<100) for each collection for debugging
