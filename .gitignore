@@ -7,3 +7,4 @@ zot_warnings.log
 /zot_bib_web/__pycache__/
 /zot_bib_web/settings.pyc
 /zot_bib_web/zotero-bib.html
+/zot_bib_web/texconv.pyc
