@@ -8,9 +8,11 @@
 
 # Bibliographic style can be chosen (APA) is default.
 
-
 # (C) 2014,2015 David Reitter, The Pennsylvania State University
 # Released under the GNU General Public License, V.3 or later.
+
+# heavilty modified from the original github repository at https://github.com/davidswelt/zot_bib_web
+
 
 from __future__ import print_function
 
@@ -31,7 +33,11 @@ library_type ='group'  # or 'group' # group or userm
 api_key = 'n06ygnguCClUjQgpH2XKsNGG'  # secret key (from Zotero)
 
 toplevelfilter = 'UC9DKBJN'   # collection where to start retrieving
+<<<<<<< HEAD
 catchallcollection = 'AXZCMS2W'  # include "Miscellaneous" category at end containing all items not mentioend anywhere else
+=======
+catchallcollection = 'CATCHALLCOLLECTION'  # include "Miscellaneous" category at end containing all items not mentioend anywhere else
+>>>>>>> annotator
 
 limit=5   # None, or set a limit (integer<100) for each collection for debugging
 
@@ -52,7 +58,11 @@ outputfile = 'zotero-bib.html'  # relative or absolute path name of output file
 category_outputfile_prefix = 'zotero'  # relative or absolute path prefix
 
 show_search_box = True  # show a Javascript/JQuery based search box to filter pubs by keyword.  Must define jquery_path.
+<<<<<<< HEAD
 jquery_path = "/js/vendor/jquery_min.js"  # path to jquery file on the server
+=======
+jquery_path = "/../js/vendor/jquery_min.js"  # path to jquery file on the server
+>>>>>>> annotator
 # jquery_path = "../wp-includes/js/jquery/jquery.js"  # wordpress location
 
 show_links = ['abstract', 'pdf', 'bib', 'ris']   # unconditionally show these items if they are available.
@@ -499,8 +509,15 @@ def compile_data(collection_id, collection_name, exclude={}, shorten=False):
         d = 2+collection_depths.get(collection_id,0)
         html += "<h4 id=\"sub-header\">%s</h4>\n"%(collection_name)
         html += corehtml
-        write_some_html(html, category_outputfile_prefix+"-%s.html"%collection_id)
+
+        # write_some_html(html, category_outputfile_prefix+"-%s.html"%collection_id)
         fullhtml += html
+    
+    zot = zotero.Zotero(library_id, library_type, api_key)
+    coins = zot.collection_items(toplevelfilter, content='coins')
+    coin_strings = [str(coin) for coin in coins]
+    for coin in coin_strings:
+        fullhtml += coin
 
     return counter # number of items included
 
@@ -525,5 +542,4 @@ for collection_name in sortedkeys:
 headerhtml += "</ul>"
 headerhtml += search_box
 
-        
 write_some_html(headerhtml+fullhtml, outputfile)

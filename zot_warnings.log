@@ -1,0 +1,52 @@
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/UC9DKBJN/collections?limit=100&format=json HTTP/1.1" 200 557
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/UC9DKBJN/collections?limit=100&format=json HTTP/1.1" 200 557
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/5FPU6BCJ/collections?limit=100&format=json HTTP/1.1" 200 2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/F83KNP8F/collections?limit=100&format=json HTTP/1.1" 200 2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AZDA4CE6/collections?limit=100&format=json HTTP/1.1" 200 2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AXZCMS2W/collections?limit=100&format=json HTTP/1.1" 200 2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/5FPU6BCJ/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=bibtex&limit=5&order=date HTTP/1.1" 200 737
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/5FPU6BCJ/items?sort=desc&style=apa&itemType=-attachment+%7C%7C+note&format=atom&content=bib&limit=5&order=date HTTP/1.1" 200 802
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/5FPU6BCJ/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=ris&limit=5&order=date HTTP/1.1" 200 739
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/5FPU6BCJ/items?content=csljson&sort=desc&limit=5&order=date&format=atom HTTP/1.1" 200 715
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/UC9DKBJN/items?content=coins&limit=100&format=atom HTTP/1.1" 200 6132
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AZDA4CE6/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=bibtex&limit=5&order=date HTTP/1.1" 200 855
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AZDA4CE6/items?sort=desc&style=apa&itemType=-attachment+%7C%7C+note&format=atom&content=bib&limit=5&order=date HTTP/1.1" 200 836
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AZDA4CE6/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=ris&limit=5&order=date HTTP/1.1" 200 834
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AZDA4CE6/items?content=csljson&sort=desc&limit=5&order=date&format=atom HTTP/1.1" 200 1026
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/UC9DKBJN/items?content=coins&limit=100&format=atom HTTP/1.1" 200 6132
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AXZCMS2W/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=bibtex&limit=5&order=date HTTP/1.1" 200 414
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AXZCMS2W/items?sort=desc&style=apa&itemType=-attachment+%7C%7C+note&format=atom&content=bib&limit=5&order=date HTTP/1.1" 200 419
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AXZCMS2W/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=ris&limit=5&order=date HTTP/1.1" 200 411
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/AXZCMS2W/items?content=csljson&sort=desc&limit=5&order=date&format=atom HTTP/1.1" 200 387
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/UC9DKBJN/items?content=coins&limit=100&format=atom HTTP/1.1" 200 6132
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/F83KNP8F/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=bibtex&limit=5&order=date HTTP/1.1" 200 412
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/F83KNP8F/items?sort=desc&style=apa&itemType=-attachment+%7C%7C+note&format=atom&content=bib&limit=5&order=date HTTP/1.1" 200 416
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/F83KNP8F/items?sort=desc&style=&itemType=-attachment+%7C%7C+note&format=atom&content=ris&limit=5&order=date HTTP/1.1" 200 410
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/F83KNP8F/items?content=csljson&sort=desc&limit=5&order=date&format=atom HTTP/1.1" 200 389
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): api.zotero.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /groups/469500/collections/UC9DKBJN/items?content=coins&limit=100&format=atom HTTP/1.1" 200 6132
