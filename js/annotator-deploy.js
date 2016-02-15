@@ -110,13 +110,9 @@ var pageUri = function () {
 
 var app = new annotator.App()
     .include(annotator.ui.main, {
-    	element: document.body
-    	})
-    .include(annotator.ui.main, {
-    editorExtensions: [annotator.ui.tags.editorExtension]
-		})
-    .include(annotator.ui.main, {
-    viewerExtensions: [annotator.ui.tags.viewerExtension]
+    	element: document.body,
+    	editorExtensions: [annotator.ui.tags.editorExtension],
+   		viewerExtensions: [annotator.ui.tags.viewerExtension]
 		})
     .include(annotator.ui.filter.standalone)
     // .include(annotator.ui.tags.standalone)
