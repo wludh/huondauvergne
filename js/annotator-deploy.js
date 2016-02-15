@@ -4,7 +4,7 @@
 var content = $('body').annotator();
     content.annotator('addPlugin', 'Store', {
       // The endpoint of the store on your server.
-      prefix: 'http://annotateit.org/api/search?user=walshb',
+      prefix: 'https://annotateit.org/api/search?user=walshb',
   	
       // Attach the uri of the current page to all annotations to allow search.
       annotationData: {
