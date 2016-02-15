@@ -9,7 +9,7 @@ var content = $('body').annotator();
   	
       // Attach the uri of the current page to all annotations to allow search.
       	annotationData: {
-        	'uri': 'http://huon-staging.herokuapp.com/bibliography.html'
+        	'uri': 'https://huon-staging.herokuapp.com/bibliography.html'
       	},
 
       // This will perform a "search" action when the plugin loads. Will
@@ -17,7 +17,7 @@ var content = $('body').annotator();
       // eg. /store/endpoint/search?limit=20&uri=http://this/document/only
       loadFromSearch: {
         'limit': 20,
-        'uri': 'http://huon-staging.herokuapp.com/bibliography.html'
+        'uri': 'https://huon-staging.herokuapp.com/bibliography.html'
       }
     }
 });
