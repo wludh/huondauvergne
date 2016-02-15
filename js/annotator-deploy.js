@@ -58,8 +58,7 @@ $(document).ready(function() {
     // ‘prefix/read’. Defaults to false.
     loadFromSearch: {
       'limit': 20,
-      'all_fields': 1,
-      'uri': 'https://huon-staging.herokuapp.com/bibliography.html'
+      'user': 'walshb'
     },
     // The server URLs for each available action (excluding prefix). These URLs
     // can point anywhere but must respond to the appropriate HTTP method. The
