@@ -110,12 +110,12 @@ var pageUri = function () {
 
 var app = new annotator.App()
     .include(annotator.ui.main, {element: document.body})
-    .include(annotator.storage.http, {prefix: 'https://www.annotateit.org/api'})
+    .include(annotator.storage.http, {prefix: 'http://www.annotateit.org/api'})
     .include(pageUri);
 
 app.start()
    .then(function () {
-       app.annotations.load({uri: window.location.href});
+       app.annotations.load({user: 'walshb'});
    });
 
 
