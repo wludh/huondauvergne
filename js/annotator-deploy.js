@@ -110,8 +110,8 @@ var pageUri = function () {
 
 var app = new annotator.App()
     .include(annotator.ui.main, {element: document.body})
-    .include(annotator.storage.http, {prefix: 'http://annotateit.org/api'})
-    // .include(annotator.storage.HttpStorage.options.headers)
+    .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
+    .include(annotator.storage.HttpStorage.options.headers)
     .include(pageUri);
 
 app.start()
