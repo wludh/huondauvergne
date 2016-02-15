@@ -45,7 +45,7 @@ $(document).ready(function() {
     // This is the API endpoint. If the server supports Cross Origin Resource
     // Sharing (CORS) a full URL can be used here. Defaults to /store. The
     // trailing slash should be omitted.
-    prefix: 'http://annotateit.org/api',
+    prefix: 'https://annotateit.org/api',
     // Custom meta data that will be attached to every annotation that is sent
     // to the server. This will override previous values. E.g. attach the uri of the
     // current page to all annotations to allow search.
