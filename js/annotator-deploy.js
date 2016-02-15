@@ -2,14 +2,15 @@
 //              .annotator('setupPlugins');
 
 var content = $('body').annotator();
-    content.annotator('addPlugin', 'Store', {
+    content.annotator('setupPlugins', {}, {
+    	Store: {
       // The endpoint of the store on your server.
-      prefix: 'https://annotateit.org/api/search?user=walshb',
+     	prefix: 'https://annotateit.org/api/search?user=walshb',
   	
       // Attach the uri of the current page to all annotations to allow search.
-      annotationData: {
-        'uri': 'http://huon-staging.herokuapp.com/bibliography.html'
-      },
+      	annotationData: {
+        	'uri': 'http://huon-staging.herokuapp.com/bibliography.html'
+      	},
 
       // This will perform a "search" action when the plugin loads. Will
       // request the last 20 annotations for the current url.
@@ -18,7 +19,8 @@ var content = $('body').annotator();
         'limit': 20,
         'uri': 'http://huon-staging.herokuapp.com/bibliography.html'
       }
-    });
+    }
+});
 
 // "http://annotateit.org/api/search?user=walshb" will return all the 
 // annotations by a user. but then how do i load that into the annotator?
