@@ -112,14 +112,14 @@ var app = new annotator.App()
     .include(annotator.ui.main, {
     	element: document.body
     	})
-  //   .include(annotator.ui.main, {
-  //   editorExtensions: [annotator.ui.tags.editorExtension]
-		// })
-  //   .include(annotator.ui.main, {
-  //   viewerExtensions: [annotator.ui.tags.viewerExtension]
-		// })
+    .include(annotator.ui.main, {
+    editorExtensions: [annotator.ui.tags.editorExtension]
+		})
+    .include(annotator.ui.main, {
+    viewerExtensions: [annotator.ui.tags.viewerExtension]
+		})
     .include(annotator.ui.filter.standalone)
-    .include(annotator.ui.tags.standalone)
+    // .include(annotator.ui.tags.standalone)
     .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
     .include(pageUri);
 
