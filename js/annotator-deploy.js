@@ -112,6 +112,7 @@ var app = new annotator.App()
     .include(annotator.ui.main, {
     	element: document.body
     	})
+    .include(annotator.ui.filter.standalone)
     .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
     .include(pageUri);
 
