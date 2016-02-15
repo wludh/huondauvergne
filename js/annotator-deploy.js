@@ -110,8 +110,7 @@ var pageUri = function () {
 
 var app = new annotator.App()
     .include(annotator.ui.main, {
-    	element: document.body,
-    	viewerExtensions: [annotator.ui.tags.viewerExtension]
+    	element: document.body
     	})
     .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
     .include(pageUri);
