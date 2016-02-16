@@ -148,6 +148,10 @@
 
 			</body>
             <script src="/build/js/tei_scripts.js"></script>
+            <link rel="stylesheet" src="/css/annotator.css">
+<script src="/js/annotator.min.js"></script>
+<!-- <script src="/js/annotator-full.min.js"></script>
+ --><script src="/js/annotator-deploy.js"></script>
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
