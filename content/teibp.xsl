@@ -148,10 +148,7 @@
 
 			</body>
             <script src="/build/js/tei_scripts.js"></script>
-            <link rel="stylesheet" src="/css/annotator.css" />
-<script src="/js/annotator.min.js"></script>
-<!-- <script src="/js/annotator-full.min.js"></script>
- --><script src="/js/annotator-deploy.js"></script>
+
 <!-- 			    <script src="/js/vendor/jquery.js"></script> -->
 <!--     <script src="/js/foundation.min.js"></script>
     <script src="/js/foundation/foundation.topbar.js"></script>
@@ -342,6 +339,10 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link id="teicss" rel="stylesheet" type="text/css" href="{$teiCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
+             <link rel="stylesheet" src="/css/annotator.css" />
+<script src="/js/annotator.min.js"></script>
+<!-- <script src="/js/annotator-full.min.js"></script>
+ --><script src="/js/annotator-deploy.js"></script>
             <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
 <!-- 			<script type="text/javascript" src="{$teibpJS}"></script>
  --><!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
