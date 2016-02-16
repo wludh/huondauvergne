@@ -148,7 +148,7 @@
 
 			</body>
             <script src="/build/js/tei_scripts.js"></script>
-            <link rel="stylesheet" src="/css/annotator.css">
+            <link rel="stylesheet" src="/css/annotator.css" />
 <script src="/js/annotator.min.js"></script>
 <!-- <script src="/js/annotator-full.min.js"></script>
  --><script src="/js/annotator-deploy.js"></script>
