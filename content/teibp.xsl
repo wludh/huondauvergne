@@ -49,8 +49,8 @@
 	-->
 	<xsl:param name="filePrefix" select="'..'"/>
     <xsl:param name="teiCSS" select="concat($filePrefix, '/build/css/tei_styles.css')"/>
-	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
-	<!-- <xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/> -->
+<!-- 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
+ -->	<!-- <xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/> -->
 <!-- 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
  --><!--     <xsl:param name="foundationminJS" select="concat($filePrefix, '/js/foundation.min.js')"/>
     <xsl:param name="foundationtopbarJS" select="concat($filePrefix, '/js/foundation/foundation.topbar.js')"/> -->
@@ -338,22 +338,11 @@
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link id="teicss" rel="stylesheet" type="text/css" href="{$teiCSS}"/>
-<!-- 			<script type="text/javascript" src="{$jqueryJS}"></script>
- -->           <!--  <script type="text/javascript" src="/js/jquery-2.2.0.min.js"></script> -->
-<!--             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> -->
-<!--             <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
             <link rel="stylesheet" src="/css/annotator.css" />
-            <script src="/js/annotator.min.js"></script>
-            <script src="/js/annotator-deploy.js"></script>            
-            <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
-<!-- 			<script type="text/javascript" src="{$teibpJS}"></script>
- --><!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
-            <script type="text/javascript" src="{$foundationtopbarJS}"></script> -->
-<!-- 			<script type="text/javascript" src="{$modernizrJS}"></script>
- -->			<script type="text/javascript">
+            <script src="/build/js/tei_scripts.js"></script>          
+			<script type="text/javascript">
 				$(document).ready(function() {
-					$("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
-					$.unblockUI();	
+					$("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());	
 				});
 			</script>
 			<xsl:call-template name="tagUsage2style"/>

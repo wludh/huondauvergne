@@ -99,29 +99,30 @@
 //      	app.annotations.load();
 // });
 	
+// $(document).ready(function()
+// {
+  var pageUri = function () {
+      return {
+          beforeAnnotationCreated: function (ann) {
+              ann.uri = window.location.href;
+          }
+      };
+  };
 
-var pageUri = function () {
-    return {
-        beforeAnnotationCreated: function (ann) {
-            ann.uri = window.location.href;
-        }
-    };
-};
+  var app = new annotator.App()
+      .include(annotator.ui.main, {
+      	element: document.body,
+      	editorExtensions: [annotator.ui.tags.editorExtension],
+     		viewerExtensions: [annotator.ui.tags.viewerExtension]
+  		})
+      .include(annotator.ui.filter.standalone)
+      // .include(annotator.ui.tags.standalone)
+      .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
+      .include(pageUri);
 
-var app = new annotator.App()
-    .include(annotator.ui.main, {
-    	element: document.body,
-    	editorExtensions: [annotator.ui.tags.editorExtension],
-   		viewerExtensions: [annotator.ui.tags.viewerExtension]
-		})
-    .include(annotator.ui.filter.standalone)
-    // .include(annotator.ui.tags.standalone)
-    .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
-    .include(pageUri);
+  app.start()
+     .then(function () {
+         app.annotations.load({user: 'walshb'});
+     });
 
-app.start()
-   .then(function () {
-       app.annotations.load({user: 'walshb'});
-   });
-
-
+// });

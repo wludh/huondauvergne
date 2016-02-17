@@ -5,7 +5,7 @@ module.exports = function(grunt){
 		clean: ['build'],
 		concat: {
 			base_js: {
-				src: ['js/vendor/jquery.js', 'js/foundation.min.js', 'js/foundation/foundation.topbar.js', 'js/vendor/modernizr.js'],
+				src: ['js/jquery-2.2.0.min.js', 'js/foundation.min.js', 'js/foundation/foundation.topbar.js', 'js/vendor/modernizr.js'],
 				dest:'build/js/base_scripts.js',
 			},
 			base_css: {
@@ -13,7 +13,7 @@ module.exports = function(grunt){
 				dest: 'build/css/base_styles.css',
 			},
 			tei_js: {
-				src: ['js/browse.js', 'js/background.js'],
+				src: ['js/jquery-2.2.0.min.js', 'js/browse.js', 'js/background.js', 'js/foundation', 'js/annotator.min.js', 'js/annotator-deploy.js'],
 				dest: 'build/js/tei_scripts.js'
 			},
 			tei_css: {
@@ -125,7 +125,9 @@ module.exports = function(grunt){
 
 	grunt.loadNpmTasks('grunt-xmlmin');
 
-	grunt.registerTask('default', ['clean','concat', 'uglify', 'cssmin', 'watch']);
+	grunt.registerTask('default', ['clean','concat', 
+		//'uglify', 'cssmin', 
+		'watch']);
 
 
 };

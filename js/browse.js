@@ -2,7 +2,12 @@
 // gives the selected laisse the class you want.
 //takes the input field and turns it into a laisse number
 function select_laisse(){
-    var laisse = document.getElementById("selected_laisse").value;
+    if (document.getElementById("selected_laisse") == null){
+        var laisse = 1;
+    }
+    else{ 
+        var laisse = document.getElementById("selected_laisse").value;
+    }
     return parseInt(laisse);
 };
 
@@ -21,7 +26,7 @@ function reveal_laisse(){
     // makes that laisse vissible.
     if(selected_laisse > 0 && selected_laisse <= $("lg").length){
         $("lg[n=" + selected_laisse + "], #bottom-buttons, #tei-hr-1").addClass("visible");
-    } else{
+    } else if ($("lg").length !== 0){
         window.alert("Please type a number between 1 and " + $("lg").length + ", the number of laisses in this edition.");
     };
 };
@@ -62,9 +67,8 @@ function display_laisse_num(){
     $("#num_laisses").text(num_laisses);
 };
 
-display_laisse_num();
-$("#selected_laisse").val(1);
-reveal_laisse();
-
-// This will have a default laisse loaded.
-// $("#selected_laisse").val(parseInt(1));
+$(document).ready(function(){
+    display_laisse_num();
+    $("#selected_laisse").val(1);
+    reveal_laisse();
+});
