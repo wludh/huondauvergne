@@ -338,11 +338,13 @@
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link id="teicss" rel="stylesheet" type="text/css" href="{$teiCSS}"/>
-			<script type="text/javascript" src="{$jqueryJS}"></script>
-             <link rel="stylesheet" src="/css/annotator.css" />
-<script src="/js/annotator.min.js"></script>
-<!-- <script src="/js/annotator-full.min.js"></script>
- --><script src="/js/annotator-deploy.js"></script>
+<!-- 			<script type="text/javascript" src="{$jqueryJS}"></script>
+ -->           <!--  <script type="text/javascript" src="/js/jquery-2.2.0.min.js"></script> -->
+<!--             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> -->
+<!--             <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+            <link rel="stylesheet" src="/css/annotator.css" />
+            <script src="/js/annotator.min.js"></script>
+            <script src="/js/annotator-deploy.js"></script>            
             <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
 <!-- 			<script type="text/javascript" src="{$teibpJS}"></script>
  --><!-- 			<script type="text/javascript" src="{$foundationminJS}"></script>
