@@ -116,7 +116,7 @@ var app = new annotator.App()
 		})
     .include(annotator.ui.filter.standalone)
     // .include(annotator.ui.tags.standalone)
-    .include(annotator.storage.http, {prefix: 'http://annotateit.org/api'})
+    .include(annotator.storage.http, {prefix: '//annotateit.org/api'})
     .include(pageUri);
 
 app.start()
