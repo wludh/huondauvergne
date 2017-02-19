@@ -164,6 +164,7 @@
 <li>–––. "Orality, literacy, and the prose epic: the case of Andrea da Barberino's <em>Ugo d'Alvernia</em>." <em>The Italianist</em> 13 (1993): 29-46.</li>
 <li>Wunderli, Peter, and Günter Holtus. "La 'renaissance' des études franco-italiennes. Rétrospective et prospective." <em>Testi, cotesti e contesti del franco-italiano. Atti del 1o simposio franco-italiano (Bad Homburg, 13-16 aprile 1987)</em>.<em> </em>Ed. Günter Holtus et al. Tübingen: Niemeyer, 1989. 3-23.</li>
       </ul>
+      <div id="includedContent"></div>
        <hr>
       </div>
     </section>
@@ -182,10 +183,14 @@
 <link rel="stylesheet" src="/css/annotator.css">
 <script src="/js/annotator.min.js"></script>
 <script src="/js/annotator-deploy.js"></script>
-
     <div id="coins"></div>
     <script>
        $(document).foundation();
     </script>
+    <script>
+  $(function(){
+      $("#includedContent").load("/zotero-bib.html");
+  });
+</script>
   </body>
 </html>
